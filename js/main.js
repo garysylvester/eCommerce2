@@ -1,3 +1,5 @@
+scrollingElement = (document.scrollingElement || document.body)
+
 function aboutToggle() {
   var x = document.getElementById("aboutGame");
   if (x.style.height === "48px") {
@@ -37,7 +39,11 @@ function tileToggleEAD() {
   var element = document.getElementById("switch");
   element.classList.toggle("platformTileInactive");
 
+  $(scrollingElement).animate({
+    scrollTop: document.body.scrollHeight
+  }, 500);
 }
+
 
 function tileToggleSteam() {
   var x = document.getElementById("steamSection");
@@ -61,6 +67,10 @@ function tileToggleSteam() {
 
   var element = document.getElementById("switch");
   element.classList.toggle("platformTileInactive");
+
+  $(scrollingElement).animate({
+    scrollTop: document.body.scrollHeight
+  }, 500);
 }
 
 function tileTogglePlaystation() {
@@ -85,6 +95,10 @@ function tileTogglePlaystation() {
 
   var element = document.getElementById("switch");
   element.classList.toggle("platformTileInactive");
+
+  $(scrollingElement).animate({
+    scrollTop: document.body.scrollHeight
+  }, 500);
 }
 
 function tileToggleXbox() {
@@ -109,21 +123,25 @@ function tileToggleXbox() {
 
   var element = document.getElementById("switch");
   element.classList.toggle("platformTileInactive");
+
+  $(scrollingElement).animate({
+    scrollTop: document.body.scrollHeight
+  }, 500);
 }
 
 
 function tileToggleSwitch() {
-    var x = document.getElementById("switchSection");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  
-    var element = document.getElementById("switch");
-    element.classList.toggle("platformTileSelected");
-    
-    var element = document.getElementById("steam");
+  var x = document.getElementById("switchSection");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var element = document.getElementById("switch");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("steam");
   element.classList.toggle("platformTileInactive");
 
   var element = document.getElementById("playstation");
@@ -134,4 +152,8 @@ function tileToggleSwitch() {
 
   var element = document.getElementById("ead");
   element.classList.toggle("platformTileInactive");
-  }
+
+  $(scrollingElement).animate({
+    scrollTop: document.body.scrollHeight
+  }, 500);
+}

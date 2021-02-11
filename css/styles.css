@@ -92,8 +92,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .bM{
-    font-size: var(--font-body-size-sizeM);
-    margin-bottom: 0px;
+    font-size: var(--font-body-size-size-M);
+    margin: 0px;
+}
+
+.bS{
+    font-size: var(--font-body-size-s);
+    margin: 0px;
 }
 
 .navbar{
@@ -198,13 +203,16 @@ h1, h2, h3, h4, h5, h6{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: var(--dimension-space-medium);
-    
+    grid-gap: var(--dimension-space-medium);   
+}
+
+.checkout-tiles img{
+    margin-bottom: var(--dimension-space-smaller);
 }
 
 .platform-tile{
     width: 100%;
-    height: 128px;
+    height: 148px;
     background-color: var(--color-fifa-neutral-900);
     border: 1px solid var(--color-fifa-neutral-900);
     border-radius: var(--dimension-space-smaller);
@@ -214,6 +222,26 @@ h1, h2, h3, h4, h5, h6{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-align: center;
+}
+
+.subscribe-tile, .buy-tile{
+    width: 100%;
+    height: 148px;
+    background-color: var(--color-fifa-neutral-900);
+    border: 1px solid var(--color-fifa-neutral-900);
+    border-radius: var(--dimension-space-smaller);
+    transition: all 0.5s linear;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.subscribe-tile h4{
+    margin-bottom: var(--dimension-space-smaller);
 }
 
 

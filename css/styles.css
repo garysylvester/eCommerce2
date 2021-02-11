@@ -1,5 +1,5 @@
 
-@import 'fonts.css';
+@import '../fonts/fonts.css';
 
 :root{
 
@@ -134,6 +134,8 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
     margin-top: var(--dimension-space-largest);
     width: calc(100% - var(--dimension-space-larger));
+    height: 48px;
+    overflow: hidden;
 }
 
 .about-game-header{

@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Electronic Arts Display';
+    src: url('ElectronicArtsDisplay-Bold.woff2') format('woff2'),
+        url('ElectronicArtsDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Electronic Arts Display';
+    src: url('ElectronicArtsDisplay-Regular.woff2') format('woff2'),
+        url('ElectronicArtsDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Electronic Arts Display';
+    src: url('ElectronicArtsDisplay-Light.woff2') format('woff2'),
+        url('ElectronicArtsDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Electronic Arts Display';
+    src: url('ElectronicArtsDisplay-Bold_1.woff2') format('woff2'),
+        url('ElectronicArtsDisplay-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Electronic Arts Display';
+    src: url('ElectronicArtsDisplay-Light_1.woff2') format('woff2'),
+        url('ElectronicArtsDisplay-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Electronic Arts Display';
+    src: url('ElectronicArtsDisplay-Regular_1.woff2') format('woff2'),
+        url('ElectronicArtsDisplay-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Electronic Arts Text';
+    src: url('ElectronicArtsText-Light.woff2') format('woff2'),
+        url('ElectronicArtsText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Electronic Arts Text';
+    src: url('ElectronicArtsText-Regular.woff2') format('woff2'),
+        url('ElectronicArtsText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Electronic Arts Text';
+    src: url('ElectronicArtsText-Bold.woff2') format('woff2'),
+        url('ElectronicArtsText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Electronic Arts Text';
+    src: url('ElectronicArtsText-Regular_1.woff2') format('woff2'),
+        url('ElectronicArtsText-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Electronic Arts Text';
+    src: url('ElectronicArtsText-Light_1.woff2') format('woff2'),
+        url('ElectronicArtsText-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Electronic Arts Text';
+    src: url('ElectronicArtsText-Bold_1.woff2') format('woff2'),
+        url('ElectronicArtsText-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -18,10 +18,13 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -41,10 +44,10 @@
 
 
   <main>
-    <section class="about-game">
+    <section class="about-game" id="aboutGame">
       <div class="about-game-header">
         <h1>Get FIFA 21</h1>
-        <h5>Learn More</h5>
+        <a onClick="aboutToggle()" href="#"><h5>Learn More</h5></a>
       </div>
       <hr>
       <div class="about-game-content">
@@ -82,6 +85,7 @@
       </div>
     </section>
 
+    <!-- STEP 1 - SELECT PLATFORM -->
     <section class="checkout select-platform">
       <hr>
       <div class="step-header">
@@ -90,24 +94,74 @@
       </div>
 
       <div class="checkout-tiles">
-        <div class="platform-tile" id="eaDesktoApp">
-          <img src="img/ea-desktop-app.svg">
-          <p class="bM">EA Desktop App</p>
-        </div>
-        <div class="platform-tile" id="steamApp">
-          <img src="img/steam.svg">
-          <p class="bM">Steam</p>
-        </div>
-        <div class="platform-tile" id="playStation">
-          <img src="img/steam.svg">
-          <p class="bM">Steam</p>
-        </div>
+          <div onClick="tileToggleEAD()" class="platform-tile" id="ead">
+            <img src="img/ea-desktop-app.svg">
+            <p class="bM">EA Desktop App</p>
+          </div>
+
+          <div onClick="tileToggleSteam()" class="platform-tile" id="steam">
+            <img src="img/steam.svg">
+            <p class="bM">Steam</p>
+          </div>
+
+          <div onClick="tileTogglePlaystation()" class="platform-tile" id="playstation">
+            <img src="img/playstation.svg">
+            <p class="bM">Playstation</p>
+          </div>
+
+          <div onClick="tileToggleXbox()" class="platform-tile" id="xbox">
+            <img src="img/xbox.svg">
+            <p class="bM">Xbox</p>
+          </div>
 
       </div>
 
     </section>
 
-    <section class="checkout subscribe-buy">
+    <!-- STEP 2 - SUBSCRIBE OR BUY -->
+    <section class="checkout subscribe-buy" id="EAD" style="display:none">
+      <hr>
+      <div class="step-header">
+        <h4>Step 2</h4>
+        <h2>Join or purchase</h2>
+      </div>
+
+      <div class="checkout-tiles">
+        <div class="platform-tile"></div>
+        <div class="platform-tile"></div>
+      </div>
+
+    </section>
+
+    <section class="checkout subscribe-buy" id="Steam" style="display:none">
+      <hr>
+      <div class="step-header">
+        <h4>Step 2</h4>
+        <h2>Join or purchase</h2>
+      </div>
+
+      <div class="checkout-tiles">
+        <div class="platform-tile"></div>
+        <div class="platform-tile"></div>
+      </div>
+
+    </section>
+
+    <section class="checkout subscribe-buy" id="Playstation" style="display:none">
+      <hr>
+      <div class="step-header">
+        <h4>Step 2</h4>
+        <h2>Join or purchase</h2>
+      </div>
+
+      <div class="checkout-tiles">
+        <div class="platform-tile"></div>
+        <div class="platform-tile"></div>
+      </div>
+
+    </section>
+
+    <section class="checkout subscribe-buy" id="Xbox" style="display:none">
       <hr>
       <div class="step-header">
         <h4>Step 2</h4>

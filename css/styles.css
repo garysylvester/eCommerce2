@@ -1,0 +1,212 @@
+
+@import 'fonts.css';
+
+:root{
+
+    --color-ea-primary: red;
+    --color-ea-secondary: blue;
+    --color-ea-base: white;
+    --color-fifa-base: #151515;
+    --color-fifa-mint: #29FFC9;
+    --color-fifa-violet: #7E42F5;
+    --color-fifa-majenta: #E518FB;
+    --color-fifa-obsidian: #201E20; 
+    --color-fifa-nav-color: #000000;
+
+    --color-fifa-neutral-0: #ffffff;
+    --color-fifa-neutral-100: #E7E7E7;
+    --color-fifa-neutral-200: #D0D0D0;
+    --color-fifa-neutral-300: #B8B8B8;
+    --color-fifa-neutral-400: #A1A1A1;
+    --color-fifa-neutral-500: #8A8A8A;
+    --color-fifa-neutral-600: #727272;
+    --color-fifa-neutral-700: #5B5B5B;
+    --color-fifa-neutral-800: #434343;
+    --color-fifa-neutral-900: #2C2C2C;
+    --color-fifa-neutral-1000: var(--color-fifa-base);
+
+    --dimension-space-large: 24px;
+    --dimension-space-larger: 32px;
+    --dimension-space-largest: 48px;
+    --dimension-space-macro: 64px;
+    --dimension-space-medium: 16px;
+    --dimension-space-micro: 2px;
+    --dimension-space-none: 0px;
+    --dimension-space-small: 12px;
+    --dimension-space-smaller: 8px;
+    --dimension-space-smallest: 4px;
+
+    --font-family-body: 'Electronic Arts Text';
+    --font-family-display: 'Electronic Arts Display';
+
+    --font-line-height-body: 1.5;
+    --font-line-height-display: 1.25;
+
+    --font-size-base: 16px;
+
+    --font-display-size-sizeXXL: 6rem ;
+    --font-display-size-sizeXL: 5rem ;
+    --font-display-size-sizeL: 4.5rem ;
+    --font-display-size-sizeM: 4rem ;
+    --font-display-size-sizeS: 3rem ;
+    --font-display-size-sizeXS: 2.5rem ;
+
+    --font-heading-size-XL: 2.25rem;
+    --font-heading-size-L: 2rem;
+    --font-heading-size-M: 1.75rem;
+    --font-heading-size-S: 1.25rem;
+    --font-heading-size-XS: 1rem;
+
+    --font-body-size-L: 2rem;
+    --font-body-size-M: 1.5rem;
+    --font-body-size-S: 1rem;
+    --font-body-size-XS: 0.75rem;
+
+
+}
+
+body{
+    background: var(--color-fifa-base);
+    font-family: var(--font-family-body);
+    font-weight: 300;
+    color: var(--color-fifa-neutral-0);
+    font-size: var(--font-size-base);
+    line-height: var(--font-line-height-body);
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-family: var(--font-family-display);
+    font-weight: bold;
+    line-height: var(--font-line-height-display);
+}
+
+.dxxl{
+    font-size: var(--font-display-size-sizeXXL);
+}
+
+.bM{
+    font-size: var(--font-body-size-sizeM);
+    margin-bottom: 0px;
+}
+
+.navbar{
+    width: 100%;
+    height: 57px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color: var(--color-fifa-nav-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-icon{
+    width:45px;
+    height: 57px;
+    margin-right: var(--dimension-space-smaller);
+}
+
+.logo{
+    width: 129px;
+    height: 57px;
+}
+.logo img{
+    height: 57px;
+}
+
+.right-side{
+    background-color: turquoise;
+    width: 144px;
+    height: var(--dimension-space-largest);
+}
+
+.about-game{
+    background-color: var(--color-fifa-base);
+    padding: 16px 16px;
+    position: relative;
+    margin-top: var(--dimension-space-largest);
+    width: calc(100% - var(--dimension-space-larger));
+}
+
+.about-game-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: var(--dimension-space-large);
+}
+
+.about-game-header h5{
+    margin-bottom: 5px;
+}
+
+.game-trailer{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: var(--dimension-space-large);
+    height: 0;
+    overflow: hidden;
+}
+
+.game-trailer iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-game-details{
+    background: var(--color-fifa-base);
+    margin-top: var(--dimension-space-large);
+}
+
+.checkout{
+    background-color: var(--color-fifa-base);
+    padding: 0 var(--dimension-space-medium);
+    position: relative;
+    width: calc(100% - 32px);
+}
+
+.step-header{
+    margin: var(--dimension-space-larger) 0;
+}
+
+.select-platform{
+    display: block;
+}
+
+.checkout-tiles{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: var(--dimension-space-medium);
+    
+}
+
+.platform-tile{
+    width: 100%;
+    height: 128px;
+    background-color: var(--color-fifa-neutral-900);
+    border: 1px solid var(--color-fifa-neutral-800);
+    border-radius: var(--dimension-space-smaller);
+    transition: all 1s linear;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.platform-tile:hover{
+    background-color: var(--color-fifa-neutral-700);
+    border: 1px solid var(--color-fifa-mint);
+}

@@ -1,5 +1,3 @@
-scrollingElement = (document.scrollingElement || document.body)
-
 // GENERAL
 function aboutToggle() {
   var x = document.getElementById("aboutGame");
@@ -10,10 +8,10 @@ function aboutToggle() {
   }
 
   var x = document.getElementById("learnMore");
-  if (x.innerHTML === "Learn More +") {
+  if (x.innerHTML === "About +") {
     x.innerHTML = "Collapse -";
   } else {
-    x.innerHTML = "Learn More +";
+    x.innerHTML = "About +";
   }
 }
 
@@ -35,10 +33,10 @@ function eaPlayMore(){
 
 function compareSubsToggle(){
     var x = document.getElementById("subsTable");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if (x.style.height === "0px") {
+    x.style.height = "861px";
   } else {
-    x.style.display = "none";
+    x.style.height = "0px";
   }
 
   var x = document.getElementById("membershipTiles");
@@ -55,6 +53,8 @@ function compareSubsToggle(){
     x.innerHTML = "Compare";
   }
 }
+
+var scrollingElement = (document.scrollingElement || document.body)
 
 //STEP 1
 //EA DESKTOP APP
@@ -208,7 +208,7 @@ function tileToggleSwitch() {
 
 
 // STEP 2 //
-//JOIN EA PLAY
+//JOIN OR BUY
 function joinEAPLAY() {
     var x = document.getElementById("eaPlaySelectMembershipSection");
     if (x.style.display === "none") {
@@ -248,3 +248,89 @@ function joinEAPLAY() {
       scrollTop: document.body.scrollHeight
     }, 500);
   }
+
+
+   //JOIN EA PLAY
+   function selectEAPLAY1() {
+    var x = document.getElementById("eaPlaySelectPaymentPlan");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var element = document.getElementById("selectEAPlayCard1");
+    element.classList.toggle("platformTileSelected");
+
+    var element = document.getElementById("selectEAPlayProCard1");
+    element.classList.toggle("platformTileInactive");
+
+
+    $(scrollingElement).animate({
+      scrollTop: document.body.scrollHeight
+    }, 500);
+  }
+
+  function selectEAPLAY2() {
+    var x = document.getElementById("eaPlaySelectPaymentPlan");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var element = document.getElementById("selectEAPlayCard2");
+    element.classList.toggle("platformTileSelected");
+
+    var element = document.getElementById("selectEAPlayProCard2");
+    element.classList.toggle("platformTileInactive");
+
+
+    $(scrollingElement).animate({
+      scrollTop: document.body.scrollHeight
+    }, 500);
+  }
+
+  //JOIN EA PLAY PRO
+
+  //JOIN EA PLAY PRO
+  function selectEAPLAYPRO1() {
+    var x = document.getElementById("eaPlayProSelectPaymentPlan");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var element = document.getElementById("selectEAPlayProCard1");
+    element.classList.toggle("platformTileSelected");
+
+    var element = document.getElementById("selectEAPlayCard1");
+    element.classList.toggle("platformTileInactive");
+
+
+    $(scrollingElement).animate({
+      scrollTop: document.body.scrollHeight
+    }, 500);
+  }
+
+  function selectEAPLAYPRO2() {
+    var x = document.getElementById("eaPlayProSelectPaymentPlan");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var element = document.getElementById("selectEAPlayProCard2");
+    element.classList.toggle("platformTileSelected");
+
+    var element = document.getElementById("selectEAPlayCard2");
+    element.classList.toggle("platformTileInactive");
+
+
+    $(scrollingElement).animate({
+      scrollTop: document.body.scrollHeight
+    }, 500);
+  }
+

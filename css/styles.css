@@ -305,17 +305,6 @@ h1, h2, h3, h4, h5, h6{
     text-align: right;
 }
 
-
-.platformTileSelected{
-    background-color: var(--color-fifa-neutral-800);
-    border: 1px solid var(--color-fifa-mint);
-}
-
-.platformTileInactive{
-    opacity: 0.3;
-    pointer-events: none;
-}
-
 .make-selection{
     margin: var(--dimension-space-large) var(--dimension-space-medium);
     text-align: center;
@@ -335,6 +324,7 @@ h1, h2, h3, h4, h5, h6{
     margin: var(--dimension-space-medium);
     overflow: hidden;
     width: calc(100% - var(--dimension-space-larger));
+    transition: all 0.5s ease-in;
 }
 
 .ea-play-content h3{
@@ -351,10 +341,18 @@ h1, h2, h3, h4, h5, h6{
     padding: var(--dimension-space-smaller) var(--dimension-space-small);
 }
 
+.toggle-btn{
+    color: var(--color-fifa-mint);
+    background: transparent;
+    border:none;
+    outline: none;;
+}
+
 .subs-table{
     display: flex;
     flex-direction: column;
     margin-top: var(--dimension-space-large);
+    overflow: hidden;
 }
 
 .subs-table-row{
@@ -387,11 +385,18 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
 }
 
-.with-background{
+.cell-header-with-background{
+    height: 135px;
+    width: 100%;
+    display:inherit;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-fifa-neutral-900);
     border: 1px solid var(--color-fifa-neutral-900);
     border-radius: var(--dimension-space-smaller);
     transition: all 0.5s linear;
+    cursor: pointer;
+    overflow: visible;
 }
 
 .cell-icon{
@@ -402,4 +407,14 @@ h1, h2, h3, h4, h5, h6{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.platformTileSelected{
+    background-color: var(--color-fifa-neutral-800);
+    border: 1px solid var(--color-fifa-mint);
+}
+
+.platformTileInactive{
+    opacity: 0.3;
+    pointer-events: none;
 }

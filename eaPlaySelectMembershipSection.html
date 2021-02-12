@@ -1,4 +1,4 @@
-<section class="checkout select-membership" id="eaPlaySelectMembershipSection" style="display:block">
+<section class="checkout select-membership" id="eaPlaySelectMembershipSection" style="display:none">
   <hr>
   <div class="step-header-compare">
     <div class="content-left">
@@ -6,48 +6,18 @@
       <h2>Select a membership</h2>
     </div>
     <div class="content-right">
-      <a onClick="compareSubsToggle()" href="#">
-        <h5 id="compareSubs">Compare</h5>
+      <button class="toggle-btn" onClick="compareSubsToggle()" id="compareSubs">Compare</button>
       </a>
     </div>
   </div>
-  <!-- OPTIONS (START) -->
-  <div class="checkout-tiles stacked" id="membershipTiles" style="display: block;">
-    <div class="membership-tile">
-      <div class="membership-tile-top">
-        <img class="membership-logo" src="img/ea-play-logo-tile.svg">
-        <div class="membership-price">
-          <p class="bM">$29.99/yr</p>
-          <h4>or $4.99/mo</h4>
-        </div>
-      </div>
-      <div class="membership-tile-bottom">
-        <p class="bS">Play new EA releases like FIFA 21 for 10 hours, plus play hundreds of top titles & save 10% on
-          digital purchases.</p>
-      </div>
-    </div>
 
-    <div class="membership-tile">
-        <div class="membership-tile-top">
-          <img class="membership-logo" src="img/ea-play-pro-logo-tile.svg">
-          <div class="membership-price">
-            <p class="bM">$99.99/yr</p>
-            <h4>or $14.99/mo</h4>
-          </div>
-        </div>
-        <div class="membership-tile-bottom">
-          <p class="bS">Get unlimited access to FIFA 21 plus pro-level rewards like Season Passes, exclusive player content, and a library of premium-edition games</p>
-        </div>
-      </div>
-  </div>
-  <!-- OPTIONS (END) -->
-
-  <div class="subs-table" id="subsTable" style="display: none;">
+  <!-- TABLE (START) -->
+  <div class="subs-table" id="subsTable" style="height: 0px;">
     <div class="table-row-details">
-      <div class="cell-header with-background">
+      <div onClick="selectEAPLAY1()" class="cell-header-with-background" id="selectEAPlayCard1">
         <img src="img/ea-play-table-header.svg">
       </div>
-      <div class="cell-header with-background">
+      <div onClick="selectEAPLAYPRO1()" class="cell-header-with-background" id="selectEAPlayProCard1">
         <img src="img/ea-play-pro-table-header.svg">
       </div>
     </div>
@@ -136,4 +106,39 @@
       </div>
     </div>
   </div>
+  <!-- TABLE (END) -->
+
+  <!-- OPTIONS (START) -->
+  <div class="checkout-tiles stacked" id="membershipTiles" style="display: block;">
+    <div onClick="selectEAPLAY2()" class="membership-tile" id="selectEAPlayCard2">
+      <div class="membership-tile-top">
+        <img class="membership-logo" src="img/ea-play-logo-tile.svg">
+        <div class="membership-price">
+          <p class="bM">$29.99/yr</p>
+          <h4>or $4.99/mo</h4>
+        </div>
+      </div>
+      <div class="membership-tile-bottom">
+        <p class="bS">Play new EA releases like FIFA 21 for 10 hours, plus play hundreds of top titles & save 10% on
+          digital purchases.</p>
+      </div>
+    </div>
+
+    <div class="membership-tile" onClick="selectEAPLAYPRO2()" id="selectEAPlayProCard2">
+      <div class="membership-tile-top">
+        <img class="membership-logo" src="img/ea-play-pro-logo-tile.svg">
+        <div class="membership-price">
+          <p class="bM">$99.99/yr</p>
+          <h4>or $14.99/mo</h4>
+        </div>
+      </div>
+      <div class="membership-tile-bottom">
+        <p class="bS">Get unlimited access to FIFA 21 plus pro-level rewards like Season Passes, exclusive player
+          content, and a library of premium-edition games</p>
+      </div>
+    </div>
+  </div>
+  <!-- OPTIONS (END) -->
+
 </section>
+

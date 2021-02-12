@@ -1,5 +1,6 @@
 scrollingElement = (document.scrollingElement || document.body)
 
+// GENERAL
 function aboutToggle() {
   var x = document.getElementById("aboutGame");
   if (x.style.height === "48px") {
@@ -32,9 +33,17 @@ function eaPlayMore(){
   }
 }
 
-
+//STEP 1
+//EA DESKTOP APP
 function tileToggleEAD() {
   var x = document.getElementById("eadSection");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("eaPlayMoreDiv");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -61,7 +70,7 @@ function tileToggleEAD() {
   }, 500);
 }
 
-
+//STEAM
 function tileToggleSteam() {
   var x = document.getElementById("steamSection");
   if (x.style.display === "none") {
@@ -70,6 +79,13 @@ function tileToggleSteam() {
     x.style.display = "none";
   }
 
+  var x = document.getElementById("eaPlayMoreDiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
   var element = document.getElementById("steam");
   element.classList.toggle("platformTileSelected");
 
@@ -90,6 +106,7 @@ function tileToggleSteam() {
   }, 2);
 }
 
+//PLAYSTATION
 function tileTogglePlaystation() {
   var x = document.getElementById("playstationSection");
   if (x.style.display === "none") {
@@ -98,6 +115,13 @@ function tileTogglePlaystation() {
     x.style.display = "none";
   }
 
+  var x = document.getElementById("eaPlayMoreDiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
   var element = document.getElementById("playstation");
   element.classList.toggle("platformTileSelected");
 
@@ -118,8 +142,16 @@ function tileTogglePlaystation() {
   }, 2);
 }
 
+//XBOX
 function tileToggleXbox() {
   var x = document.getElementById("xboxSection");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("eaPlayMoreDiv");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -146,7 +178,30 @@ function tileToggleXbox() {
   }, 2);
 }
 
-
+//SWITCH
 function tileToggleSwitch() {
   window.open("http://www.w3schools.com", "_blank");
 }
+
+
+// STEP 2 //
+//JOIN EA PLAY
+function joinEAPLAY() {
+    var x = document.getElementById("eaPlaySelectMembershipSection");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  
+    var element = document.getElementById("xbox");
+    element.classList.toggle("platformTileSelected");
+  
+    var element = document.getElementById("steam");
+    element.classList.toggle("platformTileInactive");
+
+  
+    $(scrollingElement).animate({
+      scrollTop: document.body.scrollHeight
+    }, 2);
+  }

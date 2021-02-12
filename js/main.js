@@ -93,12 +93,11 @@ function tileToggleEAD() {
   var element = document.getElementById("switch");
   element.classList.toggle("platformTileInactive");
 
-  // $('html, body').animate({
-  //   scrollTop: $("#eadSection").offset().top - 48
-  // }, 500);
-
   var elmnt = document.getElementById("eadSection");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 //STEAM
@@ -132,12 +131,11 @@ function tileToggleSteam() {
   var element = document.getElementById("switch");
   element.classList.toggle("platformTileInactive");
 
-  // $('html, body').animate({
-  //   scrollTop: $("#steamSection").offset().top - 48
-  // }, 500);
-
   var elmnt = document.getElementById("steamSection");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 //PLAYSTATION
@@ -172,7 +170,10 @@ function tileTogglePlaystation() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("playstationSection");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 //XBOX
@@ -207,7 +208,10 @@ function tileToggleXbox() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("xboxSection");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 //SWITCH
@@ -247,8 +251,10 @@ function joinEAPLAY() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("eaPlaySelectMembershipSection");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 function buyTheGame() {
@@ -266,7 +272,10 @@ function buyTheGame() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("buyTheGameSection");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 
@@ -286,7 +295,10 @@ function selectEAPLAY1() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("eaPlaySelectPaymentPlan");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 function selectEAPLAY2() {
@@ -304,7 +316,10 @@ function selectEAPLAY2() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("eaPlaySelectPaymentPlan");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 
@@ -324,7 +339,10 @@ function selectEAPLAYPRO1() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("eaPlayProSelectPaymentPlan");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 function selectEAPLAYPRO2() {
@@ -356,7 +374,10 @@ function selectEAPLAYPRO2() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("eaPlayProSelectPaymentPlan");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 //PAYMENT PLANS - EA PLAY - MONTHLY
@@ -389,7 +410,10 @@ function selectMonthlyPayments() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("EADcheckoutMonthly");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 
@@ -423,7 +447,10 @@ function selectAnnualPayments() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("EADcheckoutAnnual");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 //PAYMENT PLANS - EA PLAY PRO - MONTHLY
@@ -456,7 +483,10 @@ function selectMonthlyPaymentsPro() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("EADcheckoutProMonthly");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 //PAYMENT PLANS - EA PLAY PRO - ANNUAL
@@ -489,7 +519,10 @@ function selectAnnualPaymentsPro() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("EADcheckoutProAnnual");
-  elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
 }
 
 

@@ -291,7 +291,6 @@ function joinEAPLAY() {
     }, 500);
   }
 
-  //JOIN EA PLAY PRO
 
   //JOIN EA PLAY PRO
   function selectEAPLAYPRO1() {
@@ -334,3 +333,78 @@ function joinEAPLAY() {
     }, 500);
   }
 
+   //PAYMENT PLANS - EA PLAY PRO - MONTHLY
+   function selectMonthlyPayments() {
+    var x = document.getElementById("EADcheckoutProMonthly");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var x = document.getElementById("makeSelection");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+
+    var x = document.getElementById("checkoutAction");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var element = document.getElementById("monthlyPaymentsCard");
+    element.classList.toggle("platformTileSelected");
+
+    var element = document.getElementById("annualPaymetnsCard");
+    element.classList.toggle("platformTileInactive");
+
+
+    $(scrollingElement).animate({
+      scrollTop: document.body.scrollHeight
+    }, 500);
+  }
+
+//PAYMENT PLANS - EA PLAY PRO - ANNUAL
+  function selectAnnualPayments() {
+    var x = document.getElementById("EADcheckoutProAnnual");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var x = document.getElementById("makeSelection");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+
+    var x = document.getElementById("checkoutAction");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var element = document.getElementById("annualPaymetnsCard");
+    element.classList.toggle("platformTileSelected");
+
+    var element = document.getElementById("monthlyPaymentsCard");
+    element.classList.toggle("platformTileInactive");
+
+
+    $(scrollingElement).animate({
+      scrollTop: document.body.scrollHeight
+    }, 500);
+  }
+
+
+  //Login
+function goToLogin() {
+    window.location.href = "login.html";
+  }

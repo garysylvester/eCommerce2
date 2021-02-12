@@ -47,7 +47,7 @@
     <section class="about-game" id="aboutGame" style="height:48px">
       <div class="about-game-header">
         <h1>Get FIFA 21</h1>
-          <button class="toggle-btn" onClick="aboutToggle()" id="learnMore">About +</button>
+        <button class="toggle-btn" onClick="aboutToggle()" id="learnMore">About +</button>
         </a>
       </div>
       <hr>
@@ -101,15 +101,23 @@
     <div data-include="eaPlayProSelectPaymentPlan.html"></div>
     <!-- STEP 4 - PAYMENT PLAN (END) -->
 
+    <!-- STEP 4 - CHECKOUT SUMMARY (START) -->
+    <div data-include="EADcheckoutProAnnual.html"></div>
+    <div data-include="EADcheckoutProMonthly.html"></div>
+    <!-- STEP 4 - CHECKOUT SUMMARY (END) -->
 
 
-    <div class="make-selection">
+
+    <div class="make-selection" id="makeSelection" style="display: block;">
       <hr>
       <h4>Make a selection to proceed</h4>
     </div>
 
-    <div class="slection-progress" style="display:none">
+    <div class="slection-progress" id="selectionProgress" style="display:none">
       <p class="bS">Join EA Play Pro on EA Desktop App</p>
+    </div>
+    <div onClick="goToLogin()" class="checkout-action" id="checkoutAction" style="display:none">
+      <h2>Checkout</h2>
     </div>
 
   </main>

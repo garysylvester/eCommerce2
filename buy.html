@@ -1,0 +1,339 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="left-side">
+      <div class="nav-icon">
+        <img src="img/nav-icon.svg">
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="img/fifa-logo.png"></a>
+      </div>
+    </div>
+    <div class="right-side">
+      <img src="img/fifa-cta.svg">
+    </div>
+  </div>
+
+
+  <main>
+    <section class="about-game" id="aboutGame" style="height:48px">
+      <div class="about-game-header">
+        <h1>Get FIFA 21</h1>
+        <a onClick="aboutToggle()" href="#">
+          <h5 id="learnMore">Learn More +</h5>
+        </a>
+      </div>
+      <hr>
+      <div class="about-game-content">
+        <div class="game-trailer">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/tuLAn9adQpI" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="about-game-details">
+          <h3>About FIFA 21</h3>
+          <p>Play FIFA 21, Get David Beckham. Receive an untradeable David Beckham item in FUT, and get him as a VOLTA
+            Groundbreaker, starting December 15 when you Play FIFA 21 by January 15, 2021**.</p>
+          <ul>
+            <li>Enjoy even bigger victories together in VOLTA FOOTBALL SQUADS and FIFA Ultimate Team™ Co-Op.</li>
+            <li>Feel a new level of gameplay realism that rewards you for your creativity and control.</li>
+            <li>Manage every moment in FIFA 21 Career Mode with new innovations that create additional depth in matches,
+              transfers and training.</li>
+            <li>Experience unrivaled authenticity that gives you the most true-to-life experience of The World’s Game,
+              including the UEFA Champions League and CONMEBOL Libertadores.</li>
+          </ul>
+          <p>Win as one in EA SPORTS™ FIFA 21, with new ways to team up on the street and in the stadium to enjoy even
+            bigger victories together.
+          </p>
+          <p>This game includes optional in-game purchases of virtual currency that can be used to acquire a random
+            selection of virtual in-game items.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 1 - SELECT PLATFORM -->
+    <section class="checkout select-platform">
+      <hr>
+      <div class="step-header">
+        <h4>Step 1</h4>
+        <h2>Select a platform</h2>
+      </div>
+
+      <div class="checkout-tiles">
+        <div onClick="tileToggleEAD()" class="platform-tile" id="ead">
+          <img src="img/ea-desktop-app.svg">
+          <p class="bM">EA Desktop App</p>
+        </div>
+
+        <div onClick="tileToggleSteam()" class="platform-tile" id="steam">
+          <img src="img/steam.svg">
+          <p class="bM">Steam</p>
+        </div>
+
+        <div onClick="tileTogglePlaystation()" class="platform-tile" id="playstation">
+          <img src="img/playstation.svg">
+          <p class="bM">Playstation</p>
+        </div>
+
+        <div onClick="tileToggleXbox()" class="platform-tile" id="xbox">
+          <img src="img/xbox.svg">
+          <p class="bM">Xbox</p>
+        </div>
+
+        <div onClick="tileToggleSwitch()" class="platform-tile" id="switch">
+          <img src="img/switch.svg">
+          <p class="bM">Switch</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- STEP 2 - SUBSCRIBE OR BUY -->
+    <section class="checkout subscribe-buy" id="eadSection" style="display:none">
+      <hr>
+      <div class="step-header">
+        <h4>Step 2</h4>
+        <h2>Get the game</h2>
+      </div>
+
+      <div class="checkout-tiles">
+        <div class="subscribe-tile">
+          <h4>Join</h4>
+          <img src="img/ea-play.svg">
+          <p class="bM">Starting at</p>
+          <h4>$4.99/mo</h4>
+        </div>
+
+        <div class="buy-tile">
+          <h4>Buy</h4>
+          <p class="bM">Starting at</p>
+          <h4>$59.99</h4>
+        </div>
+      </div>
+
+      <div class="ea-play-more" id="eaPlayMoreDiv" style="height: 40px;">
+        <button class="ea-play-learn-more-btn" id="eaPlayMoreBtn" onClick="eaPlayMore()">Explore EA Play +</button>
+
+        <div class="ea-play-content">
+          <h3>What is EA Play?</h3>
+          <p class="bM">EA Play is the ultimate gaming membership for anyone who loves EA games. There are 2 tiers of
+            membership: </p>
+          <div class="subs-table">
+            <div class="table-row-details">
+              <div class="cell-header">
+                <img src="img/ea-play-table-header.svg">
+              </div>
+              <div class="cell-header">
+                <img src="img/ea-play-pro-table-header.svg">
+              </div>
+            </div>
+
+            <div class="subs-table-row">
+              <div class="table-row-description">
+                <p class="bS" style="font-weight: bold;">Play new releases up to 10 days before launch</p>
+              </div>
+              <div class="table-row-details">
+                <div class="cell-icon">
+                    <p class="bS">Play select games up to 10 hours each</p>
+                </div>
+                <div class="cell-icon">
+                    <p class="bS" style="color: #29FFC9">Unlimited</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="subs-table-row">
+                <div class="table-row-description">
+                  <p class="bS" style="font-weight: bold;">Access to all of EA’s latest games</p>
+                </div>
+                <div class="table-row-details">
+                  <div class="cell-icon">
+                      <p class="bS">Play select games up to 10 hours each</p>
+                  </div>
+                  <div class="cell-icon">
+                      <p class="bS" style="color: #29FFC9">Unlimited</p>
+                  </div>
+                </div>
+              </div>
+
+            <div class="subs-table-row">
+                <div class="table-row-description">
+                  <p class="bS" style="font-weight: bold;">Exclusive in-game rewards</p>
+                </div>
+                <div class="table-row-details">
+                  <div class="cell-icon">
+                      <img src="img/check.svg">
+                  </div>
+                  <div class="cell-icon">
+                      <img src="img/check.svg">
+                  </div>
+                </div>
+              </div>
+
+              <div class="subs-table-row">
+                <div class="table-row-description">
+                  <p class="bS" style="font-weight: bold;">Exclusive member-only content</p>
+                </div>
+                <div class="table-row-details">
+                  <div class="cell-icon">
+                      <img src="img/check.svg">
+                  </div>
+                  <div class="cell-icon">
+                      <img src="img/check.svg">
+                  </div>
+                </div>
+              </div>
+
+              <div class="subs-table-row">
+                <div class="table-row-description">
+                  <p class="bS" style="font-weight: bold;">Unlimited access to a collection of EA games</p>
+                </div>
+                <div class="table-row-details">
+                  <div class="cell-icon">
+                      <img src="img/check.svg">
+                  </div>
+                  <div class="cell-icon">
+                      <img src="img/check.svg">
+                  </div>
+                </div>
+              </div>
+
+              <div class="subs-table-row">
+                <div class="table-row-description">
+                  <p class="bS" style="font-weight: bold;">10% off all EA digital purchases</p>
+                </div>
+                <div class="table-row-details">
+                  <div class="cell-icon">
+                      <img src="img/check.svg">
+                  </div>
+                  <div class="cell-icon">
+                      <img src="img/check.svg">
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="checkout subscribe-buy" id="steamSection" style="display:none">
+      <hr>
+      <div class="step-header">
+        <h4>Step 2</h4>
+        <h2>Get the game</h2>
+      </div>
+
+      <div class="checkout-tiles">
+        <div class="subscribe-tile">
+          <h4>Join</h4>
+          <img src="img/ea-play.svg">
+          <p class="bM">Starting at</p>
+          <h4>$4.99/mo</h4>
+        </div>
+
+        <div class="buy-tile">
+          <h4>Buy</h4>
+          <p class="bXS">Pricing avaliable on Steam</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="checkout subscribe-buy" id="playstationSection" style="display:none">
+      <hr>
+      <div class="step-header">
+        <h4>Step 2</h4>
+        <h2>Get the game</h2>
+      </div>
+
+      <div class="checkout-tiles">
+        <div class="subscribe-tile">
+          <h4>Join</h4>
+          <img src="img/ea-play.svg">
+          <p class="bM">Starting at</p>
+          <h4>$4.99/mo</h4>
+        </div>
+
+        <div class="buy-tile">
+          <h4>Buy</h4>
+          <p class="bXS">Pricing avaliable on Playstation</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="checkout subscribe-buy" id="xboxSection" style="display:none">
+      <hr>
+      <div class="step-header">
+        <h4>Step 2</h4>
+        <h2>Get the game</h2>
+      </div>
+
+      <div class="checkout-tiles">
+        <div class="subscribe-tile">
+          <h4>Join</h4>
+          <img src="img/ea-play.svg">
+          <p class="bM">Starting at</p>
+          <h4>$4.99/mo</h4>
+        </div>
+
+        <div class="buy-tile">
+          <h4>Buy</h4>
+          <p class="bXS">Pricing avaliable on Xbox</p>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <div class="make-selection">
+      <hr>
+      <h4>Make a selection to proceed</h4>
+    </div>
+
+    <div class="slection-progress" style="display:none">
+      <p class="bS">Join EA Play Pro on EA Desktop App</p>
+    </div>
+
+
+  </main>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

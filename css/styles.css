@@ -1,6 +1,6 @@
 :root{
 
-    --color-ea-primary: red;
+    --color-ea-primary: #FF4747;
     --color-ea-secondary: blue;
     --color-ea-base: white;
     --color-fifa-base: #151515;
@@ -96,8 +96,8 @@ h1, h2, h3, h4, h5, h6{
     margin: 0px;
 }
 
-.bS{
-    font-size: var(--font-body-size-s);
+.bXS{
+    font-size: var(--font-body-size-XS);
     margin: 0px;
 }
 
@@ -137,6 +137,28 @@ h1, h2, h3, h4, h5, h6{
     background-color: turquoise;
     width: 144px;
     height: var(--dimension-space-largest);
+}
+
+.fifa-home{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 57px;
+}
+
+.fifa-home img{
+    width: 100%;
+    height: auto;
+}
+
+#switch::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/external.svg);
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    right: 12px;
 }
 
 .about-game{
@@ -213,6 +235,7 @@ h1, h2, h3, h4, h5, h6{
 .platform-tile{
     width: 100%;
     height: 148px;
+    position: relative;
     background-color: var(--color-fifa-neutral-900);
     border: 1px solid var(--color-fifa-neutral-900);
     border-radius: var(--dimension-space-smaller);
@@ -268,4 +291,73 @@ h1, h2, h3, h4, h5, h6{
     height: 48px;
     padding: var(--dimension-space-smaller);
     background: var(--color-fifa-violet);
+}
+
+.ea-play-more{
+    margin-top: var(--dimension-space-medium);
+    overflow: hidden;
+}
+
+.ea-play-content{
+
+}
+
+.ea-play-content h3{
+    margin-bottom: var(--dimension-space-small);
+}
+
+.ea-play-learn-more-btn{
+    margin-bottom: var(--dimension-space-large);
+    color: var(--color-fifa-neutral-0);
+    background: var(--color-ea-primary);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: var(--dimension-space-smaller) var(--dimension-space-small);
+}
+
+.subs-table{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--dimension-space-large);
+}
+
+.subs-table-row{
+    display: inherit;
+    flex-direction: column;
+}
+
+.table-row-description{
+    height: fit-content;
+    margin-top: var(--dimension-space-small);
+    text-align: center;
+    border-top: 2px solid var(--color-fifa-neutral-900);
+
+}
+
+.table-row-details{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--dimension-space-medium);
+}
+
+.cell-header{
+    height: 135px;
+    width: 100%;
+    background: var(--color-fifa-neutral-1000);
+    display:inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-icon{
+    height: 100%;
+    width: 100%;
+    background: var(--color-fifa-neutral-1000);
+    display:inherit;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

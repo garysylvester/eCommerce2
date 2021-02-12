@@ -54,8 +54,6 @@ function compareSubsToggle() {
   }
 }
 
-var scrollingElement = (document.scrollingElement || document.body)
-
 //STEP 1
 //EA DESKTOP APP
 function tileToggleEAD() {
@@ -95,9 +93,9 @@ function tileToggleEAD() {
   var element = document.getElementById("switch");
   element.classList.toggle("platformTileInactive");
 
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
+  $('html, body').animate({
+    scrollTop: $("#eadSection").offset().top - 48
+}, 500);
 }
 
 //STEAM
@@ -131,9 +129,9 @@ function tileToggleSteam() {
   var element = document.getElementById("switch");
   element.classList.toggle("platformTileInactive");
 
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
+  $('html, body').animate({
+    scrollTop: $("#steamSection").offset().top - 48
+}, 500);
 }
 
 //PLAYSTATION
@@ -167,9 +165,9 @@ function tileTogglePlaystation() {
   var element = document.getElementById("switch");
   element.classList.toggle("platformTileInactive");
 
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
+  $('html, body').animate({
+    scrollTop: $("#playstationSection").offset().top - 48
+}, 500);
 }
 
 //XBOX
@@ -203,9 +201,9 @@ function tileToggleXbox() {
   var element = document.getElementById("switch");
   element.classList.toggle("platformTileInactive");
 
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
+  $('html, body').animate({
+    scrollTop: $("#xboxSection").offset().top - 48
+}, 500);
 }
 
 //SWITCH
@@ -244,10 +242,10 @@ function joinEAPLAY() {
   var element = document.getElementById("buyTheGameCard");
   element.classList.toggle("platformTileInactive");
 
+$('html, body').animate({
+    scrollTop: $("#eaPlaySelectMembershipSection").offset().top - 48
+}, 500);
 
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
 }
 
 function buyTheGame() {
@@ -264,10 +262,9 @@ function buyTheGame() {
   var element = document.getElementById("joinEAPlayCard");
   element.classList.toggle("platformTileInactive");
 
-
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
+  $('html, body').animate({
+    scrollTop: $("#buyTheGameSection").offset().top - 48
+}, 500);
 }
 
 
@@ -287,9 +284,9 @@ function selectEAPLAY1() {
   element.classList.toggle("platformTileInactive");
 
 
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
+  $('html, body').animate({
+    scrollTop: $("#eaPlaySelectPaymentPlan").offset().top - 48
+}, 500);
 }
 
 function selectEAPLAY2() {
@@ -307,9 +304,9 @@ function selectEAPLAY2() {
   element.classList.toggle("platformTileInactive");
 
 
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
+  $('html, body').animate({
+    scrollTop: $("#eaPlaySelectPaymentPlan").offset().top - 48
+}, 500);
 }
 
 
@@ -329,9 +326,9 @@ function selectEAPLAYPRO1() {
   element.classList.toggle("platformTileInactive");
 
 
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
+  $('html, body').animate({
+    scrollTop: $("#eaPlayProSelectPaymentPlan").offset().top - 48
+}, 500);
 }
 
 function selectEAPLAYPRO2() {
@@ -363,9 +360,9 @@ function selectEAPLAYPRO2() {
   element.classList.toggle("platformTileInactive");
 
 
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
+  $('html, body').animate({
+    scrollTop: $("#eaPlayProSelectPaymentPlan").offset().top - 48
+}, 500);
 }
 
 //PAYMENT PLANS - EA PLAY PRO - MONTHLY
@@ -398,9 +395,9 @@ function selectMonthlyPayments() {
   element.classList.toggle("platformTileInactive");
 
 
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
+  $('html, body').animate({
+    scrollTop: $("#EADcheckoutProMonthly").offset().top - 48
+}, 500);
 }
 
 //PAYMENT PLANS - EA PLAY PRO - ANNUAL
@@ -433,9 +430,9 @@ function selectAnnualPayments() {
   element.classList.toggle("platformTileInactive");
 
 
-  $(scrollingElement).animate({
-    scrollTop: document.body.scrollHeight
-  }, 500);
+  $('html, body').animate({
+    scrollTop: $("#EADcheckoutProAnnual").offset().top - 48
+}, 500);
 }
 
 

@@ -216,6 +216,14 @@ h1, h2, h3, h4, h5, h6{
     margin: var(--dimension-space-larger) 0;
 }
 
+.step-header-compare{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: var(--dimension-space-larger) 0;
+}
+
 .select-platform{
     display: block;
 }
@@ -226,6 +234,10 @@ h1, h2, h3, h4, h5, h6{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: var(--dimension-space-medium);   
+}
+
+.stacked {
+    grid-template-columns: 1fr;
 }
 
 .checkout-tiles img{
@@ -267,6 +279,32 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: var(--dimension-space-smaller);
 }
 
+.membership-tile{
+    width: calc(100% -32px);
+    height: fit-content;
+    padding: var(--dimension-space-medium);
+    background-color: var(--color-fifa-neutral-900);
+    border: 1px solid var(--color-fifa-neutral-900);
+    border-radius: var(--dimension-space-smaller);
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.membership-tile:first-child{
+    margin-bottom: var(--dimension-space-medium);
+}
+
+.membership-tile-top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.membership-price{
+    text-align: right;
+}
+
 
 .platformTileSelected{
     background-color: var(--color-fifa-neutral-800);
@@ -294,12 +332,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .ea-play-more{
-    margin-top: var(--dimension-space-medium);
+    margin: var(--dimension-space-medium);
     overflow: hidden;
-}
-
-.ea-play-content{
-
+    width: calc(100% - var(--dimension-space-larger));
 }
 
 .ea-play-content h3{
@@ -350,6 +385,13 @@ h1, h2, h3, h4, h5, h6{
     display:inherit;
     justify-content: center;
     align-items: center;
+}
+
+.with-background{
+    background-color: var(--color-fifa-neutral-900);
+    border: 1px solid var(--color-fifa-neutral-900);
+    border-radius: var(--dimension-space-smaller);
+    transition: all 0.5s linear;
 }
 
 .cell-icon{

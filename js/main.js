@@ -33,6 +33,29 @@ function eaPlayMore(){
   }
 }
 
+function compareSubsToggle(){
+    var x = document.getElementById("subsTable");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("membershipTiles");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  var x = document.getElementById("compareSubs");
+  if (x.innerHTML === "Compare") {
+    x.innerHTML = "Tiles";
+  } else {
+    x.innerHTML = "Compare";
+  }
+}
+
 //STEP 1
 //EA DESKTOP APP
 function tileToggleEAD() {
@@ -103,7 +126,7 @@ function tileToggleSteam() {
 
   $(scrollingElement).animate({
     scrollTop: document.body.scrollHeight
-  }, 2);
+  }, 500);
 }
 
 //PLAYSTATION
@@ -139,7 +162,7 @@ function tileTogglePlaystation() {
 
   $(scrollingElement).animate({
     scrollTop: document.body.scrollHeight
-  }, 2);
+  }, 500);
 }
 
 //XBOX
@@ -175,12 +198,12 @@ function tileToggleXbox() {
 
   $(scrollingElement).animate({
     scrollTop: document.body.scrollHeight
-  }, 2);
+  }, 500);
 }
 
 //SWITCH
 function tileToggleSwitch() {
-  window.open("http://www.w3schools.com", "_blank");
+  window.open("https://www.nintendo.com/games/detail/fifa-21-nintendo-switch-legacy-edition-switch/", "_blank");
 }
 
 
@@ -194,14 +217,34 @@ function joinEAPLAY() {
       x.style.display = "none";
     }
   
-    var element = document.getElementById("xbox");
+    var element = document.getElementById("joinEAPlayCard");
     element.classList.toggle("platformTileSelected");
   
-    var element = document.getElementById("steam");
+    var element = document.getElementById("buyTheGameCard");
     element.classList.toggle("platformTileInactive");
 
   
     $(scrollingElement).animate({
       scrollTop: document.body.scrollHeight
-    }, 2);
+    }, 500);
+  }
+
+  function buyTheGame() {
+    var x = document.getElementById("buyTheGameSection");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  
+    var element = document.getElementById("buyTheGameCard");
+    element.classList.toggle("platformTileSelected");
+  
+    var element = document.getElementById("joinEAPlayCard");
+    element.classList.toggle("platformTileInactive");
+
+  
+    $(scrollingElement).animate({
+      scrollTop: document.body.scrollHeight
+    }, 500);
   }

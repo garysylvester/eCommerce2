@@ -101,118 +101,118 @@ function tileToggleEAD() {
 }
 
 //STEAM
-function tileToggleSteam() {
-  var x = document.getElementById("steamSection");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+// function tileToggleSteam() {
+//   var x = document.getElementById("steamSection");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
 
-  var x = document.getElementById("eaPlayMoreDiv");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+//   var x = document.getElementById("eaPlayMoreDiv");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
 
-  var element = document.getElementById("steam");
-  element.classList.toggle("platformTileSelected");
+//   var element = document.getElementById("steam");
+//   element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("ead");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("ead");
+//   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("playstation");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("playstation");
+//   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("xbox");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("xbox");
+//   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("switch");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("switch");
+//   element.classList.toggle("platformTileInactive");
 
-  var elmnt = document.getElementById("steamSection");
-  elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'center'
-  });
-}
+//   var elmnt = document.getElementById("steamSection");
+//   elmnt.scrollIntoView({
+//     behavior: 'smooth',
+//     block: 'center'
+//   });
+// }
 
 //PLAYSTATION
-function tileTogglePlaystation() {
-  var x = document.getElementById("playstationSection");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+// function tileTogglePlaystation() {
+//   var x = document.getElementById("playstationSection");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
 
-  var x = document.getElementById("eaPlayMoreDiv");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+//   var x = document.getElementById("eaPlayMoreDiv");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
 
-  var element = document.getElementById("playstation");
-  element.classList.toggle("platformTileSelected");
+//   var element = document.getElementById("playstation");
+//   element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("steam");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("steam");
+//   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("ead");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("ead");
+//   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("xbox");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("xbox");
+//   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("switch");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("switch");
+//   element.classList.toggle("platformTileInactive");
 
-  var elmnt = document.getElementById("playstationSection");
-  elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'center'
-  });
-}
+//   var elmnt = document.getElementById("playstationSection");
+//   elmnt.scrollIntoView({
+//     behavior: 'smooth',
+//     block: 'center'
+//   });
+// }
 
 //XBOX
-function tileToggleXbox() {
-  var x = document.getElementById("xboxSection");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+// function tileToggleXbox() {
+//   var x = document.getElementById("xboxSection");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
 
-  var x = document.getElementById("eaPlayMoreDiv");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+//   var x = document.getElementById("eaPlayMoreDiv");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
 
-  var element = document.getElementById("xbox");
-  element.classList.toggle("platformTileSelected");
+//   var element = document.getElementById("xbox");
+//   element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("steam");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("steam");
+//   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("playstation");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("playstation");
+//   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("ead");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("ead");
+//   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("switch");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("switch");
+//   element.classList.toggle("platformTileInactive");
 
-  var elmnt = document.getElementById("xboxSection");
-  elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'center'
-  });
-}
+//   var elmnt = document.getElementById("xboxSection");
+//   elmnt.scrollIntoView({
+//     behavior: 'smooth',
+//     block: 'center'
+//   });
+// }
 
 //SWITCH
 function tileToggleSwitch() {
@@ -221,7 +221,7 @@ function tileToggleSwitch() {
 
 
 // STEP 2 //
-//JOIN OR BUY
+//JOIN EA PLAY
 function joinEAPLAY() {
   var x = document.getElementById("eaPlaySelectMembershipSection");
   if (x.style.display === "none") {
@@ -257,26 +257,27 @@ function joinEAPLAY() {
   });
 }
 
-function buyTheGame() {
-  var x = document.getElementById("buyTheGameSection");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+//BUY THE GAME
+// function buyTheGame() {
+//   var x = document.getElementById("buyTheGameSection");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
 
-  var element = document.getElementById("buyTheGameCard");
-  element.classList.toggle("platformTileSelected");
+//   var element = document.getElementById("buyTheGameCard");
+//   element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("joinEAPlayCard");
-  element.classList.toggle("platformTileInactive");
+//   var element = document.getElementById("joinEAPlayCard");
+//   element.classList.toggle("platformTileInactive");
 
-  var elmnt = document.getElementById("buyTheGameSection");
-  elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'center'
-  });
-}
+//   var elmnt = document.getElementById("buyTheGameSection");
+//   elmnt.scrollIntoView({
+//     behavior: 'smooth',
+//     block: 'center'
+//   });
+// }
 
 
 //JOIN EA PLAY

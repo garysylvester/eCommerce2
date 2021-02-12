@@ -306,8 +306,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .make-selection{
-    margin: var(--dimension-space-large) var(--dimension-space-medium);
+    margin: var(--dimension-space-larger) var(--dimension-space-medium) 96px var(--dimension-space-medium);
     text-align: center;
+}
+
+.make-selection h4{
+    margin-top: var(--dimension-space-large);
 }
 
 .slection-progress{
@@ -316,7 +320,7 @@ h1, h2, h3, h4, h5, h6{
     bottom: 0px;
     width: 100%;
     height: 48px;
-    padding: var(--dimension-space-smaller);
+    padding: var(--dimension-space-smaller) var(--dimension-space-medium);
     background: var(--color-fifa-violet);
 }
 

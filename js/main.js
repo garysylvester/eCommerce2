@@ -2,7 +2,7 @@
 function aboutToggle() {
   var x = document.getElementById("aboutGame");
   if (x.style.height === "48px") {
-    x.style.height = "1600px";
+    x.style.height = "auto";
   } else {
     x.style.height = "48px";
   }
@@ -18,7 +18,7 @@ function aboutToggle() {
 function eaPlayMore() {
   var x = document.getElementById("eaPlayMoreDiv");
   if (x.style.height === "40px") {
-    x.style.height = "fit-content";
+    x.style.height = "auto";
   } else {
     x.style.height = "40px";
   }

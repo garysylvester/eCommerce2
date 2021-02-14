@@ -2,7 +2,7 @@
 function aboutToggle() {
   var x = document.getElementById("aboutGame");
   if (x.style.height === "48px") {
-    x.style.height = "fit-content";
+    x.style.height = "1600px";
   } else {
     x.style.height = "48px";
   }

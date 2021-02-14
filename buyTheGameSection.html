@@ -1,22 +1,30 @@
 <section class="checkout buy-the-game" id="buyTheGameSection" style="display:none">
     <hr>
-    <div class="step-header">
-      <h4>Step 3</h4>
-      <h2>Select a membership</h2>
+    <div class="step-header-compare">
+      <div class="content-left">
+        <h4>Step 3</h4>
+        <h2>Select an edition</h2>
+      </div>
+      <div class="content-right">
+        <button class="toggle-btn" onClick="" id="">Compare</button>
+        </a>
+      </div>
     </div>
-    <!-- OPTIONS (START) -->
-    <div class="checkout-tiles">
-      <div class="subscribe-tile">
-        <h4>Join</h4>
-        <img src="img/ea-play.svg">
-        <p class="bM">Starting at</p>
-        <h4>$4.99/mo</h4>
+
+    <div class="edition-tile-grid">
+      <div onClick="buyBeckhamEdition()" class="edition-tile" id="beckhamEdition">
+        <img src="img/beckham-edition.jpg">
+        <p class="bM">Beckham Edition</p>
       </div>
 
-      <div class="buy-tile">
-        <h4>Buy</h4>
-        <p class="bS">Prices avaliable on Steam</p>
+      <div onClick="buyChampionsEdition()" class="edition-tile" id="championsEdition">
+        <img src="img/champions-edition.jpg">
+        <p class="bM">Champions Edition</p>
+      </div>
+
+      <div onClick="buyUltimateEdition()" class="edition-tile" id="ultimateEdition">
+        <img src="img/ultimate-edition.jpg">
+        <p class="bM">Ultimate Edition</p>
       </div>
     </div>
-    <!-- OPTIONS (END) -->
   </section>

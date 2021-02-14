@@ -2,7 +2,7 @@
 function aboutToggle() {
   var x = document.getElementById("aboutGame");
   if (x.style.height === "48px") {
-    x.style.height = "1000px";
+    x.style.height = "fit-content";
   } else {
     x.style.height = "48px";
   }
@@ -18,7 +18,7 @@ function aboutToggle() {
 function eaPlayMore() {
   var x = document.getElementById("eaPlayMoreDiv");
   if (x.style.height === "40px") {
-    x.style.height = "1048px";
+    x.style.height = "fit-content";
   } else {
     x.style.height = "40px";
   }
@@ -101,42 +101,49 @@ function tileToggleEAD() {
 }
 
 //STEAM
-// function tileToggleSteam() {
-//   var x = document.getElementById("steamSection");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
+function tileToggleSteam() {
+  var x = document.getElementById("steamSection");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
-//   var x = document.getElementById("eaPlayMoreDiv");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
+  var x = document.getElementById("eaPlayMoreDiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
-//   var element = document.getElementById("steam");
-//   element.classList.toggle("platformTileSelected");
+  var x = document.getElementById("selectionProgressSteam1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
-//   var element = document.getElementById("ead");
-//   element.classList.toggle("platformTileInactive");
+  var element = document.getElementById("steam");
+  element.classList.toggle("platformTileSelected");
 
-//   var element = document.getElementById("playstation");
-//   element.classList.toggle("platformTileInactive");
+  var element = document.getElementById("ead");
+  element.classList.toggle("platformTileInactive");
 
-//   var element = document.getElementById("xbox");
-//   element.classList.toggle("platformTileInactive");
+  var element = document.getElementById("playstation");
+  element.classList.toggle("platformTileInactive");
 
-//   var element = document.getElementById("switch");
-//   element.classList.toggle("platformTileInactive");
+  var element = document.getElementById("xbox");
+  element.classList.toggle("platformTileInactive");
 
-//   var elmnt = document.getElementById("steamSection");
-//   elmnt.scrollIntoView({
-//     behavior: 'smooth',
-//     block: 'center'
-//   });
-// }
+  var element = document.getElementById("switch");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("steamSection");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
 
 //PLAYSTATION
 // function tileTogglePlaystation() {
@@ -221,7 +228,7 @@ function tileToggleSwitch() {
 
 
 // STEP 2 //
-//JOIN EA PLAY
+// JOIN EA PLAY
 function joinEAPLAY() {
   var x = document.getElementById("eaPlaySelectMembershipSection");
   if (x.style.display === "none") {
@@ -257,27 +264,35 @@ function joinEAPLAY() {
   });
 }
 
-//BUY THE GAME
-// function buyTheGame() {
-//   var x = document.getElementById("buyTheGameSection");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
+// STEP 2 //
+// BUY THE GAME
+function buyTheGame() {
+  var x = document.getElementById("buyTheGameSection");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
-//   var element = document.getElementById("buyTheGameCard");
-//   element.classList.toggle("platformTileSelected");
+  var x = document.getElementById("selectionProgressEAD2Buy");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
-//   var element = document.getElementById("joinEAPlayCard");
-//   element.classList.toggle("platformTileInactive");
+  var element = document.getElementById("buyTheGameCard");
+  element.classList.toggle("platformTileSelected");
 
-//   var elmnt = document.getElementById("buyTheGameSection");
-//   elmnt.scrollIntoView({
-//     behavior: 'smooth',
-//     block: 'center'
-//   });
-// }
+  var element = document.getElementById("joinEAPlayCard");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("buyTheGameSection");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
 
 
 //JOIN EA PLAY
@@ -520,6 +535,53 @@ function selectAnnualPaymentsPro() {
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("EADcheckoutProAnnual");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+
+// SELECT EDITION //
+// ULTIMATE EDITION
+function buyUltimateEdition() {
+  var x = document.getElementById("EADcheckoutBuyUltimateEdition");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("selectionProgressEAD2Buy");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  var x = document.getElementById("makeSelection");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  var x = document.getElementById("checkoutAction");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var element = document.getElementById("ultimateEdition");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("championsEdition");
+  element.classList.toggle("platformTileInactive");
+
+  var element = document.getElementById("beckhamEdition");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("EADcheckoutBuyUltimateEdition");
   elmnt.scrollIntoView({
     behavior: 'smooth',
     block: 'center'

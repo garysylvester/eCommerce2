@@ -244,6 +244,11 @@ h1, h2, h3, h4, h5, h6{
     grid-gap: var(--dimension-space-medium); 
 }
 
+.edition-grid-outer{
+    width:100%;
+    height: auto;
+}
+
 .edition-tile{
     height: auto;
     position: relative;
@@ -266,6 +271,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .edition-tile p{
+    margin-bottom: var(--dimension-space-smallest);
+}
+
+.edition-tile h4{
     margin-bottom: var(--dimension-space-small);
 }
 
@@ -435,6 +444,18 @@ h1, h2, h3, h4, h5, h6{
     overflow: hidden;
 }
 
+.edition-table-wrapper{
+    width: 100%;
+    margin-bottom: var(--dimension-space-larger);
+}
+
+.edition-table{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: var(--dimension-space-large);
+}
+
 .subs-table-row{
     display: inherit;
     flex-direction: column;
@@ -456,17 +477,64 @@ h1, h2, h3, h4, h5, h6{
     grid-gap: var(--dimension-space-medium);
 }
 
+.table-row-details-3{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: var(--dimension-space-medium);
+}
+
 .cell-header{
-    height: 135px;
+    height: fit-content;
     width: 100%;
     background: var(--color-fifa-neutral-1000);
     display:inherit;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.cell-header-tile{
+    height: fit-content;
+    width: 100%;
+    background: var(--color-fifa-neutral-900);
+    border-radius: var(--dimension-space-smaller);
+    margin-bottom: var(--dimension-space-small);
+    display:inherit;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cell-header-tile img{
+    width:100%;
+}
+
+.cell-header img{
+    width:100%;
+    border-radius: 4px;;
+}
+
+.cell-header-tile p{
+    margin-bottom: var(--dimension-space-smallest);
+}
+
+.cell-header-tile h4{
+    margin-bottom: var(--dimension-space-small);
+}
+
+.table-row-description p{
+    margin-bottom: var(--dimension-space-smaller);
+}
+
+.table-row-description p:last-child{
+    margin-bottom: var(--dimension-space-medium);
 }
 
 .cell-header-with-background{
-    height: 135px;
+    height: fit-content;
     width: 100%;
     display:inherit;
     justify-content: center;

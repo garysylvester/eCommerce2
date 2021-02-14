@@ -54,6 +54,29 @@ function compareSubsToggle() {
   }
 }
 
+function compareEditionToggle() {
+  var x = document.getElementById("editionTableGrid");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  var x = document.getElementById("editionTable");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("compareEdition");
+  if (x.innerHTML === "Compare") {
+    x.innerHTML = "Grid";
+  } else {
+    x.innerHTML = "Compare";
+  }
+}
+
 //STEP 1
 //EA DESKTOP APP
 function tileToggleEAD() {
@@ -542,8 +565,8 @@ function selectAnnualPaymentsPro() {
 }
 
 // SELECT EDITION //
-// ULTIMATE EDITION
-function buyUltimateEdition() {
+// ULTIMATE EDITION 1
+function buyUltimateEdition1() {
   var x = document.getElementById("EADcheckoutBuyUltimateEdition");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -572,13 +595,59 @@ function buyUltimateEdition() {
     x.style.display = "none";
   }
 
-  var element = document.getElementById("ultimateEdition");
+  var element = document.getElementById("ultimateEdition1");
   element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("championsEdition");
+  var element = document.getElementById("championsEdition1");
   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("beckhamEdition");
+  var element = document.getElementById("beckhamEdition1");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("EADcheckoutBuyUltimateEdition");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+
+// ULTIMATE EDITION 2
+function buyUltimateEdition2() {
+  var x = document.getElementById("EADcheckoutBuyUltimateEdition");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("selectionProgressEAD2Buy");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  var x = document.getElementById("makeSelection");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  var x = document.getElementById("checkoutAction");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var element = document.getElementById("ultimateEdition2");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("championsEdition2");
+  element.classList.toggle("platformTileInactive");
+
+  var element = document.getElementById("beckhamEdition2");
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("EADcheckoutBuyUltimateEdition");

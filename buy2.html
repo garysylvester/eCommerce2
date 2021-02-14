@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/csi.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="left-side">
+      <div class="nav-icon">
+        <img src="img/nav-icon.svg">
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="img/fifa-logo.png"></a>
+      </div>
+    </div>
+    <div class="right-side">
+      <!-- <img src="img/fifa-cta.svg"> -->
+    </div>
+  </div>
+
+
+  <main>
+    <section class="about-game" id="aboutGame" style="height:900px">
+      <div class="about-game-header">
+        <h1>Get FIFA 21</h1>
+        <button class="toggle-btn" onClick="aboutToggle()" id="learnMore">About +</button>
+        </a>
+      </div>
+      <hr>
+
+    <form>
+        EA Desktop App  <input type="radio" onclick="javascript:platformCheck();" name="platform" id="eadCheck">
+        Steam           <input type="radio" onclick="javascript:platformCheck();" name="platform" id="steamCheck">
+        Playstation     <input type="radio" onclick="javascript:platformCheck();" name="platform" id="playstationCheck">
+    </form>
+
+    <div id="ifEAD" style="display:none">
+      <h1>EA Desktop App</h1>
+      <form>
+        join            <input type="radio" onclick="javascript:joinBuy();" name="platform" id="joinCheck">
+        buy             <input type="radio" onclick="javascript:joinBuy();" name="platform" id="buyCheck">
+    </form>
+    </div>
+
+    <div id="ifSteam" style="display:none">
+        <h1>Steam</h1>
+        <form>
+            join            <input type="radio" onclick="javascript:joinBuy();" name="platform" id="joinCheck">
+            buy             <input type="radio" onclick="javascript:joinBuy();" name="platform" id="buyCheck">
+        </form>
+      </div>
+
+      <div id="ifPlaystation" style="display:none">
+        <h1>Playstation</h1>
+      </div>
+
+      <div id="ifJoin" style="display:none">
+        <h1>Join</h1>
+      </div>
+
+      <div id="ifBuy" style="display:none">
+        <h1>Buy</h1>
+      </div>
+
+      
+    </section>
+
+
+
+    <div class="make-selection" id="makeSelection" style="display: block;">
+      <hr>
+      <h4>Make a selection to proceed</h4>
+    </div>
+
+    <!-- <div class="slection-progress" id="selectionProgressEAD1" style="display:none">
+      <p class="bS">EA Desktop App</p>
+    </div>
+
+    <div class="slection-progress" id="selectionProgressEAD2" style="display:none">
+      <p class="bS">Join EA Play <span style="opacity: 0.5;">on</span> EA Desktop App</p>
+    </div>
+
+    <div class="slection-progress" id="selectionProgressEAD3" style="display:none">
+      <p class="bS">Join EA Play Pro <span style="opacity: 0.5;">on</span> EA Desktop App</p>
+    </div>
+
+    <div onClick="goToLogin()" class="checkout-action" id="checkoutAction" style="display:none">
+      <h2>Checkout</h2>
+    </div> -->
+
+  </main>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main2.js"></script>
+</body>
+
+</html>

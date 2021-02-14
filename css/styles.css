@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5, h6{
     margin-top: var(--dimension-space-large);
 }
 
-.slection-progress{
+.selection-progress{
     position: fixed;
     vertical-align: middle;
     bottom: 0px;
@@ -498,10 +498,9 @@ h1, h2, h3, h4, h5, h6{
     pointer-events: none;
 }
 
-.checkout-summary-buy{
+.checkout-summary{
     margin-bottom: 100px;
 }
-
 
 .checkout-summary img{
     width: 100%;

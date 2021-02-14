@@ -478,11 +478,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .table-row-details-3{
-    display: grid;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: var(--dimension-space-medium);
 }
 
 .cell-header{
@@ -497,11 +496,12 @@ h1, h2, h3, h4, h5, h6{
 
 .cell-header-tile{
     height: fit-content;
-    width: 100%;
+    width: calc(33.33% - 10px);
     background: var(--color-fifa-neutral-900);
     border-radius: var(--dimension-space-smaller);
     margin-bottom: var(--dimension-space-small);
-    display:inherit;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -584,4 +584,5 @@ h1, h2, h3, h4, h5, h6{
 .checkout-summary-buy img{
     width: 100%;
     height: auto;
+    margin-bottom: var(--dimension-space-large);
 }

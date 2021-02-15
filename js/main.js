@@ -18,10 +18,10 @@ function aboutToggle() {
 
 function eaPlayMore() {
   var x = document.getElementById("eaPlayMoreDiv");
-  if (x.style.height === "40px") {
-    x.style.height = "auto";
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } else {
-    x.style.height = "40px";
+    x.style.display = "none";
   }
 
   var x = document.getElementById("eaPlayMoreBtn");
@@ -34,10 +34,10 @@ function eaPlayMore() {
 
 function compareSubsToggle() {
   var x = document.getElementById("subsTable");
-  if (x.style.height === "0px") {
-    x.style.height = "861px";
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } else {
-    x.style.height = "0px";
+    x.style.display = "none";
   }
 
   var x = document.getElementById("membershipTiles");
@@ -82,13 +82,6 @@ function compareEditionToggle() {
 //EA DESKTOP APP
 function tileToggleEAD() {
   var x = document.getElementById("eadSection");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-
-  var x = document.getElementById("eaPlayMoreDiv");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {

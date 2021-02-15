@@ -212,8 +212,19 @@ h1, h2, h3, h4, h5, h6{
     width: calc(100% - 32px);
 }
 
+.ea-play-more{
+    background-color: var(--color-fifa-base);
+    padding: 0 var(--dimension-space-medium);
+    position: relative;
+    width: calc(100% - 32px);
+}
+
 .step-header{
     margin: var(--dimension-space-larger) 0;
+}
+
+.step-header-subs{
+    margin-bottom: var(--dimension-space-larger);
 }
 
 .step-header-compare{
@@ -233,7 +244,8 @@ h1, h2, h3, h4, h5, h6{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: var(--dimension-space-medium);   
+    grid-gap: var(--dimension-space-medium); 
+    margin-bottom: var(--dimension-space-medium); 
 }
 
 .edition-tile-grid {
@@ -387,13 +399,6 @@ h1, h2, h3, h4, h5, h6{
     background: var(--color-fifa-violet);
 }
 
-.ea-play-more{
-    margin: var(--dimension-space-medium);
-    overflow: hidden;
-    width: calc(100% - var(--dimension-space-larger));
-    transition: all 0.5s ease-in;
-}
-
 .ea-play-content h3{
     margin-bottom: var(--dimension-space-small);
 }
@@ -442,12 +447,17 @@ h1, h2, h3, h4, h5, h6{
 
 .subs-table{
     display: flex;
+    width: 100%;
     flex-direction: column;
-    margin-top: var(--dimension-space-large);
     overflow: hidden;
 }
 
 .edition-table-wrapper{
+    width: 100%;
+    margin-bottom: var(--dimension-space-larger);
+}
+
+.subs-table-wrapper{
     width: 100%;
     margin-bottom: var(--dimension-space-larger);
 }
@@ -551,10 +561,24 @@ h1, h2, h3, h4, h5, h6{
 .cell-header-tile2{
     height: fit-content;
     width: calc(50% - 8px);
-    background: var(--color-fifa-neutral-900);
     border-radius: var(--dimension-space-smaller);
     margin-bottom: var(--dimension-space-small);
     padding: var(--dimension-space-small) 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cell-header-tile2wBG{
+    width: calc(50% - 8px);
+    height: 120px;
+    border-radius: var(--dimension-space-smaller);
+    background: var(--color-fifa-neutral-900);
+    margin-bottom: var(--dimension-space-small);
+    padding: var(--dimension-space-medium) 0;
     display:flex;
     flex-direction: column;
     justify-content: center;

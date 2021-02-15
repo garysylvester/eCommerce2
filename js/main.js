@@ -1,4 +1,5 @@
 // GENERAL
+
 function aboutToggle() {
   var x = document.getElementById("aboutGame");
   if (x.style.height === "48px") {

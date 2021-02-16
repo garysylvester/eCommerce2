@@ -1,22 +1,43 @@
-<section class="checkout subscribe-buy" id="steamSection" style="display:none">
-    <hr>
-    <div class="step-header">
-      <h4>Step 2</h4>
-      <h2>Get the game</h2>
-    </div>
-    <!-- OPTIONS (START) -->
-    <div class="checkout-tiles">
-      <div class="subscribe-tile">
-        <h4>Join</h4>
-        <img src="img/ea-play.svg">
-        <p class="bM">Starting at</p>
-        <h4>$4.99/mo</h4>
-      </div>
+<section class="checkout" id="steamSection" style="display:none">
+  <hr>
+  <div class="step-header">
+    <h4>Step 2</h4>
+    <h2>Get the game</h2>
+  </div>
 
-      <div class="buy-tile">
-        <h4>Buy</h4>
-        <p class="bS">Prices avaliable on Steam</p>
+  <!-- OPTIONS (START) -->
+  <div class="checkout-tiles stacked" id="membershipTiles" style="display: block;">
+    <div onClick="buyGameSteam()" class="membership-tile" id="steamBuy">
+      <div class="membership-tile-top">
+        <div class="membership-tile-description">
+          <h3>Buy the game</h3>
+          <p class="bXS">Prices avaliable on Steam</p>
+        </div>
+        <div class="membership-price">
+        </div>
+      </div>
+      <div class="membership-tile-bottom">
+        <p class="bS"><b>Avaliable Editions: </b>Standard Edition, Champions Edition, Ultimate Edition</p>
       </div>
     </div>
-    <!-- OPTIONS (END) -->
-  </section>
+
+    <div onClick="goToSteam()" class="membership-tile" id="steamJoin">
+      <div class="membership-tile-top">
+        <div class="membership-tile-description">
+          <h3>Join EA Play</h3>
+          <p class="bXS">Starting at $4.99/mo</p>
+        </div>
+        <div class="membership-price">
+          <img class="membership-logo" src="img/ea-play-logo-tile.svg">
+        </div>
+      </div>
+      <div class="membership-tile-bottom">
+        <p class="bS">Play new EA releases like FIFA 21 for 10 hours, plus play hundreds of top titles & save 10% on
+          digital purchases.</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- OPTIONS (END) -->
+  <button class="ea-play-learn-more-btn" id="eaPlayMoreBtn2" onClick="eaPlayMore2()">Explore EA Play +</button>
+</section>

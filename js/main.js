@@ -32,6 +32,22 @@ function eaPlayMore() {
   }
 }
 
+function eaPlayMore2() {
+  var x = document.getElementById("eaPlayMoreDiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("eaPlayMoreBtn2");
+  if (x.innerHTML === "Explore EA Play +") {
+    x.innerHTML = "Collapse -";
+  } else {
+    x.innerHTML = "Explore EA Play +";
+  }
+}
+
 function compareSubsToggle() {
   var x = document.getElementById("subsTable");
   if (x.style.display === "none") {
@@ -120,13 +136,6 @@ function tileToggleEAD() {
 //STEAM
 function tileToggleSteam() {
   var x = document.getElementById("steamSection");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-
-  var x = document.getElementById("eaPlayMoreDiv");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -520,6 +529,45 @@ function selectMonthlyPaymentsPro() {
     behavior: 'smooth',
     block: 'center'
   });
+}
+
+//JOIN- EA PLAY - STEAM 
+function joinEAPlaySteam() {
+  var x = document.getElementById("steamEAPlaySelectPaymentPlan");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("selectionProgressSteam1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  var element = document.getElementById("steamJoin");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("steamBuy");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("steamEAPlaySelectPaymentPlan");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+
+//SWITCH
+function buyGameSteam() {
+  window.open("https://store.steampowered.com/app/1313860/EA_SPORTS_FIFA_21/", "_blank");
+}
+
+//SWITCH
+function goToSteam() {
+  window.open("https://store.steampowered.com/subscriptions/ea#SaleSection_77945", "_blank");
 }
 
 //PAYMENT PLANS - EA PLAY PRO - ANNUAL

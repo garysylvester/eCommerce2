@@ -151,9 +151,9 @@
     <div data-include="footerElements.html"></div>
     <!-- FOOTER ELEMENTS (END) -->
 
-  </main>
+    <button type="button" id="open-modal" style="margin: 30px;">Open new modal</button>
 
-  <button type="button" id="open-modal">Open new modal</button>
+  </main>
 
   <!-- MODALS-->
   <!-- New event modal -->
@@ -167,40 +167,8 @@
           <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
         </header>
         <main class="modal__content" id="modal-1-content">
-          <div class="swiper-container">
-    
-            <!-- swiper slides -->
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=24);">
-                    <h2>SIMPLE SWIPER</h2>
-                </div>
-                
-                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=53);"> 
-                    <h2>HELLO WORLD</h2>
-                </div>
-                
-                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=52);">
-                    <h2>Random Text 1</h2>
-                </div>
-                
-                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=21);">
-                </div>
-                
-                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=53);">
-                </div>
-            </div>
-            <!-- !swiper slides -->
-            
-            <!-- next / prev arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!-- !next / prev arrows -->
-            
-            <!-- pagination dots -->
-            <div class="swiper-pagination"></div>
-            <!-- !pagination dots -->
-        </div>
-          
+          <h3>This is EA Play Content</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nobis quam dicta veniam nulla, incidunt illo obcaecati in non ullam debitis distinctio soluta accusamus voluptatem repellendus ipsa deleniti laboriosam et.</p>
         </main>
         <footer class="modal__footer">
           <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
@@ -208,25 +176,11 @@
       </div>
     </div>
   </div>
-    
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/modal.js"></script>
-  <script>
-    var Swipes = new Swiper('.swiper-container', {
-    loop: true,
-    slidesPerView: 1.3,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-    },
-});
-  </script>
-  
 </body>
 
 </html>

@@ -56,7 +56,7 @@ function compareSubsToggle() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("membershipTiles");
+  var x = document.getElementById("membershipTiles2");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

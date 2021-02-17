@@ -207,6 +207,7 @@ h1, h2, h3, h4, h5, h6{
     height: 0;
     overflow: hidden;
     border-radius: var(--dimension-space-small);
+    -webkit-border-radius: var(--dimension-space-small);
 }
 
 .game-trailer iframe{

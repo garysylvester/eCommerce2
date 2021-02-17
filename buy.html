@@ -58,45 +58,62 @@
       <div class="about-game-content">
         <div class="game-trailer">
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/tuLAn9adQpI" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
 
         <h4 style="margin: 24px 0 16px 0">Screenshots</h4>
-        <div class="swiper-container">
-    
+        <div class="swiper-container swiper-container1">
           <!-- swiper slides -->
           <div class="swiper-wrapper">
-              
-              <div class="swiper-slide">
-                <img src="https://data1.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-2-16x9.jpg/5c153f74-9358-423c-8b8c-0e88a15f2032/original.jpg">
-              </div>
 
-              <div class="swiper-slide">
-                <img src="https://data2.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-3-16x9.jpg/046a8048-d643-4765-88b3-92b0e9fd4b6f/original.jpg">
-              </div>
+            <div class="swiper-slide swiper-slide1">
+              <img
+                src="https://data1.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-2-16x9.jpg/5c153f74-9358-423c-8b8c-0e88a15f2032/original.jpg">
+            </div>
 
-              <div class="swiper-slide">
-                <img src="https://data3.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-4-16x9.jpg/eb824b41-7433-4c39-a991-4b2bf45727d9/original.jpg">
-              </div>
+            <div class="swiper-slide swiper-slide1">
+              <img
+                src="https://data2.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-3-16x9.jpg/046a8048-d643-4765-88b3-92b0e9fd4b6f/original.jpg">
+            </div>
 
-              <div class="swiper-slide">
-                <img src="https://data2.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-11-16x9.jpg/0697be82-1d19-40b5-aa10-8a5611157883/original.jpg">
-              </div>
-              
-              
+            <div class="swiper-slide swiper-slide1">
+              <img
+                src="https://data3.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-4-16x9.jpg/eb824b41-7433-4c39-a991-4b2bf45727d9/original.jpg">
+            </div>
+
+            <div class="swiper-slide swiper-slide1">
+              <img
+                src="https://data2.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-11-16x9.jpg/0697be82-1d19-40b5-aa10-8a5611157883/original.jpg">
+            </div>
           </div>
           <!-- !swiper slides -->
-          
+
           <!-- next / prev arrows -->
           <!-- <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div> -->
           <!-- !next / prev arrows -->
-          
+
           <!-- pagination dots -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination swiper-pagination1"></div>
           <!-- !pagination dots -->
-      </div>
+          <script>
+            var swiper1 = new Swiper('.swiper-container1', {
+              loop: true,
+              slidesPerView: 2,
+              spaceBetween: 16,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination1',
+              },
+            });
+
+          </script>
+        </div>
+
         <div class="about-game-details">
           <h3>About FIFA 21</h3>
           <p>Play FIFA 21, Get David Beckham. Receive an untradeable David Beckham item in FUT, and get him as a VOLTA
@@ -153,8 +170,6 @@
     <div data-include="selectPlatform.html"></div>
     <!-- STEP 1 - SELECT PLATFORM (END) -->
 
-    <div data-include="eaPlayMoreSection.html"></div>
-
     <!-- STEP 2 - SUBSCRIBE OR BUY EA DESKTOP  (START) -->
     <div data-include="eadSection.html"></div>
     <div data-include="steamSection.html"></div>
@@ -187,37 +202,75 @@
     <div data-include="footerElements.html"></div>
     <!-- FOOTER ELEMENTS (END) -->
 
-    <button type="button" id="open-modal" style="margin: 30px;">Open new modal</button>
 
-  </main>
+    <!-- MODAL (START) -->
+    <input class="modal-state" id="modal-1" type="checkbox" />
+    <div class="modal">
+      <label class="modal__bg" for="modal-1"></label>
+      <div class="modal__inner">
+        <label class="modal__close" for="modal-1" onClick="closeModal()"></label>
+        <h2>EA Play Member Benefits</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non expedita nam quia a officiis repellat
+          distinctio.
+        </p>
 
-  <!-- MODALS-->
-  <!-- New event modal -->
-  <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-        <header class="modal__header">
-          <h2 class="modal__title" id="modal-1-title">
-            New event
-          </h2>
-          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-        </header>
-        <main class="modal__content" id="modal-1-content">
-          <h3>This is EA Play Content</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nobis quam dicta veniam nulla, incidunt illo obcaecati in non ullam debitis distinctio soluta accusamus voluptatem repellendus ipsa deleniti laboriosam et.</p>
-        </main>
-        <footer class="modal__footer">
-          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
-        </footer>
+        <div class="swiper-container swiper-container2">
+          <!-- swiper slides -->
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide swiper-slide2">
+              <img
+                src="https://data1.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-2-16x9.jpg/5c153f74-9358-423c-8b8c-0e88a15f2032/original.jpg">
+            </div>
+
+            <div class="swiper-slide swiper-slide2">
+              <img
+                src="https://data2.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-3-16x9.jpg/046a8048-d643-4765-88b3-92b0e9fd4b6f/original.jpg">
+            </div>
+
+            <div class="swiper-slide swiper-slide2">
+              <img
+                src="https://data3.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-4-16x9.jpg/eb824b41-7433-4c39-a991-4b2bf45727d9/original.jpg">
+            </div>
+
+            <div class="swiper-slide swiper-slide2">
+              <img
+                src="https://data2.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-21/gdp/PUB-46687_screenshot-updt/fifa21-Screenshot-11-16x9.jpg/0697be82-1d19-40b5-aa10-8a5611157883/original.jpg">
+            </div>
+          </div>
+          <!-- !swiper slides -->
+
+          <!-- next / prev arrows -->
+          <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+          <!-- !next / prev arrows -->
+
+          <!-- pagination dots -->
+          <div class="swiper-pagination swiper-pagination2"></div>
+          <!-- !pagination dots -->
+          <script>
+            var swiper2 = new Swiper('.swiper-container2', {
+              loop: true,
+              slidesPerView: 2,
+              spaceBetween: 16,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination2',
+              },
+            });
+
+          </script>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/modal.js"></script>
-  <script src="js/swiper.js"></script>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

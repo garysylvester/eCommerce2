@@ -840,15 +840,54 @@ h1, h2, h3, h4, h5, h6{
   /* SWIPER STYLES */
   .swiper-container {
     width: 100%;
+    border-radius: var(--dimension-space-small);
+    overflow: visible !important;
+    margin-bottom: var(--dimension-space-largest);
 }
 
 .swiper-slide {
     background-size: cover;
-    background-position: 50%;
-    min-height: 40vh;
-    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    object-fit: cover;
 }
+
+.swiper-slide img{
+    width: 100%;
+    height: auto;
+    border-radius: var(--dimension-space-small);
+}
+
+.swiper-slide iframe{
+    width: 100%;
+    height: 231px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: var(--color-fifa-neutral-0) !important;
+}
+
+.swiper-button-next:focus, .swiper-button-prev:focus{
+    outline: none;
+}
+
+.swiper-pagination-bullet{
+    background: var(--color-fifa-neutral-800) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--color-fifa-mint) !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: var(--font-body-size-M) !important;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: -30px !important;
+    right: 0;
+}
+

@@ -1,26 +1,142 @@
 <!-- STEP 2A - SUBSCRIBE OR BUY EA DESKTOP  (START) -->
 <section class="checkout subscribe-buy" id="eadSection" style="display:none">
-    <hr>
-    <div class="step-header">
-      <h4>Step 2</h4>
-      <h2>Get the game</h2>
-    </div>
-    <button class="ea-play-learn-more-btn" id="eaPlayMoreBtn" onClick="eaPlayMore()">Explore EA Play +</button>
-    <!-- OPTIONS (START) -->
-    <div class="checkout-tiles">
-      <div onClick="joinEAPLAY()" class="subscribe-tile" id="joinEAPlayCard">
-        <h4>Join</h4>
-        <img src="img/ea-play.svg">
-        <p class="bM">Starting at</p>
-        <h4>$4.99/mo</h4>
-      </div>
+  <hr>
+  <div class="step-header">
+    <h4>Step 2</h4>
+    <h2>Get the game</h2>
+  </div>
 
-      <div onClick="buyTheGame()" class="buy-tile" id="buyTheGameCard">
-        <h4>Buy</h4>
-        <p class="bM">Starting at</p>
-        <h4>$59.99</h4>
+  <!-- EA PLAY MORE (START) -->
+  <div class="ea-play-more" id="eaPlayMoreDiv" style="display:none">
+    <div class="step-header-subs">
+      <div class="content-left">
+        <h3>What is EA Play?</h3>
+        <p class="bS">EA Play is the ultimate gaming membership for anyone who loves EA games. There are 2 tiers of
+          membership:</p>
       </div>
     </div>
-    <!-- OPTIONS (END) -->
-  </section>
-  <!-- STEP 2A - SUBSCRIBE OR BUY EA DESKTOP  (END) -->
+
+    <div class="edition-table-wrapper">
+      <div class="edition-table">
+        <div class="table-row-header2" id="editionHeaderRow">
+          <div class="cell-header-tile2" id="beckhamEdition2">
+            <img src="img/ea-play-table-header.svg">
+          </div>
+          <div class="cell-header-tile2" id="championsEdition2">
+            <img src="img/ea-play-pro-table-header.svg">
+          </div>
+        </div>
+
+        <div class="subs-table-row">
+          <div class="table-row-description">
+            <p class="bS" style="font-weight: bold;">Play new releases up to 10 days before launch</p>
+          </div>
+          <div class="table-row-details-3">
+            <div class="cell-icon">
+              <p class="bS">Play select games up to 10 hours each</p>
+            </div>
+            <div class="cell-icon">
+              <p class="bS" style="color: #29FFC9">Unlimited</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subs-table-row">
+          <div class="table-row-description">
+            <p class="bS" style="font-weight: bold;">Access to all of EA’s latest games</p>
+          </div>
+          <div class="table-row-details-3">
+            <div class="cell-icon">
+              <p class="bS">Play select games up to 10 hours each</p>
+            </div>
+            <div class="cell-icon">
+              <p class="bS" style="color: #29FFC9">Unlimited</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subs-table-row">
+          <div class="table-row-description" style="margin-bottom: 16px;">
+            <p class="bS" style="font-weight: bold;">Exclusive in-game rewards</p>
+            <label class="btn" for="modal-1" onClick="showModal()"
+              style="color:#29FFC9; text-decoration: underline;">Show me FIFA 21 member benefits</label>
+          </div>
+          <div class="table-row-details-3">
+            <div class="cell-icon">
+              <img src="img/check.svg">
+            </div>
+            <div class="cell-icon">
+              <img src="img/check.svg">
+            </div>
+          </div>
+        </div>
+
+        <div class="subs-table-row">
+          <div class="table-row-description">
+            <p class="bS" style="font-weight: bold;">Exclusive member-only content</p>
+          </div>
+          <div class="table-row-details-3">
+            <div class="cell-icon">
+              <img src="img/check.svg">
+            </div>
+            <div class="cell-icon">
+              <img src="img/check.svg">
+            </div>
+          </div>
+        </div>
+
+        <div class="subs-table-row">
+          <div class="table-row-description">
+            <p class="bS" style="font-weight: bold;">Unlimited access to a collection of EA games</p>
+          </div>
+          <div class="table-row-details-3">
+            <div class="cell-icon">
+              <img src="img/check.svg">
+            </div>
+            <div class="cell-icon">
+              <img src="img/check.svg">
+            </div>
+          </div>
+        </div>
+
+        <div class="subs-table-row">
+          <div class="table-row-description">
+            <p class="bS" style="font-weight: bold;">10% off all EA digital purchases</p>
+          </div>
+          <div class="table-row-details-3">
+            <div class="cell-icon">
+              <img src="img/check.svg">
+            </div>
+            <div class="cell-icon">
+              <img src="img/check.svg">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- EA PLAY MORE (END) -->
+
+  <button class="ea-play-learn-more-btn" id="eaPlayMoreBtn" onClick="eaPlayMore()">Explore EA Play +</button>
+  <!-- OPTIONS (START) -->
+  <div class="checkout-tiles">
+    <div onClick="joinEAPLAY()" class="subscribe-tile" id="joinEAPlayCard">
+      <h4>Join</h4>
+      <img src="img/ea-play.svg">
+      <p class="bM">Starting at</p>
+      <h4>$4.99/mo</h4>
+    </div>
+
+    <div onClick="buyTheGame()" class="buy-tile" id="buyTheGameCard">
+      <h4>Buy</h4>
+      <p class="bM">Starting at</p>
+      <h4>$59.99</h4>
+    </div>
+  </div>
+  <!-- OPTIONS (END) -->
+</section>
+<!-- STEP 2A - SUBSCRIBE OR BUY EA DESKTOP  (END) -->
+
+

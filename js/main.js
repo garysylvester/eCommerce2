@@ -111,7 +111,69 @@ window.addEventListener('scroll', () => {
   document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
 });
 
-//STEP 1
+//STEP 1 ----- SELECT DEVICE ------------------------
+// SELECT PC (START)
+function selectPC() {
+  var x = document.getElementById("selectPCPlatform");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  // var x = document.getElementById("selectionProgressEAD1");
+  // if (x.style.display === "none") {
+  //   x.style.display = "block";
+  // } else {
+  //   x.style.display = "none";
+  // }
+
+  var element = document.getElementById("s1pc");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("1sconsole");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("selectPCPlatform");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+// SELECT PC (END)
+
+// SELECT CONSOLE (START)
+function selectConsole() {
+  var x = document.getElementById("selectConsolePlatform");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  // var x = document.getElementById("selectionProgressEAD1");
+  // if (x.style.display === "none") {
+  //   x.style.display = "block";
+  // } else {
+  //   x.style.display = "none";
+  // }
+
+  var element = document.getElementById("s1console");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("s1pc");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("selectConsolePlatform");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+// SELECT CONSOLE (END)
+
+
+//STEP 2 ----- SELECT SELECT PLATFORM - PC ------------------------
 //EA DESKTOP APP
 function tileToggleEAD() {
   var x = document.getElementById("eadSection");

@@ -1,29 +1,28 @@
 <!-- STEP 2A - SUBSCRIBE OR BUY EA DESKTOP  (START) -->
 <section class="checkout subscribe-buy" id="eadSection" style="display:none">
   <hr>
-  <div class="step-header">
-    <h4>Step 2</h4>
-    <h2>Get the game</h2>
+  <div class="step-header-compare">
+    <div class="content-left">
+      <h4>Step 3</h4>
+      <h2>Join or buy?</h2>
+    </div>
+    <div class="content-right">
+      <button class="toggle-btn" onClick="compareJoinBuy()" id="compareJoinBuybtn">Compare +</button>
+      </a>
+    </div>
   </div>
 
   <!-- EA PLAY MORE (START) -->
-  <div class="ea-play-more" id="eaPlayMoreDiv" style="display:none">
-    <div class="step-header-subs">
-      <div class="content-left">
-        <h3>What is EA Play?</h3>
-        <p class="bS">EA Play is the ultimate gaming membership for anyone who loves EA games. There are 2 tiers of
-          membership:</p>
-      </div>
-    </div>
+  <div class="ea-play-more" id="compareJoinBuySection" style="display:none">
 
     <div class="edition-table-wrapper">
       <div class="edition-table">
         <div class="table-row-header2" id="editionHeaderRow">
           <div class="cell-header-tile2" id="beckhamEdition2">
-            <img src="img/ea-play-table-header.svg">
+            <img src="img/table-header-join.svg">
           </div>
           <div class="cell-header-tile2" id="championsEdition2">
-            <img src="img/ea-play-pro-table-header.svg">
+            <img src="img/table-header-buy.svg">
           </div>
         </div>
 
@@ -119,20 +118,15 @@
   </div>
   <!-- EA PLAY MORE (END) -->
 
-  <button class="ea-play-learn-more-btn" id="eaPlayMoreBtn" onClick="eaPlayMore()">Explore EA Play +</button>
   <!-- OPTIONS (START) -->
   <div class="checkout-tiles">
-    <div onClick="joinEAPLAY()" class="subscribe-tile" id="joinEAPlayCard">
-      <h4>Join</h4>
-      <img src="img/ea-play.svg">
-      <p class="bM">Starting at</p>
-      <h4>$4.99/mo</h4>
+    <div onClick="compareJoin()" class="subscribe-tile" id="compareJoinCard">
+
+      <img src="img/table-header-join.svg">
     </div>
 
-    <div onClick="buyTheGame()" class="buy-tile" id="buyTheGameCard">
-      <h4>Buy</h4>
-      <p class="bM">Starting at</p>
-      <h4>$59.99</h4>
+    <div onClick="compareBuy()" class="buy-tile" id="compareBuyCard">
+      <img src="img/table-header-buy.svg">
     </div>
   </div>
   <!-- OPTIONS (END) -->

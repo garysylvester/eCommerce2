@@ -1,28 +1,122 @@
 <section class="checkout select-platform" id="selectPCPlatform" style="display: none;">
-    <hr>
-    <div class="step-header">
+  <hr>
+  <div class="step-header-compare">
+    <div class="content-left">
       <h4>Step 2</h4>
       <h2>Select a platform</h2>
     </div>
+    <div class="content-right">
+      <button class="toggle-btn" onClick="comparePCPlatforms()" id="comparePC">Compare +</button>
+      </a>
+    </div>
+  </div>
 
-    <!-- <div class="membership-tiles">
-      <div onClick="tileToggleEAD()" class="membership-tile" id="ead">
-        <img src="img/ea-desktop-app.svg">
-        <p class="bM">EA Desktop App</p>
+  <!-- PC PLATFORM COMPARE TABLE (START) -->
+  <div class="edition-table-wrapper" id="comparePCtable" style="display:none;">
+    <div class="edition-table">
+      <div class="table-row-header2" id="editionHeaderRow">
+        <div class="cell-header-tile2" id="tableHeaderTileEAD">
+          <img src="img/table-header-ead.svg">
+        </div>
+        <div class="cell-header-tile2" id="tableHeaderTileSteam">
+          <img src="img/table-header-steam.svg">
+        </div>
       </div>
 
-      <div onClick="tileToggleSteam()" class="membership-tile" id="steam">
-        <img src="img/steam.svg">
-        <p class="bM">Steam</p>
+      <div class="subs-table-row">
+        <div class="table-row-description">
+          <p class="bS" style="font-weight: bold;">Play new releases up to 10 days before launch</p>
+        </div>
+        <div class="table-row-details-3">
+          <div class="cell-icon">
+            <p class="bS">Play select games up to 10 hours each</p>
+          </div>
+          <div class="cell-icon">
+            <p class="bS" style="color: #29FFC9">Unlimited</p>
+          </div>
+        </div>
       </div>
-      </div>
-    </div> -->
 
-      <!-- OPTIONS (START) -->
-  <div class="checkout-tiles stacked" id="membershipTiles2" style="display: block;">
-    <div onClick="selectEAPLAY2()" class="membership-tile" id="selectEAPlayCard2">
+      <div class="subs-table-row">
+        <div class="table-row-description">
+          <p class="bS" style="font-weight: bold;">Access to all of EA’s latest games</p>
+        </div>
+        <div class="table-row-details-3">
+          <div class="cell-icon">
+            <p class="bS">Play select games up to 10 hours each</p>
+          </div>
+          <div class="cell-icon">
+            <p class="bS" style="color: #29FFC9">Unlimited</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subs-table-row">
+        <div class="table-row-description">
+          <p class="bS" style="font-weight: bold;">Exclusive in-game rewards</p>
+        </div>
+        <div class="table-row-details-3">
+          <div class="cell-icon">
+            <img src="img/check.svg">
+          </div>
+          <div class="cell-icon">
+            <img src="img/check.svg">
+          </div>
+        </div>
+      </div>
+
+      <div class="subs-table-row">
+        <div class="table-row-description">
+          <p class="bS" style="font-weight: bold;">Exclusive member-only content</p>
+        </div>
+        <div class="table-row-details-3">
+          <div class="cell-icon">
+            <img src="img/check.svg">
+          </div>
+          <div class="cell-icon">
+            <img src="img/check.svg">
+          </div>
+        </div>
+      </div>
+
+      <div class="subs-table-row">
+        <div class="table-row-description">
+          <p class="bS" style="font-weight: bold;">Unlimited access to a collection of EA games</p>
+        </div>
+        <div class="table-row-details-3">
+          <div class="cell-icon">
+            <img src="img/check.svg">
+          </div>
+          <div class="cell-icon">
+            <img src="img/check.svg">
+          </div>
+        </div>
+      </div>
+
+      <div class="subs-table-row">
+        <div class="table-row-description">
+          <p class="bS" style="font-weight: bold;">10% off all EA digital purchases</p>
+        </div>
+        <div class="table-row-details-3">
+          <div class="cell-icon">
+            <img src="img/check.svg">
+          </div>
+          <div class="cell-icon">
+            <img src="img/check.svg">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- PC PLATFORM COMPARE TABLE (END) -->
+
+
+  <!-- OPTIONS (START) -->
+  <div class="platform-tiles stacked" id="selectPCtiles" style="display: block;">
+    <div onClick="selectPlatformEAD()" class="membership-tile" id="s2selectEAD">
       <div class="membership-tile-top">
-        <img class="membership-logo" src="img/eadlogo2.svg">
+        <img class="platform-logo" src="img/eadlogo2.svg">
         <div class="membership-price">
           <img src="img/ead-purchase-methods.svg">
         </div>
@@ -33,9 +127,9 @@
       </div> -->
     </div>
 
-    <div class="membership-tile" onClick="selectEAPLAYPRO2()" id="selectEAPlayProCard2">
+    <div onClick="selectPlatformSteam()" class="membership-tile" id="s2selectSteam">
       <div class="membership-tile-top">
-        <img class="membership-logo" src="img/steamlogo2.svg">
+        <img class="platform-logo" src="img/steamlogo2.svg">
         <div class="membership-price">
           <img src="img/steam-purchase-methods.svg">
         </div>
@@ -47,4 +141,4 @@
     </div>
   </div>
   <!-- OPTIONS (END) -->
-  </section>
+</section>

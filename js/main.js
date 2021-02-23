@@ -16,22 +16,6 @@ function aboutToggle() {
   }
 }
 
-function eaPlayMore() {
-  var x = document.getElementById("eaPlayMoreDiv");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-
-  var x = document.getElementById("eaPlayMoreBtn");
-  if (x.innerHTML === "Explore EA Play +") {
-    x.innerHTML = "Collapse -";
-  } else {
-    x.innerHTML = "Explore EA Play +";
-  }
-}
-
 function eaPlayMore2() {
   var x = document.getElementById("eaPlayMoreDiv");
   if (x.style.display === "none") {
@@ -94,13 +78,13 @@ function compareEditionToggle() {
   }
 }
 
-const showModal = () => {
+function showModal() {
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   const body = document.body;
   body.style.position = 'fixed';
   body.style.top = `-${scrollY}`;
-};
-const closeModal = () => {
+}
+function closeModal() {
   const body = document.body;
   const scrollY = body.style.top;
   body.style.position = '';
@@ -111,7 +95,7 @@ window.addEventListener('scroll', () => {
   document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
 });
 
-//STEP 1 ----- SELECT DEVICE ------------------------
+//STEP 1 ------------------------ SELECT DEVICE ------------------------ (START)
 // SELECT PC (START)
 function selectPC() {
   var x = document.getElementById("selectPCPlatform");
@@ -131,7 +115,7 @@ function selectPC() {
   var element = document.getElementById("s1pc");
   element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("1sconsole");
+  var element = document.getElementById("s1console");
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("selectPCPlatform");
@@ -171,11 +155,12 @@ function selectConsole() {
   });
 }
 // SELECT CONSOLE (END)
+//STEP 1 ------------------------ SELECT DEVICE ------------------------ (END)
 
 
-//STEP 2 ----- SELECT SELECT PLATFORM - PC ------------------------
-//EA DESKTOP APP
-function tileToggleEAD() {
+// STEP 2 ----------------- SELECT SELECT PLATFORM - PC ----------------- (START)
+// EA DESKTOP APP (START)
+function selectPlatformEAD() {
   var x = document.getElementById("eadSection");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -183,26 +168,17 @@ function tileToggleEAD() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("selectionProgressEAD1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+  // var x = document.getElementById("selectionProgressEAD1");
+  // if (x.style.display === "none") {
+  //   x.style.display = "block";
+  // } else {
+  //   x.style.display = "none";
+  // }
 
-  var element = document.getElementById("ead");
+  var element = document.getElementById("s2selectEAD");
   element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("steam");
-  element.classList.toggle("platformTileInactive");
-
-  var element = document.getElementById("playstation");
-  element.classList.toggle("platformTileInactive");
-
-  var element = document.getElementById("xbox");
-  element.classList.toggle("platformTileInactive");
-
-  var element = document.getElementById("switch");
+  var element = document.getElementById("s2selectSteam");
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("eadSection");
@@ -212,45 +188,73 @@ function tileToggleEAD() {
   });
 }
 
-//STEAM
-function tileToggleSteam() {
-  var x = document.getElementById("steamSection");
+function comparePCPlatforms() {
+  var x = document.getElementById("comparePCtable");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("selectionProgressSteam1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  // var x = document.getElementById("selectPCtiles");
+  // if (x.style.display === "block") {
+  //   x.style.display = "none";
+  // } else {
+  //   x.style.display = "block";
+  // }
+  
+  var x = document.getElementById("comparePC");
+  if (x.innerHTML === "Compare +") {
+    x.innerHTML = "Collapse -";
   } else {
-    x.style.display = "none";
+    x.innerHTML = "Compare +";
   }
 
-  var element = document.getElementById("steam");
-  element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("ead");
-  element.classList.toggle("platformTileInactive");
-
-  var element = document.getElementById("playstation");
-  element.classList.toggle("platformTileInactive");
-
-  var element = document.getElementById("xbox");
-  element.classList.toggle("platformTileInactive");
-
-  var element = document.getElementById("switch");
-  element.classList.toggle("platformTileInactive");
-
-  var elmnt = document.getElementById("steamSection");
-  elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'center'
-  });
 }
+// EA DESKTOP APP (END)
 
-//PLAYSTATION
+
+// STEAM (START)
+// function tileToggleSteam() {
+//   var x = document.getElementById("steamSection");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+
+//   var x = document.getElementById("selectionProgressSteam1");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+
+//   var element = document.getElementById("steam");
+//   element.classList.toggle("platformTileSelected");
+
+//   var element = document.getElementById("ead");
+//   element.classList.toggle("platformTileInactive");
+
+//   var element = document.getElementById("playstation");
+//   element.classList.toggle("platformTileInactive");
+
+//   var element = document.getElementById("xbox");
+//   element.classList.toggle("platformTileInactive");
+
+//   var element = document.getElementById("switch");
+//   element.classList.toggle("platformTileInactive");
+
+//   var elmnt = document.getElementById("steamSection");
+//   elmnt.scrollIntoView({
+//     behavior: 'smooth',
+//     block: 'center'
+//   });
+// }
+// STEAM (END)
+
+//PLAYSTATION (START)
 // function tileTogglePlaystation() {
 //   var x = document.getElementById("playstationSection");
 //   if (x.style.display === "none") {
@@ -287,8 +291,9 @@ function tileToggleSteam() {
 //     block: 'center'
 //   });
 // }
+// PLAYSTATIOON (END)
 
-//XBOX
+// XBOX (START)
 // function tileToggleXbox() {
 //   var x = document.getElementById("xboxSection");
 //   if (x.style.display === "none") {
@@ -325,16 +330,37 @@ function tileToggleSteam() {
 //     block: 'center'
 //   });
 // }
+// XBOX (END)
 
-//SWITCH
+// SWITCH (START)
 function tileToggleSwitch() {
   window.open("https://www.nintendo.com/games/detail/fifa-21-nintendo-switch-legacy-edition-switch/", "_blank");
 }
+// SWITCH (END)
 
 
-// STEP 2 //
-// JOIN EA PLAY
-function joinEAPLAY() {
+// STEP 3 ----------------- JOIN OR BUY ----------------- (START)
+
+// GENERAL (START)
+function compareJoinBuy() {
+  var x = document.getElementById("compareJoinBuySection");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("compareJoinBuybtn");
+  if (x.innerHTML === "Compare +") {
+    x.innerHTML = "Collapse -";
+  } else {
+    x.innerHTML = "Compare +";
+  }
+}
+// GENERAL (START)
+
+// JOIN EA PLAY (START)
+function compareJoin() {
   var x = document.getElementById("eaPlaySelectMembershipSection");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -356,10 +382,10 @@ function joinEAPLAY() {
     x.style.display = "none";
   }
 
-  var element = document.getElementById("joinEAPlayCard");
+  var element = document.getElementById("compareJoinCard");
   element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("buyTheGameCard");
+  var element = document.getElementById("compareBuyCard");
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("eaPlaySelectMembershipSection");
@@ -368,10 +394,11 @@ function joinEAPLAY() {
     block: 'center'
   });
 }
+// JOIN EA PLAY (END)
 
-// STEP 2 //
-// BUY THE GAME
-function buyTheGame() {
+
+// BUY THE GAME (START)
+function compareBuy() {
   var x = document.getElementById("buyTheGameSection");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -386,10 +413,10 @@ function buyTheGame() {
     x.style.display = "none";
   }
 
-  var element = document.getElementById("buyTheGameCard");
+  var element = document.getElementById("compareBuyCard");
   element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("joinEAPlayCard");
+  var element = document.getElementById("compareJoinCard");
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("buyTheGameSection");
@@ -398,6 +425,7 @@ function buyTheGame() {
     block: 'center'
   });
 }
+// BUY THE GAME (END)
 
 
 //JOIN EA PLAY

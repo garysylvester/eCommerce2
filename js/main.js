@@ -341,7 +341,7 @@ function tileToggleSwitch() {
 
 // STEP 3 ----------------- JOIN OR BUY ----------------- (START)
 
-// GENERAL (START)
+// -------- GENERAL (START)
 function compareJoinBuy() {
   var x = document.getElementById("compareJoinBuySection");
   if (x.style.display === "none") {
@@ -357,9 +357,9 @@ function compareJoinBuy() {
     x.innerHTML = "Compare +";
   }
 }
-// GENERAL (START)
+// -------- GENERAL (START)
 
-// JOIN EA PLAY (START)
+// -------- JOIN EA PLAY (START)
 function compareJoin() {
   var x = document.getElementById("eaPlaySelectMembershipSection");
   if (x.style.display === "none") {
@@ -394,10 +394,10 @@ function compareJoin() {
     block: 'center'
   });
 }
-// JOIN EA PLAY (END)
+// -------- JOIN EA PLAY (END)
 
 
-// BUY THE GAME (START)
+// -------- BUY THE GAME (START)
 function compareBuy() {
   var x = document.getElementById("buyTheGameSection");
   if (x.style.display === "none") {
@@ -425,7 +425,7 @@ function compareBuy() {
     block: 'center'
   });
 }
-// BUY THE GAME (END)
+// -------- BUY THE GAME (END)
 
 
 //JOIN EA PLAY

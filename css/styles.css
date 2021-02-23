@@ -116,6 +116,11 @@ h1, h2, h3, h4, h5, h6{
     z-index: 10;
 }
 
+.sticky-row{
+    position: sticky;
+    position: -webkit-sticky;
+}
+
 .left-side{
     display: flex;
     flex-direction: row;
@@ -236,6 +241,13 @@ h1, h2, h3, h4, h5, h6{
     width: 100%;
 }
 
+.compareJoinBuy{
+    background-color: var(--color-fifa-base);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
 .step-header{
     margin: var(--dimension-space-larger) 0;
 }
@@ -257,6 +269,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .checkout-tiles{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: var(--dimension-space-medium); 
+    margin-bottom: var(--dimension-space-medium); 
+}
+
+.platform-tiles{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -313,6 +334,10 @@ h1, h2, h3, h4, h5, h6{
 
 .checkout-tiles img{
     margin-bottom: var(--dimension-space-smaller);
+}
+
+.platform-tiles img{
+    margin-bottom: 0;
 }
 
 .platform-tile{
@@ -374,6 +399,7 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .membership-price{
@@ -785,9 +811,9 @@ h1, h2, h3, h4, h5, h6{
     overflow: visible !important;
 }
 
-.swiper-container2 {
+/* .swiper-container2 {
     
-}
+} */
 
 .swiper-slide {
     background-size: cover;

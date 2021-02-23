@@ -556,6 +556,19 @@ h1, h2, h3, h4, h5, h6{
     background: var(--color-fifa-base);
 }
 
+.table-row-header2::after{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image:url('../img/versus.svg');
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-12px) translateY(-12px);
+    z-index: 10;
+}
+
 .table-row-details-3{
     display: flex;
     align-items: center;

@@ -531,8 +531,6 @@ h1, h2, h3, h4, h5, h6{
     height: fit-content;
     margin-top: var(--dimension-space-small);
     text-align: center;
-    border-top: 2px solid var(--color-fifa-neutral-900);
-
 }
 
 .table-row-details{

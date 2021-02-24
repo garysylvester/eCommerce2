@@ -40,18 +40,11 @@ function compareSubsToggle() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("membershipTiles2");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-
   var x = document.getElementById("compareSubs");
-  if (x.innerHTML === "Compare") {
-    x.innerHTML = "Tiles";
+  if (x.innerHTML === "Compare +") {
+    x.innerHTML = "Collapse -";
   } else {
-    x.innerHTML = "Compare";
+    x.innerHTML = "Compare +";
   }
 }
 
@@ -72,10 +65,10 @@ function compareEditionToggle() {
   }
 
   var x = document.getElementById("compareEdition");
-  if (x.innerHTML === "Compare") {
-    x.innerHTML = "Grid";
+  if (x.innerHTML === "Compare +") {
+    x.innerHTML = "Collapse -";
   } else {
-    x.innerHTML = "Compare";
+    x.innerHTML = "Compare +";
   }
 }
 //------------------------ COMPARE EDITION ------------------------ (END)
@@ -158,48 +151,6 @@ function selectPC() {
     block: 'center'
   });
 }
-
-// BACK TO START LOGIC
-// function resetAll() {
-//   var x = document.getElementById("selectPCPlatform");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-
-  // var x = document.getElementById("selectionProgressEAD1");
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  // } else {
-  //   x.style.display = "none";
-  // }
-//   var str2 ="back to default"
-
-//   const backToStart = {
-//     backToStartFunction() {
-//       setTimeout(
-//         function () {
-//           document.getElementById('s1pc').setAttribute("onclick", "resetAll()");
-//           // console.log(str2);
-//         }, 1000
-//       );
-//     }
-//   }
-//   backToStart.backToStartFunction();
-
-//   var element = document.getElementById("s1pc");
-//   element.classList.toggle("platformTileSelected");
-
-//   var element = document.getElementById("s1console");
-//   element.classList.toggle("platformTileInactive");
-
-//   var elmnt = document.getElementById("aboutGame");
-//   elmnt.scrollIntoView({
-//     behavior: 'smooth',
-//     block: 'top'
-//   });
-// }
 
 // SELECT PC (END)
 
@@ -292,43 +243,77 @@ function comparePCPlatforms() {
 // EA DESKTOP APP (END)
 
 
-// STEAM (START)
-// function tileToggleSteam() {
-//   var x = document.getElementById("steamSection");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
+// -------- STEAM (START) --------
 
-//   var x = document.getElementById("selectionProgressSteam1");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
+// -------- GENERAL (START)
+function compareJoinBuy2() {
+  var x = document.getElementById("compareJoinBuySection2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
-//   var element = document.getElementById("steam");
-//   element.classList.toggle("platformTileSelected");
+  var x = document.getElementById("compareJoinBuybtn2");
+  if (x.innerHTML === "Compare +") {
+    x.innerHTML = "Collapse -";
+  } else {
+    x.innerHTML = "Compare +";
+  }
+}
 
-//   var element = document.getElementById("ead");
-//   element.classList.toggle("platformTileInactive");
+function eadCallout() {
+  var x = document.getElementById("steamSection");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 
-//   var element = document.getElementById("playstation");
-//   element.classList.toggle("platformTileInactive");
+  var element = document.getElementById("s2selectSteam");
+  element.classList.remove("platformTileSelected");
 
-//   var element = document.getElementById("xbox");
-//   element.classList.toggle("platformTileInactive");
+  var element = document.getElementById("s2selectEAD");
+  element.classList.remove("platformTileInactive");
 
-//   var element = document.getElementById("switch");
-//   element.classList.toggle("platformTileInactive");
+  // var x = document.getElementById("compareJoinBuybtn2");
+  // if (x.innerHTML === "Compare +") {
+  //   x.innerHTML = "Collapse -";
+  // } else {
+  //   x.innerHTML = "Compare +";
+  // }
+}
 
-//   var elmnt = document.getElementById("steamSection");
-//   elmnt.scrollIntoView({
-//     behavior: 'smooth',
-//     block: 'center'
-//   });
-// }
+
+// -------- GENERAL (START)
+
+function selectPlatformSteam() {
+  var x = document.getElementById("steamSection");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  // var x = document.getElementById("selectionProgressSteam1");
+  // if (x.style.display === "none") {
+  //   x.style.display = "block";
+  // } else {
+  //   x.style.display = "none";
+  // }
+
+  var element = document.getElementById("s2selectSteam");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("s2selectEAD");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("steamSection");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
 // STEAM (END)
 
 //PLAYSTATION (START)

@@ -51,7 +51,7 @@
     <section class="about-game" id="aboutGame" style="height:48px">
       <div class="about-game-header">
         <h1>Get FIFA 21</h1>
-        <button class="toggle-btn" onClick="aboutToggle()" id="learnMore">About +</button>
+        <button class="toggle-btn" onclick="aboutToggle()" id="learnMore">About +</button>
         </a>
       </div>
       <hr>
@@ -213,7 +213,7 @@
     <div class="modal">
       <label class="modal__bg" for="modal-1"></label>
       <div class="modal__inner">
-        <label class="modal__close" for="modal-1" onClick="closeModal()"></label>
+        <label class="modal__close" for="modal-1" onclick="closeModal()"></label>
         <h2>EA Play Member Benefits</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non expedita nam quia a officiis repellat
           distinctio.
@@ -278,7 +278,7 @@
     <div class="modal">
       <label class="modal__bg" for="modal-2"></label>
       <div class="modal__inner">
-        <label class="modal__close" for="modal-2" onClick="closeModal2()"></label>
+        <label class="modal__close" for="modal-2" onclick="closeModal2()"></label>
         <img src="img/ea-play.svg">
         <p class="bS" style="margin-top: 8px;">Games on EA Desktop App & Steam</p>
 
@@ -350,9 +350,9 @@
           <!-- !pagination dots -->
           <script>
             var swiper3 = new Swiper('.swiper-container3', {
-              loop: true,
+              loop: false,
               slidesPerView: 2,
-              spaceBetween: 16,
+              spaceBetween: 18,
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',

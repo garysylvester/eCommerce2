@@ -60,7 +60,8 @@
     --font-body-size-L: 2rem;
     --font-body-size-M: 1.5rem;
     --font-body-size-S: 1rem;
-    --font-body-size-XS: 0.75rem;
+    --font-body-size-XS: 0.875rem;
+    --font-body-size-XXS: 0.75rem;
 
 
 }
@@ -101,6 +102,11 @@ h1, h2, h3, h4, h5, h6{
 
 .bXS{
     font-size: var(--font-body-size-XS);
+    margin: 0px;
+}
+
+.bXXS{
+    font-size: var(--font-body-size-XXS);
     margin: 0px;
 }
 
@@ -169,7 +175,7 @@ h1, h2, h3, h4, h5, h6{
     right: 12px;
 }
 
-.membership-tile-description h3::after{
+.membership-tile-description img::after{
     content: "";
     position: absolute;
     background-image: url(../img/external.svg);
@@ -310,7 +316,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: var(--color-fifa-neutral-900);
     border: 1px solid var(--color-fifa-neutral-900);
     border-radius: var(--dimension-space-smaller);
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -318,6 +324,7 @@ h1, h2, h3, h4, h5, h6{
     cursor: pointer;
     text-align: center;
     overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .edition-tile img{
@@ -352,13 +359,14 @@ h1, h2, h3, h4, h5, h6{
     background-color: var(--color-fifa-neutral-900);
     border: 1px solid var(--color-fifa-neutral-900);
     border-radius: var(--dimension-space-smaller);
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .subscribe-tile, .buy-tile{
@@ -368,13 +376,14 @@ h1, h2, h3, h4, h5, h6{
     background-color: var(--color-fifa-neutral-900);
     border: 1px solid var(--color-fifa-neutral-900);
     border-radius: var(--dimension-space-smaller);
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .subscribe-tile h4{
@@ -388,8 +397,9 @@ h1, h2, h3, h4, h5, h6{
     background-color: var(--color-fifa-neutral-900);
     border: 1px solid var(--color-fifa-neutral-900);
     border-radius: var(--dimension-space-smaller);
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .membership-tile:first-child{
@@ -624,7 +634,7 @@ h1, h2, h3, h4, h5, h6{
 
 .cell-header-tile{
     height: fit-content;
-    width: calc(33.33% - 8px);
+    width: calc(33.33% - 4px);
     background: var(--color-fifa-neutral-900);
     border-radius: var(--dimension-space-smaller);
     margin-bottom: var(--dimension-space-small);
@@ -689,7 +699,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .cell-header-tile p{
-    margin-bottom: var(--dimension-space-smallest);
+    margin: var(--dimension-space-small) 0 var(--dimension-space-smallest) 0;
 }
 
 .cell-header-tile h4{
@@ -713,7 +723,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: var(--color-fifa-neutral-900);
     border: 1px solid var(--color-fifa-neutral-900);
     border-radius: var(--dimension-space-smaller);
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
     cursor: pointer;
     overflow: visible;
 }
@@ -721,6 +731,17 @@ h1, h2, h3, h4, h5, h6{
 .cell-icon{
     height: 100%;
     width: calc(50% - 4px);
+    background: var(--table-cell-bg);
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom:  var(--dimension-space-smaller);
+}
+
+.cell-icon3{
+    height: 100%;
+    width: calc(33.33% - 4px);
     background: var(--table-cell-bg);
     display: inherit;
     justify-content: center;
@@ -924,5 +945,22 @@ h1, h2, h3, h4, h5, h6{
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom: -30px !important;
     right: 0;
+}
+
+.EAD-callout{
+    margin-top: var(--dimension-space-large);
+}
+
+.EAD-callout h4{
+    margin-bottom: var(--dimension-space-smaller);
+}
+
+.EAD-callout-btn{
+    color: var(--color-fifa-neutral-0);
+    background: var(--color-ea-primary);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: var(--dimension-space-smaller) var(--dimension-space-small);
 }
 

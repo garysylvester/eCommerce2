@@ -426,9 +426,11 @@ function compareBuy() {
   });
 }
 // -------- BUY THE GAME (END)
+// STEP 3 ----------------- JOIN OR BUY ----------------- (END)
 
 
-//JOIN EA PLAY
+// STEP 4 ----------------- SELECT A MEMBERSHIP ----------------- (START)
+// -------- JOIN EA PLAY (START)
 function selectEAPLAY1() {
   var x = document.getElementById("eaPlaySelectPaymentPlan");
   if (x.style.display === "none") {
@@ -470,9 +472,10 @@ function selectEAPLAY2() {
     block: 'center'
   });
 }
+// -------- JOIN EA PLAY (END)
 
 
-//JOIN EA PLAY PRO
+// -------- JOIN EA PLAY PRO (START)
 function selectEAPLAYPRO1() {
   var x = document.getElementById("eaPlayProSelectPaymentPlan");
   if (x.style.display === "none") {
@@ -528,6 +531,7 @@ function selectEAPLAYPRO2() {
     block: 'center'
   });
 }
+// -------- JOIN EA PLAY PRO (END)
 
 //PAYMENT PLANS - EA PLAY - MONTHLY
 function selectMonthlyPayments() {

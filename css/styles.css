@@ -11,7 +11,7 @@
     --color-fifa-nav-color: #000000;
     --color-steam-blue: #397298;
 
-    --table-cell-bg: rgba(50, 50, 50, 0.4);
+    --table-cell-bg: rgba(50, 50, 50, 0.2);
 
     --color-fifa-neutral-0: #ffffff;
     --color-fifa-neutral-100: #E7E7E7;
@@ -531,7 +531,7 @@ h1, h2, h3, h4, h5, h6{
 
 .table-row-description{
     height: fit-content;
-    margin-top: var(--dimension-space-small);
+    margin: var(--dimension-space-small) 0;
     text-align: center;
 }
 

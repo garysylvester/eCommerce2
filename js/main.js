@@ -112,6 +112,20 @@ function selectPC() {
   //   x.style.display = "none";
   // }
 
+  // var str1 ="change function"
+
+  // const backtrackPC = {
+  //   backtrackFunction() {
+  //     setTimeout(
+  //       function () {
+  //         document.getElementById('s1pc').setAttribute("onclick", "resetAll()");
+  //         console.log(str1);
+  //       }, 1000
+  //     );
+  //   }
+  // }
+  // backtrackPC.backtrackFunction();
+
   var element = document.getElementById("s1pc");
   element.classList.toggle("platformTileSelected");
 
@@ -124,6 +138,49 @@ function selectPC() {
     block: 'center'
   });
 }
+
+// BACK TO START LOGIC
+// function resetAll() {
+//   var x = document.getElementById("selectPCPlatform");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+
+  // var x = document.getElementById("selectionProgressEAD1");
+  // if (x.style.display === "none") {
+  //   x.style.display = "block";
+  // } else {
+  //   x.style.display = "none";
+  // }
+//   var str2 ="back to default"
+
+//   const backToStart = {
+//     backToStartFunction() {
+//       setTimeout(
+//         function () {
+//           document.getElementById('s1pc').setAttribute("onclick", "resetAll()");
+//           // console.log(str2);
+//         }, 1000
+//       );
+//     }
+//   }
+//   backToStart.backToStartFunction();
+
+//   var element = document.getElementById("s1pc");
+//   element.classList.toggle("platformTileSelected");
+
+//   var element = document.getElementById("s1console");
+//   element.classList.toggle("platformTileInactive");
+
+//   var elmnt = document.getElementById("aboutGame");
+//   elmnt.scrollIntoView({
+//     behavior: 'smooth',
+//     block: 'top'
+//   });
+// }
+
 // SELECT PC (END)
 
 // SELECT CONSOLE (START)

@@ -208,7 +208,7 @@
     <!-- FOOTER ELEMENTS (END) -->
 
 
-    <!-- MODAL (START) -->
+    <!-- MODAL1 (START) -->
     <input class="modal-state" id="modal-1" type="checkbox" />
     <div class="modal">
       <label class="modal__bg" for="modal-1"></label>
@@ -271,6 +271,102 @@
         </div>
       </div>
     </div>
+    <!-- MODAL1 (START) -->
+
+    <!-- MODAL2 (START) -->
+    <input class="modal-state" id="modal-2" type="checkbox" />
+    <div class="modal">
+      <label class="modal__bg" for="modal-2"></label>
+      <div class="modal__inner">
+        <label class="modal__close" for="modal-2" onClick="closeModal2()"></label>
+        <img src="img/ea-play.svg">
+        <p class="bS" style="margin-top: 8px;">Games on EA Desktop App & Steam</p>
+
+        <div class="swiper-container swiper-container3">
+          <!-- swiper slides -->
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-01.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-02.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-03.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-04.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-05.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-06.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-07.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-08.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-09.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-10.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-11.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-12.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-13.svg">
+            </div>
+          </div>
+          <!-- !swiper slides -->
+
+          <!-- next / prev arrows -->
+          <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+          <!-- !next / prev arrows -->
+
+          <!-- pagination dots -->
+          <div class="swiper-pagination swiper-pagination3"></div>
+          <!-- !pagination dots -->
+          <script>
+            var swiper3 = new Swiper('.swiper-container3', {
+              loop: true,
+              slidesPerView: 2,
+              spaceBetween: 16,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination3',
+              },
+            });
+
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL2 (START) -->
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>

@@ -817,7 +817,7 @@ h1, h2, h3, h4, h5, h6{
     left: 0;
     width: calc(100% - 64px);
     margin: auto;
-    overflow: auto;
+    overflow: hidden;
     background: var(--color-fifa-base);
     border-radius: 5px;
     padding: var(--dimension-space-larger) var(--dimension-space-medium);
@@ -868,6 +868,11 @@ h1, h2, h3, h4, h5, h6{
     overflow: visible !important;
 }
 
+.swiper-container3{
+    overflow: visible !important;
+    margin: var(--dimension-space-medium) 0;
+}
+
 /* .swiper-container2 {
     
 } */
@@ -884,7 +889,7 @@ h1, h2, h3, h4, h5, h6{
 .swiper-slide img{
     width: 100%;
     height: auto;
-    border-radius: var(--dimension-space-small);
+    border-radius: var(--dimension-space-smaller);
 }
 
 .swiper-slide iframe{
@@ -903,6 +908,9 @@ h1, h2, h3, h4, h5, h6{
 .swiper-pagination-bullet{
     background: var(--color-fifa-neutral-800) !important;
     opacity: 1 !important;
+    width: 4px !important;
+    height: 4px !important;
+    margin: 0 3px !important;
 }
 
 .swiper-pagination-bullet-active{

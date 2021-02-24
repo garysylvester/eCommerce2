@@ -55,6 +55,7 @@ function compareSubsToggle() {
   }
 }
 
+//------------------------ COMPARE EDITION ------------------------ (START)
 function compareEditionToggle() {
   var x = document.getElementById("editionTableGrid");
   if (x.style.display === "block") {
@@ -77,14 +78,32 @@ function compareEditionToggle() {
     x.innerHTML = "Compare";
   }
 }
+//------------------------ COMPARE EDITION ------------------------ (END)
 
+//------------------------ SHOW MODAL ------------------------ (END)
 function showModal() {
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   const body = document.body;
   body.style.position = 'fixed';
   body.style.top = `-${scrollY}`;
 }
+
+function showModal2() {
+  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+}
+
 function closeModal() {
+  const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+function closeModal2() {
   const body = document.body;
   const scrollY = body.style.top;
   body.style.position = '';
@@ -94,6 +113,7 @@ function closeModal() {
 window.addEventListener('scroll', () => {
   document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
 });
+//------------------------ SHOW MODAL ------------------------ (END)
 
 //STEP 1 ------------------------ SELECT DEVICE ------------------------ (START)
 // SELECT PC (START)

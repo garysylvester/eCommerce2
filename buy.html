@@ -245,11 +245,6 @@
           </div>
           <!-- !swiper slides -->
 
-          <!-- next / prev arrows -->
-          <!-- <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div> -->
-          <!-- !next / prev arrows -->
-
           <!-- pagination dots -->
           <div class="swiper-pagination swiper-pagination2"></div>
           <!-- !pagination dots -->
@@ -340,11 +335,6 @@
           </div>
           <!-- !swiper slides -->
 
-          <!-- next / prev arrows -->
-          <!-- <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div> -->
-          <!-- !next / prev arrows -->
-
           <!-- pagination dots -->
           <div class="swiper-pagination swiper-pagination3"></div>
           <!-- !pagination dots -->
@@ -359,6 +349,80 @@
               },
               pagination: {
                 el: '.swiper-pagination3',
+              },
+            });
+
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL2 (START) -->
+
+    <!-- MODAL3 (START) -->
+    <input class="modal-state" id="modal-3" type="checkbox" />
+    <div class="modal">
+      <label class="modal__bg" for="modal-3"></label>
+      <div class="modal__inner">
+        <label class="modal__close" for="modal-3" onclick="closeModal3()"></label>
+        <img src="img/ea-play.svg">
+        <p class="bS" style="margin-top: 8px;">EA Play Member Benefits for FIFA 21</p>
+
+        <div class="swiper-container swiper-container4">
+          <!-- swiper slides -->
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-01.jpg">
+              <img src="img/member-benefit-01.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-02.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-03.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-04.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-05.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-06.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-06-1.svg">
+            </div>
+
+          </div>
+          <!-- !swiper slides -->
+
+          <!-- pagination dots -->
+          <div class="swiper-pagination swiper-pagination4"></div>
+          <!-- !pagination dots -->
+          <script>
+            var swiper4 = new Swiper('.swiper-container4', {
+              loop: false,
+              slidesPerView: 1,
+              spaceBetween: 18,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination4',
               },
             });
 

@@ -762,7 +762,8 @@ h1, h2, h3, h4, h5, h6{
     height: 100%;
     width: calc(50% - 4px);
     background: var(--table-cell-bg);
-    display: inherit;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -924,9 +925,14 @@ h1, h2, h3, h4, h5, h6{
     margin: var(--dimension-space-medium) 0;
 }
 
-/* .swiper-container2 {
-    
-} */
+.swiper-container4{
+    overflow: visible !important;
+    margin: var(--dimension-space-medium) 0;
+}
+
+.swiper-slide4 img{
+    margin-bottom: var(--dimension-space-small);
+}
 
 .swiper-slide {
     background-size: cover;

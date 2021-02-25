@@ -127,27 +127,6 @@ function selectPC() {
     x.style.display = "none";
   }
 
-  // var x = document.getElementById("selectionProgressEAD1");
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  // } else {
-  //   x.style.display = "none";
-  // }
-
-  // var str1 ="change function"
-
-  // const backtrackPC = {
-  //   backtrackFunction() {
-  //     setTimeout(
-  //       function () {
-  //         document.getElementById('s1pc').setAttribute("onclick", "resetAll()");
-  //         console.log(str1);
-  //       }, 1000
-  //     );
-  //   }
-  // }
-  // backtrackPC.backtrackFunction();
-
   var element = document.getElementById("s1pc");
   element.classList.toggle("platformTileSelected");
 
@@ -171,13 +150,6 @@ function selectConsole() {
   } else {
     x.style.display = "none";
   }
-
-  // var x = document.getElementById("selectionProgressEAD1");
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  // } else {
-  //   x.style.display = "none";
-  // }
 
   var element = document.getElementById("s1console");
   element.classList.toggle("platformTileSelected");
@@ -205,12 +177,12 @@ function selectPlatformEAD() {
     x.style.display = "none";
   }
 
-  // var x = document.getElementById("selectionProgressEAD1");
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  // } else {
-  //   x.style.display = "none";
-  // }
+  var x = document.getElementById("selectionProgressEAD1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
   var element = document.getElementById("s2selectEAD");
   element.classList.toggle("platformTileSelected");
@@ -304,12 +276,12 @@ function selectPlatformSteam() {
     x.style.display = "none";
   }
 
-  // var x = document.getElementById("selectionProgressSteam1");
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  // } else {
-  //   x.style.display = "none";
-  // }
+  var x = document.getElementById("selectionProgressSteam1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
   var element = document.getElementById("s2selectSteam");
   element.classList.toggle("platformTileSelected");

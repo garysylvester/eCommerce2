@@ -68,6 +68,9 @@
 
 body{
     background: var(--color-fifa-base);
+    background-image: url('../img/bg-element.png');
+    background-position: top;
+    background-repeat: no-repeat;
     font-family: var(--font-family-body);
     font-weight: 300;
     color: var(--color-fifa-neutral-0);
@@ -192,7 +195,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .about-game{
-    background-color: var(--color-fifa-base);
     padding: 16px 16px;
     position: relative;
     width: calc(100% - var(--dimension-space-larger));
@@ -236,7 +238,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .checkout{
-    background-color: var(--color-fifa-base);
     padding: 0 var(--dimension-space-medium);
     position: relative;
     width: calc(100% - 32px);
@@ -687,7 +688,7 @@ h1, h2, h3, h4, h5, h6{
     width: calc(33.33% - 4px);
     margin-bottom: var(--dimension-space-small);
     background: var(--table-cell-bg);
-    padding: var(--dimension-space-medium) 0;
+    padding: 0 0 var(--dimension-space-small) 0;
     display:flex;
     flex-direction: column;
     justify-content: center;

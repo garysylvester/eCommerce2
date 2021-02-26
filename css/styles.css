@@ -68,7 +68,6 @@
 
 body {
   background: var(--color-fifa-base);
-  background-image: url('../img/bg-element.png');
   background-position: top;
   background-repeat: no-repeat;
   font-family: var(--font-family-body);
@@ -77,6 +76,11 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--font-line-height-body);
 }
+
+.fifaBG{
+    background-image: url('../img/bg-element.png');
+}
+
 
 a {
   color: var(--color-fifa-mint);
@@ -110,11 +114,13 @@ h6 {
 
 .bXS {
   font-size: var(--font-body-size-XS);
+  line-height: var(--font-line-height-display);
   margin: 0px;
 }
 
 .bXXS {
   font-size: var(--font-body-size-XXS);
+  line-height: var(--font-line-height-display);
   margin: 0px;
 }
 
@@ -339,7 +345,6 @@ h6 {
   height: auto;
   position: relative;
   background-color: var(--color-fifa-neutral-900);
-  border: 1px solid var(--color-fifa-neutral-900);
   border-radius: var(--dimension-space-smaller);
   transition: all 0.25s linear;
   display: flex;
@@ -1085,3 +1090,60 @@ h6 {
   border-radius: 4px;
   padding: var(--dimension-space-smaller) var(--dimension-space-small);
 }
+
+
+/* Login Screen */
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 285px;
+    margin: -140px 0 0 -182px;
+    padding: 40px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+  .form h2 {
+    margin: 0 0 20px;
+    line-height: 1;
+    color: #44c4e7;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .form input {
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-family: "Roboto";
+    box-sizing: border-box;
+    font-size: 14px;
+    font-wieght: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: 0.2s linear;
+  }
+  .form inputinput:focus {
+    color: #333;
+    border: 1px solid #44c4e7;
+  }
+  .form button {
+    cursor: pointer;
+    background: #44c4e7;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .form button:hover {
+    background: #369cb8;
+  }
+  .error,
+  .valid {
+    display: none;
+  }

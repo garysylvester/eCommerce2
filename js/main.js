@@ -152,7 +152,7 @@ function selectPC() {
   var elmnt = document.getElementById("selectPCPlatform");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -176,7 +176,7 @@ function selectConsole() {
   var elmnt = document.getElementById("selectConsolePlatform");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 // SELECT CONSOLE (END)
@@ -209,7 +209,7 @@ function selectPlatformEAD() {
   var elmnt = document.getElementById("eadSection");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -308,7 +308,7 @@ function selectPlatformSteam() {
   var elmnt = document.getElementById("steamSection");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 // STEAM (END)
@@ -375,7 +375,7 @@ function selectPS5() {
   var elmnt = document.getElementById("playstation5Section");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -396,7 +396,7 @@ function ps5joinEAPlay() {
   var elmnt = document.getElementById("ps5EAPlaySelectPaymentPlan");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -425,7 +425,7 @@ function ps5buyFifa() {
   var elmnt = document.getElementById("buyTheGameSectionPS5");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -473,7 +473,7 @@ function selectPS4() {
   var elmnt = document.getElementById("playstation4Section");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -494,7 +494,7 @@ function ps4joinEAPlay() {
   var elmnt = document.getElementById("ps4EAPlaySelectPaymentPlan");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -542,7 +542,7 @@ function selectAnnualPaymentsps4() {
 //   var elmnt = document.getElementById("xboxSection");
 //   elmnt.scrollIntoView({
 //     behavior: 'smooth',
-//     block: 'center'
+//     block: 'start'
 //   });
 // }
 // XBOX (END)
@@ -606,7 +606,7 @@ function compareJoin() {
   var elmnt = document.getElementById("eaPlaySelectMembershipSection");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 // -------- JOIN EA PLAY (END)
@@ -637,7 +637,7 @@ function compareBuy() {
   var elmnt = document.getElementById("buyTheGameSection");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 // -------- BUY THE GAME (END)
@@ -663,7 +663,7 @@ function selectEAPLAY1() {
   var elmnt = document.getElementById("eaPlaySelectPaymentPlan");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -684,7 +684,7 @@ function selectEAPLAY2() {
   var elmnt = document.getElementById("eaPlaySelectPaymentPlan");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 // -------- JOIN EA PLAY (END)
@@ -708,7 +708,7 @@ function selectEAPLAYPRO1() {
   var elmnt = document.getElementById("eaPlayProSelectPaymentPlan");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -743,7 +743,7 @@ function selectEAPLAYPRO2() {
   var elmnt = document.getElementById("eaPlayProSelectPaymentPlan");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 // -------- JOIN EA PLAY PRO (END)
@@ -780,7 +780,7 @@ function selectMonthlyPayments() {
   var elmnt = document.getElementById("EADcheckoutMonthly");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -817,7 +817,7 @@ function selectAnnualPayments() {
   var elmnt = document.getElementById("EADcheckoutAnnual");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -853,7 +853,7 @@ function selectMonthlyPaymentsPro() {
   var elmnt = document.getElementById("EADcheckoutProMonthly");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -882,7 +882,7 @@ function joinEAPlaySteam() {
   var elmnt = document.getElementById("steamEAPlaySelectPaymentPlan");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -928,7 +928,7 @@ function selectAnnualPaymentsPro() {
   var elmnt = document.getElementById("EADcheckoutProAnnual");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -975,7 +975,7 @@ function buyUltimateEdition() {
   var elmnt = document.getElementById("EADcheckoutBuyUltimateEdition");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -1021,7 +1021,7 @@ function buyChampionsEdition() {
   var elmnt = document.getElementById("EADcheckoutBuyChampionsEdition");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 
@@ -1067,7 +1067,7 @@ function buyStandardEdition() {
   var elmnt = document.getElementById("EADcheckoutBuyStandardEdition");
   elmnt.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'start'
   });
 }
 

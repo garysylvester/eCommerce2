@@ -81,12 +81,12 @@ body {
   line-height: var(--font-line-height-body);
 }
 
-.fifaBG{
-    background-image: url('../img/bg-element.png');
+.fifaBG {
+  background-image: url('../img/bg-element.png');
 }
 
-.playstation{
-    background: #2F6ECA;
+.playstation {
+  background: #2F6ECA;
 }
 
 
@@ -201,7 +201,7 @@ h6 {
 #standardEditionps5::after,
 #championsEditionps5::after,
 #ultimateEditionps5::after,
-#ultimateEditionps5::after{
+#ultimateEditionps5::after {
   content: "";
   position: absolute;
   background-image: url(../img/external-wBG.svg);
@@ -274,6 +274,28 @@ h6 {
   padding: 0 var(--dimension-space-medium);
   position: relative;
   width: calc(100% - 32px);
+}
+
+.checkout2 {
+  padding: var(--dimension-space-medium) var(--dimension-space-medium);
+  position: relative;
+  width: calc(100% - 32px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#expandCheckoutSummarybtn{
+    margin-top: var(--dimension-space-medium);
+}
+
+.checkout-summary2{
+    overflow: hidden;
+}
+
+.checkout-summary2 img{
+    margin-bottom: var(--dimension-space-medium);
 }
 
 .ea-play-more {
@@ -447,7 +469,7 @@ h6 {
 #monthlyPaymentsCardps4::after,
 #annualPaymentsCardps4::after,
 #steamBuy::after,
-#steamJoin::after  {
+#steamJoin::after {
   content: "";
   position: absolute;
   background-image: url(../img/external.svg);
@@ -780,8 +802,8 @@ h6 {
   overflow: hidden;
 }
 
-.cell-header-tileNEW4 p{
-    margin-top: var(--dimension-space-small);
+.cell-header-tileNEW4 p {
+  margin-top: var(--dimension-space-small);
 }
 
 
@@ -811,7 +833,7 @@ h6 {
 
 .cell-header img {
   width: 100%;
-  border-radius:var(--border-radius-small);
+  border-radius: var(--border-radius-small);
   ;
 }
 
@@ -1111,68 +1133,68 @@ h6 {
 
 /* Login Screen */
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% - 32px);
-    margin: var(--dimension-space-largest) auto;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 32px);
+  margin: var(--dimension-space-largest) auto;
+}
 
-  .form h2 {
-    margin-bottom: var(--dimension-space-medium);
-    text-align: center;
-  }
+.form h2 {
+  margin-bottom: var(--dimension-space-medium);
+  text-align: center;
+}
 
-  .form img{
-      margin: 0 auto;
-  }
+.form img {
+  margin: 0 auto;
+}
 
-  .form input {
-    outline: none;
-    display: block;
-    width: 100%;
-    margin: 0 0 20px;
-    padding: 10px 15px;
-    border: 1px solid var(--color-fifa-neutral-700);
-    border-radius: var(--border-radius-medium);
-    background: var(--color-fifa-neutral-900);
-    color: #ccc;
-    font-family: "Roboto";
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transition: 0.2s linear;
-  }
+.form input {
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 12px 16px;
+  border: 1px solid var(--color-fifa-neutral-700);
+  border-radius: var(--border-radius-medium);
+  background: var(--color-fifa-neutral-1000);
+  color: #ccc;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.2s linear;
+}
 
-  .form inputinput:focus {
-    color: #333;
-    border: 1px solid #44c4e7;
-  }
+.form inputinput:focus {
+  color: #333;
+  border: 1px solid #44c4e7;
+}
 
-  .form button {
-    cursor: pointer;
-    background: var(--color-ea-primary);
-    border-radius: var(--border-radius-medium);
-    width: 100%;
-    padding: 15px 15px;
-    border: 0;
-    color: #fff;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 400;
-  }
+.form button {
+  cursor: pointer;
+  background: var(--color-ea-primary);
+  border-radius: var(--border-radius-medium);
+  width: 100%;
+  padding: 15px 15px;
+  border: 0;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+}
 
-  .form button:hover {
-    background: #369cb8;
-  }
+.form button:hover {
+  background: #369cb8;
+}
 
-  .error,
-  .valid {
-    display: none;
-  }
+.error,
+.valid {
+  display: none;
+}
 
-  .loginbox{
-      width: 100%;
-      margin-bottom: var(--dimension-space-larger);
-  }
+.loginbox {
+  width: 100%;
+  margin-bottom: var(--dimension-space-larger);
+}

@@ -6,7 +6,7 @@
       <h2>Select PC platform</h2>
     </div>
     <div class="content-right">
-      <button class="toggle-btn" onClick="comparePCPlatforms()" id="comparePC">Compare +</button>
+      <button class="toggle-btn" onclick="comparePCPlatforms()" id="comparePC">Compare +</button>
       </a>
     </div>
   </div>
@@ -25,63 +25,37 @@
 
       <div class="subs-table-row">
         <div class="table-row-description">
-          <p class="bS" style="font-weight: bold;">Play new releases up to 10 days before launch</p>
+          <img src="img/EAPP.svg">
         </div>
-        <div class="table-row-details-3 heightMedium">
+        <div class="table-row-details-3 heightLarge">
           <div class="cell-icon">
-            <p class="bS">Play select games up to 10 hours each</p>
+            <p class="bXS" style="color: #29FFC9">Unlimited access to FIFA 21 plus premium members only benefits</p>
           </div>
           <div class="cell-icon">
-            <p class="bS" style="color: #29FFC9">Unlimited</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="subs-table-row">
-        <div class="table-row-description">
-          <p class="bS" style="font-weight: bold;">Access to all of EA’s latest games</p>
-        </div>
-        <div class="table-row-details-3 heightMedium">
-          <div class="cell-icon">
-            <p class="bS">Play select games up to 10 hours each</p>
-          </div>
-          <div class="cell-icon">
-            <p class="bS" style="color: #29FFC9">Unlimited</p>
+            <img src="img/x.svg">
           </div>
         </div>
       </div>
 
       <div class="subs-table-row">
         <div class="table-row-description">
-          <p class="bS" style="font-weight: bold;">Exclusive in-game rewards</p>
+          <img src="img/EAP.svg">
         </div>
-        <div class="table-row-details-3 heightSmall">
+        <div class="table-row-details-3 heightLarge">
           <div class="cell-icon">
-            <img src="img/check.svg">
+            <p class="bXS">Play FIFA 21 for up to 10 hours, plus get members only benefits</p>
           </div>
           <div class="cell-icon">
-            <img src="img/check.svg">
-          </div>
-        </div>
-      </div>
-
-      <div class="subs-table-row">
-        <div class="table-row-description">
-          <p class="bS" style="font-weight: bold;">Exclusive member-only content</p>
-        </div>
-        <div class="table-row-details-3 heightSmall">
-          <div class="cell-icon">
-            <img src="img/check.svg">
-          </div>
-          <div class="cell-icon">
-            <img src="img/check.svg">
+            <p class="bXS">Play FIFA 21 for up to 10 hours, plus get members only benefits</p>
           </div>
         </div>
       </div>
 
       <div class="subs-table-row">
-        <div class="table-row-description">
-          <p class="bS" style="font-weight: bold;">Unlimited access to a collection of EA games</p>
+        <div class="table-row-description" style="height: 80px;">
+          <p class="bS" style="font-weight: bold; margin-bottom: 0px;">Unlimited access to</p>
+          <label class="btn" for="modal-2" onclick="showModal2()"
+              style="color:#29FFC9; text-decoration: underline;"> a collection of EA games</label>
         </div>
         <div class="table-row-details-3 heightSmall">
           <div class="cell-icon">
@@ -107,6 +81,21 @@
         </div>
       </div>
 
+      <div class="subs-table-row">
+        <div class="table-row-description">
+          <p class="bS" style="font-weight: bold;">Purchase editions</p>
+          <p class="bXS">Standard Edition, Champions Edition, Ultimate Edition</p>
+        </div>
+        <div class="table-row-details-3 heightSmall">
+          <div class="cell-icon">
+            <img src="img/check.svg">
+          </div>
+          <div class="cell-icon">
+            <img src="img/check.svg">
+          </div>
+        </div>
+      </div>
+
     </div>
     <hr>
   </div>
@@ -115,7 +104,7 @@
 
   <!-- OPTIONS (START) -->
   <div class="platform-tiles stacked" id="selectPCtiles" style="display: block;">
-    <div onClick="selectPlatformEAD()" class="membership-tile" id="s2selectEAD">
+    <div onclick="selectPlatformEAD()" class="membership-tile" id="s2selectEAD">
       <div class="membership-tile-top">
         <img class="platform-logo" src="img/eadlogo2.svg">
         <div class="membership-price">
@@ -127,7 +116,7 @@
       </div>
     </div>
 
-    <div onClick="selectPlatformSteam()" class="membership-tile" id="s2selectSteam">
+    <div onclick="selectPlatformSteam()" class="membership-tile" id="s2selectSteam">
       <div class="membership-tile-top">
         <img class="platform-logo" src="img/steamlogo2.svg">
         <div class="membership-price">

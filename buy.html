@@ -3,14 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>FIFA 21 - Get the game</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -31,7 +26,7 @@
 
 </head>
 
-<body>
+<body class="fifaBG">
   <div class="navbar">
     <div class="left-side">
       <div class="nav-icon">
@@ -51,7 +46,7 @@
     <section class="about-game" id="aboutGame" style="height:48px">
       <div class="about-game-header">
         <h1>Get FIFA 21</h1>
-        <button class="toggle-btn" onClick="aboutToggle()" id="learnMore">About +</button>
+        <button class="toggle-btn" onclick="aboutToggle()" id="learnMore">About +</button>
         </a>
       </div>
       <hr>
@@ -173,27 +168,34 @@
     <!-- STEP 2 - SELECT PLATFORM (START) -->
     <div data-include="selectPCPlatform.html"></div>
     <div data-include="selectConsolePlatform.html"></div>
-    <!-- STEP 1 - SELECT PLATFORM (END) -->
+    <!-- STEP 2 - SELECT PLATFORM (END) -->
 
     <!-- STEP 2 - SUBSCRIBE OR BUY EA DESKTOP  (START) -->
     <div data-include="eadSection.html"></div>
     <div data-include="steamSection.html"></div>
-    <div data-include="playstationSection.html"></div>
+    <div data-include="playstation5Section.html"></div>
+    <div data-include="playstation4Section.html"></div>
     <div data-include="xboxSection.html"></div>
     <!-- STEP 2 - SUBSCRIBE OR BUY EA DESKTOP  (END) -->
 
     <!-- STEP 3 - SELECT MEMBERSHIP (START) -->
     <div data-include="eaPlaySelectMembershipSection.html"></div>
     <div data-include="buyTheGameSection.html"></div>
+    <div data-include="buyTheGameSectionPS5.html"></div>
+    <div data-include="buyTheGameSectionPS4.html"></div>
     <!-- STEP 3 - SELECT MEMBERSHIP (END) -->
 
     <!-- STEP 4 - PAYMENT PLAN (START) -->
     <div data-include="eaPlaySelectPaymentPlan.html"></div>
     <div data-include="eaPlayProSelectPaymentPlan.html"></div>
     <div data-include="steamEAPlaySelectPaymentPlan.html"></div>
+    <div data-include="ps5EAPlaySelectPaymentPlan.html"></div>
+    <div data-include="ps4EAPlaySelectPaymentPlan.html"></div>
     <!-- STEP 4 - PAYMENT PLAN (END) -->
 
     <!-- STEP 4 - CHECKOUT SUMMARY (START) -->
+    <div data-include="EADcheckoutBuyStandardEdition.html"></div>
+    <div data-include="EADcheckoutBuyChampionsEdition.html"></div>
     <div data-include="EADcheckoutBuyUltimateEdition.html"></div>
     <div data-include="EADcheckoutAnnual.html"></div>
     <div data-include="EADcheckoutMonthly.html"></div>
@@ -208,12 +210,12 @@
     <!-- FOOTER ELEMENTS (END) -->
 
 
-    <!-- MODAL (START) -->
+    <!-- MODAL1 (START) -->
     <input class="modal-state" id="modal-1" type="checkbox" />
     <div class="modal">
       <label class="modal__bg" for="modal-1"></label>
       <div class="modal__inner">
-        <label class="modal__close" for="modal-1" onClick="closeModal()"></label>
+        <label class="modal__close" for="modal-1" onclick="closeModal()"></label>
         <h2>EA Play Member Benefits</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non expedita nam quia a officiis repellat
           distinctio.
@@ -245,11 +247,6 @@
           </div>
           <!-- !swiper slides -->
 
-          <!-- next / prev arrows -->
-          <!-- <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div> -->
-          <!-- !next / prev arrows -->
-
           <!-- pagination dots -->
           <div class="swiper-pagination swiper-pagination2"></div>
           <!-- !pagination dots -->
@@ -271,11 +268,175 @@
         </div>
       </div>
     </div>
+    <!-- MODAL1 (START) -->
+
+    <!-- MODAL2 (START) -->
+    <input class="modal-state" id="modal-2" type="checkbox" />
+    <div class="modal">
+      <label class="modal__bg" for="modal-2"></label>
+      <div class="modal__inner">
+        <label class="modal__close" for="modal-2" onclick="closeModal2()"></label>
+        <img src="img/ea-play.svg">
+        <p class="bS" style="margin-top: 8px;">Games on EA Desktop App & Steam</p>
+
+        <div class="swiper-container swiper-container3">
+          <!-- swiper slides -->
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-01.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-02.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-03.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-04.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-05.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-06.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-07.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-08.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-09.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-10.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-11.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-12.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide3">
+              <img src="img/game-13.svg">
+            </div>
+          </div>
+          <!-- !swiper slides -->
+
+          <!-- pagination dots -->
+          <div class="swiper-pagination swiper-pagination3"></div>
+          <!-- !pagination dots -->
+          <script>
+            var swiper3 = new Swiper('.swiper-container3', {
+              loop: false,
+              slidesPerView: 2.15,
+              spaceBetween: 18,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination3',
+              },
+            });
+
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL2 (START) -->
+
+    <!-- MODAL3 (START) -->
+    <input class="modal-state" id="modal-3" type="checkbox" />
+    <div class="modal">
+      <label class="modal__bg" for="modal-3"></label>
+      <div class="modal__inner">
+        <label class="modal__close" for="modal-3" onclick="closeModal3()"></label>
+        <img src="img/ea-play.svg">
+        <p class="bS" style="margin-top: 8px;">EA Play Member Benefits for FIFA 21</p>
+
+        <div class="swiper-container swiper-container4">
+          <!-- swiper slides -->
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-01.jpg">
+              <img src="img/member-benefit-01.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-02.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-03.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-04.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-05.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-06.svg">
+            </div>
+
+            <div class="swiper-slide swiper-slide4">
+              <img src="img/member-benefit-image-02.jpg">
+              <img src="img/member-benefit-06-1.svg">
+            </div>
+
+          </div>
+          <!-- !swiper slides -->
+
+          <!-- pagination dots -->
+          <div class="swiper-pagination swiper-pagination4"></div>
+          <!-- !pagination dots -->
+          <script>
+            var swiper4 = new Swiper('.swiper-container4', {
+              loop: false,
+              slidesPerView: 1.15,
+              spaceBetween: 18,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination4',
+              },
+            });
+
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL2 (START) -->
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/modal.js"></script>
 </body>
 
 </html>

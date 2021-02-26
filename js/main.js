@@ -80,6 +80,22 @@ function compareEditionToggle2() {
     x.innerHTML = "Compare +";
   }
 }
+
+function compareEditionToggle3() {
+  var x = document.getElementById("editionTable3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("compareEdition3");
+  if (x.innerHTML === "Compare +") {
+    x.innerHTML = "Collapse -";
+  } else {
+    x.innerHTML = "Compare +";
+  }
+}
 //------------------------ COMPARE EDITION ------------------------ (END)
 
 //------------------------ SHOW MODAL ------------------------ (END)
@@ -357,6 +373,13 @@ function selectPS5() {
     x.style.display = "none";
   }
 
+  var x = document.getElementById("selectionProgressPS5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
   var element = document.getElementById("s2ps5");
   element.classList.toggle("platformTileSelected");
 
@@ -441,7 +464,7 @@ function buyUltimateEditionps5() {
   window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHULTIMA", "_blank");
 }
 
-function buyUltimateEditionps5() {
+function buyNXTLVLEditionps5() {
   window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-PS5LAUNCHBUNDLE0", "_blank");
 }
 
@@ -449,6 +472,13 @@ function buyUltimateEditionps5() {
 // ----- PS4 -----
 function selectPS4() {
   var x = document.getElementById("playstation4Section");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("selectionProgressPS4");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -498,6 +528,27 @@ function ps4joinEAPlay() {
   });
 }
 
+function ps4buyFifa() {
+  var x = document.getElementById("buyTheGameSectionPS4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var element = document.getElementById("ps4compareBuyCard");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("ps4compareJoinCard");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("buyTheGameSectionPS4");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}
+
 function selectMonthlyPaymentsps4() {
   window.open("https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA99CENTPROMO", "_blank");
 }
@@ -505,6 +556,19 @@ function selectMonthlyPaymentsps4() {
 function selectAnnualPaymentsps4() {
   window.open("https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA12M00000000", "_blank");
 }
+
+function buyStandardEditionps4() {
+  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-FIFAFOOTBALL2021", "_blank");
+}
+
+function buyChampionsEditionps4() {
+  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHCHAMPN", "_blank");
+}
+
+function buyUltimateEditionps4() {
+  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHULTIMA", "_blank");
+}
+
 
 // PLAYSTATIOON (END)
 

@@ -63,6 +63,10 @@
   --font-body-size-XS: 0.875rem;
   --font-body-size-XXS: 0.75rem;
 
+  --border-radius-large: var(--dimension-space-small);
+  --border-radius-medium: var(--dimension-space-smallest);
+  --border-radius-small: var(--dimension-space-smallest);
+
 
 }
 
@@ -79,6 +83,10 @@ body {
 
 .fifaBG{
     background-image: url('../img/bg-element.png');
+}
+
+.playstation{
+    background: #2F6ECA;
 }
 
 
@@ -193,7 +201,7 @@ h6 {
 #standardEditionps5::after,
 #championsEditionps5::after,
 #ultimateEditionps5::after,
-#ultimateEditionps5::after {
+#ultimateEditionps5::after{
   content: "";
   position: absolute;
   background-image: url(../img/external-wBG.svg);
@@ -245,8 +253,8 @@ h6 {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  border-radius: var(--dimension-space-small);
-  -webkit-border-radius: var(--dimension-space-small);
+  border-radius: var(--border-radius-medium);
+  -webkit-border-radius: var(--border-radius-medium);
 }
 
 .game-trailer iframe {
@@ -345,7 +353,7 @@ h6 {
   height: auto;
   position: relative;
   background-color: var(--color-fifa-neutral-900);
-  border-radius: var(--dimension-space-smaller);
+  border-radius: var(--border-radius-medium);
   transition: all 0.25s linear;
   display: flex;
   flex-direction: column;
@@ -388,7 +396,7 @@ h6 {
   position: relative;
   background-color: var(--color-fifa-neutral-900);
   border: 1px solid var(--color-fifa-neutral-900);
-  border-radius: var(--dimension-space-smaller);
+  border-radius: var(--border-radius-medium);
   transition: all 0.25s linear;
   display: flex;
   flex-direction: column;
@@ -406,7 +414,7 @@ h6 {
   padding: var(--dimension-space-large) var(--dimension-space-small);
   background-color: var(--color-fifa-neutral-900);
   border: 1px solid var(--color-fifa-neutral-900);
-  border-radius: var(--dimension-space-smaller);
+  border-radius: var(--border-radius-medium);
   transition: all 0.25s linear;
   display: flex;
   flex-direction: column;
@@ -427,7 +435,7 @@ h6 {
   padding: var(--dimension-space-medium);
   background-color: var(--color-fifa-neutral-900);
   border: 1px solid var(--color-fifa-neutral-900);
-  border-radius: var(--dimension-space-smaller);
+  border-radius: var(--border-radius-medium);
   margin-bottom: var(--dimension-space-medium);
   transition: all 0.25s linear;
   cursor: pointer;
@@ -435,13 +443,17 @@ h6 {
 }
 
 #monthlyPaymentsCardps5::after,
-#annualPaymentsCardps5::after {
+#annualPaymentsCardps5::after,
+#monthlyPaymentsCardps4::after,
+#annualPaymentsCardps4::after,
+#steamBuy::after,
+#steamJoin::after  {
   content: "";
   position: absolute;
   background-image: url(../img/external.svg);
   width: 16px;
   height: 16px;
-  top: 16px;
+  top: 14px;
   right: 12px;
 }
 
@@ -539,7 +551,7 @@ h6 {
   background: var(--color-ea-primary);
   outline: none;
   border: none;
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   padding: var(--dimension-space-smaller) var(--dimension-space-small);
 }
 
@@ -702,7 +714,7 @@ h6 {
   height: fit-content;
   width: calc(33.33% - 4px);
   background: var(--color-fifa-neutral-900);
-  border-radius: var(--dimension-space-smaller);
+  border-radius: var(--border-radius-medium);
   margin-bottom: var(--dimension-space-small);
   display: flex;
   flex-direction: column;
@@ -715,7 +727,7 @@ h6 {
 .cell-header-tile2 {
   height: fit-content;
   width: calc(50% - 8px);
-  border-radius: var(--dimension-space-smaller);
+  border-radius: var(--border-radius-medium);
   margin-bottom: var(--dimension-space-small);
   padding: var(--dimension-space-small) 0;
   display: flex;
@@ -768,6 +780,11 @@ h6 {
   overflow: hidden;
 }
 
+.cell-header-tileNEW4 p{
+    margin-top: var(--dimension-space-small);
+}
+
+
 .cell-header-tileNEW3 img,
 .cell-header-tileNEW4 img {
   width: 100%;
@@ -776,7 +793,7 @@ h6 {
 .cell-header-tile2wBG {
   width: calc(50% - 8px);
   height: fit-content;
-  border-radius: var(--dimension-space-smaller);
+  border-radius: var(--border-radius-medium);
   background: var(--color-fifa-neutral-900);
   margin-bottom: var(--dimension-space-small);
   padding: var(--dimension-space-medium) 0;
@@ -794,7 +811,7 @@ h6 {
 
 .cell-header img {
   width: 100%;
-  border-radius: 4px;
+  border-radius:var(--border-radius-small);
   ;
 }
 
@@ -826,7 +843,7 @@ h6 {
   align-items: center;
   background-color: var(--color-fifa-neutral-900);
   border: 1px solid var(--color-fifa-neutral-900);
-  border-radius: var(--dimension-space-smaller);
+  border-radius: var(--border-radius-medium);
   transition: all 0.25s linear;
   cursor: pointer;
   overflow: visible;
@@ -957,7 +974,7 @@ h6 {
   margin: auto;
   overflow: hidden;
   background: var(--color-fifa-base);
-  border-radius: 5px;
+  border-radius: var(--border-radius-small);
   padding: var(--dimension-space-larger) var(--dimension-space-medium);
   height: fit-content;
   max-height: 80%;
@@ -998,7 +1015,7 @@ h6 {
 /* SWIPER STYLES */
 .swiper-container {
   width: 100%;
-  border-radius: var(--dimension-space-small);
+  border-radius: var(--border-radius-medium);
   margin-bottom: var(--dimension-space-largest);
 }
 
@@ -1032,7 +1049,7 @@ h6 {
 .swiper-slide img {
   width: 100%;
   height: auto;
-  border-radius: var(--dimension-space-smaller);
+  border-radius: var(--border-radius-medium);
 }
 
 .swiper-slide iframe {
@@ -1087,63 +1104,75 @@ h6 {
   background: var(--color-ea-primary);
   outline: none;
   border: none;
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   padding: var(--dimension-space-smaller) var(--dimension-space-small);
 }
 
 
 /* Login Screen */
 .form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 285px;
-    margin: -140px 0 0 -182px;
-    padding: 40px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 32px);
+    margin: var(--dimension-space-largest) auto;
   }
+
   .form h2 {
-    margin: 0 0 20px;
-    line-height: 1;
-    color: #44c4e7;
-    font-size: 18px;
-    font-weight: 400;
+    margin-bottom: var(--dimension-space-medium);
+    text-align: center;
   }
+
+  .form img{
+      margin: 0 auto;
+  }
+
   .form input {
     outline: none;
     display: block;
     width: 100%;
     margin: 0 0 20px;
     padding: 10px 15px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-fifa-neutral-700);
+    border-radius: var(--border-radius-medium);
+    background: var(--color-fifa-neutral-900);
     color: #ccc;
     font-family: "Roboto";
     box-sizing: border-box;
-    font-size: 14px;
-    font-wieght: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: 0.2s linear;
   }
+
   .form inputinput:focus {
     color: #333;
     border: 1px solid #44c4e7;
   }
+
   .form button {
     cursor: pointer;
-    background: #44c4e7;
+    background: var(--color-ea-primary);
+    border-radius: var(--border-radius-medium);
     width: 100%;
-    padding: 10px 15px;
+    padding: 15px 15px;
     border: 0;
     color: #fff;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 400;
   }
+
   .form button:hover {
     background: #369cb8;
   }
+
   .error,
   .valid {
     display: none;
+  }
+
+  .loginbox{
+      width: 100%;
+      margin-bottom: var(--dimension-space-larger);
   }

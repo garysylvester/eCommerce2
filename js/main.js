@@ -64,6 +64,22 @@ function compareEditionToggle() {
     x.innerHTML = "Compare +";
   }
 }
+
+function compareEditionToggle2() {
+  var x = document.getElementById("editionTable2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("compareEdition2");
+  if (x.innerHTML === "Compare +") {
+    x.innerHTML = "Collapse -";
+  } else {
+    x.innerHTML = "Compare +";
+  }
+}
 //------------------------ COMPARE EDITION ------------------------ (END)
 
 //------------------------ SHOW MODAL ------------------------ (END)
@@ -298,42 +314,198 @@ function selectPlatformSteam() {
 // STEAM (END)
 
 //PLAYSTATION (START)
-// function tileTogglePlaystation() {
-//   var x = document.getElementById("playstationSection");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
+// GENERAL (START)
+function compareJoinBuy3() {
+  var x = document.getElementById("compareJoinBuySection3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
-//   var x = document.getElementById("eaPlayMoreDiv");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
+  var x = document.getElementById("compareJoinBuybtn3");
+  if (x.innerHTML === "Compare +") {
+    x.innerHTML = "Collapse -";
+  } else {
+    x.innerHTML = "Compare +";
+  }
+}
 
-//   var element = document.getElementById("playstation");
-//   element.classList.toggle("platformTileSelected");
+function compareJoinBuy4() {
+  var x = document.getElementById("compareJoinBuySection4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
-//   var element = document.getElementById("steam");
-//   element.classList.toggle("platformTileInactive");
+  var x = document.getElementById("compareJoinBuybtn4");
+  if (x.innerHTML === "Compare +") {
+    x.innerHTML = "Collapse -";
+  } else {
+    x.innerHTML = "Compare +";
+  }
+}
+// GENERAL (END)
 
-//   var element = document.getElementById("ead");
-//   element.classList.toggle("platformTileInactive");
+// ----- PS5 -----
+function selectPS5() {
+  var x = document.getElementById("playstation5Section");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
-//   var element = document.getElementById("xbox");
-//   element.classList.toggle("platformTileInactive");
+  var element = document.getElementById("s2ps5");
+  element.classList.toggle("platformTileSelected");
 
-//   var element = document.getElementById("switch");
-//   element.classList.toggle("platformTileInactive");
+  var element = document.getElementById("s2ps4");
+  element.classList.toggle("platformTileInactive");
 
-//   var elmnt = document.getElementById("playstationSection");
-//   elmnt.scrollIntoView({
-//     behavior: 'smooth',
-//     block: 'center'
-//   });
-// }
+  var element = document.getElementById("s2xboxXS");
+  element.classList.toggle("platformTileInactive");
+
+  var element = document.getElementById("s2xboxOne");
+  element.classList.toggle("platformTileInactive");
+
+  var element = document.getElementById("s2switch");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("playstation5Section");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+
+function ps5joinEAPlay() {
+  var x = document.getElementById("ps5EAPlaySelectPaymentPlan");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var element = document.getElementById("ps5compareJoinCard");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("ps5compareBuyCard");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("ps5EAPlaySelectPaymentPlan");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+
+function selectMonthlyPaymentsps5() {
+  window.open("https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA99CENTPROMO", "_blank");
+}
+
+function selectAnnualPaymentsps5() {
+  window.open("https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA12M00000000", "_blank");
+}
+
+function ps5buyFifa() {
+  var x = document.getElementById("buyTheGameSectionPS5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var element = document.getElementById("ps5compareBuyCard");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("ps5compareJoinCard");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("buyTheGameSectionPS5");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+
+function buyStandardEditionps5() {
+  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-FIFAFOOTBALL2021", "_blank");
+}
+
+function buyChampionsEditionps5() {
+  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHCHAMPN", "_blank");
+}
+
+function buyUltimateEditionps5() {
+  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHULTIMA", "_blank");
+}
+
+function buyUltimateEditionps5() {
+  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-PS5LAUNCHBUNDLE0", "_blank");
+}
+
+
+// ----- PS4 -----
+function selectPS4() {
+  var x = document.getElementById("playstation4Section");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var element = document.getElementById("s2ps4");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("s2ps5");
+  element.classList.toggle("platformTileInactive");
+
+  var element = document.getElementById("s2xboxXS");
+  element.classList.toggle("platformTileInactive");
+
+  var element = document.getElementById("s2xboxOne");
+  element.classList.toggle("platformTileInactive");
+
+  var element = document.getElementById("s2switch");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("playstation4Section");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+
+function ps4joinEAPlay() {
+  var x = document.getElementById("ps4EAPlaySelectPaymentPlan");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var element = document.getElementById("ps4compareJoinCard");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("ps4compareBuyCard");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("ps4EAPlaySelectPaymentPlan");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+
+function selectMonthlyPaymentsps4() {
+  window.open("https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA99CENTPROMO", "_blank");
+}
+
+function selectAnnualPaymentsps4() {
+  window.open("https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA12M00000000", "_blank");
+}
+
 // PLAYSTATIOON (END)
 
 // XBOX (START)
@@ -376,7 +548,7 @@ function selectPlatformSteam() {
 // XBOX (END)
 
 // SWITCH (START)
-function tileToggleSwitch() {
+function selectSwitch() {
   window.open("https://www.nintendo.com/games/detail/fifa-21-nintendo-switch-legacy-edition-switch/", "_blank");
 }
 // SWITCH (END)
@@ -714,15 +886,15 @@ function joinEAPlaySteam() {
   });
 }
 
-//SWITCH
+// ----- EXTERNAL LINKS -----
 function buyGameSteam() {
   window.open("https://store.steampowered.com/app/1313860/EA_SPORTS_FIFA_21/", "_blank");
 }
 
-//SWITCH
 function goToSteam() {
   window.open("https://store.steampowered.com/subscriptions/ea#SaleSection_77945", "_blank");
 }
+
 
 //PAYMENT PLANS - EA PLAY PRO - ANNUAL
 function selectAnnualPaymentsPro() {
@@ -761,8 +933,8 @@ function selectAnnualPaymentsPro() {
 }
 
 // SELECT EDITION //
-// ULTIMATE EDITION 1
-function buyUltimateEdition1() {
+// ULTIMATE EDITION
+function buyUltimateEdition() {
   var x = document.getElementById("EADcheckoutBuyUltimateEdition");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -791,13 +963,13 @@ function buyUltimateEdition1() {
     x.style.display = "none";
   }
 
-  var element = document.getElementById("ultimateEdition1");
+  var element = document.getElementById("ultimateEdition");
   element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("championsEdition1");
+  var element = document.getElementById("championsEdition");
   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("beckhamEdition1");
+  var element = document.getElementById("standardEdition");
   element.classList.toggle("platformTileInactive");
 
   var elmnt = document.getElementById("EADcheckoutBuyUltimateEdition");
@@ -807,9 +979,9 @@ function buyUltimateEdition1() {
   });
 }
 
-// ULTIMATE EDITION 2
-function buyUltimateEdition2() {
-  var x = document.getElementById("EADcheckoutBuyUltimateEdition");
+// CHAMPIONS EDITION
+function buyChampionsEdition() {
+  var x = document.getElementById("EADcheckoutBuyChampionsEdition");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -837,22 +1009,67 @@ function buyUltimateEdition2() {
     x.style.display = "none";
   }
 
-  var element = document.getElementById("ultimateEdition2");
+  var element = document.getElementById("championsEdition");
   element.classList.toggle("platformTileSelected");
 
-  var element = document.getElementById("championsEdition2");
+  var element = document.getElementById("ultimateEdition");
   element.classList.toggle("platformTileInactive");
 
-  var element = document.getElementById("beckhamEdition2");
+  var element = document.getElementById("standardEdition");
   element.classList.toggle("platformTileInactive");
 
-  var elmnt = document.getElementById("EADcheckoutBuyUltimateEdition");
+  var elmnt = document.getElementById("EADcheckoutBuyChampionsEdition");
   elmnt.scrollIntoView({
     behavior: 'smooth',
     block: 'center'
   });
 }
 
+// STANDARD EDITION
+function buyStandardEdition() {
+  var x = document.getElementById("EADcheckoutBuyStandardEdition");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("selectionProgressEAD2Buy");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  var x = document.getElementById("makeSelection");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  var x = document.getElementById("checkoutAction");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var element = document.getElementById("standardEdition");
+  element.classList.toggle("platformTileSelected");
+
+  var element = document.getElementById("ultimateEdition");
+  element.classList.toggle("platformTileInactive");
+
+  var element = document.getElementById("championsEdition");
+  element.classList.toggle("platformTileInactive");
+
+  var elmnt = document.getElementById("EADcheckoutBuyStandardEdition");
+  elmnt.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
 
 //Login
 function goToLogin() {

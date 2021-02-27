@@ -1135,7 +1135,52 @@ function buyStandardEdition() {
   });
 }
 
-//Login
+// LOGIN
 function goToLogin() {
   window.location.href = "login.html";
+}
+
+
+// CHECKOUT
+
+function expandCheckoutSummary2() {
+  var x = document.getElementById("checkoutSummary2");
+  if (x.style.height === "150px") {
+    x.style.height = "auto";
+  } else {
+    x.style.height = "150px";
+  }
+
+  var x = document.getElementById("expandCheckoutSummarybtn");
+  if (x.innerHTML === "Show More +") {
+    x.innerHTML = "Show Less -";
+  } else {
+    x.innerHTML = "Show More +";
+  }
+}
+
+function selectCreditCard() {
+  var x = document.getElementById("checkoutCTA2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  var element = document.getElementById("amex2");
+  element.classList.toggle("platformTileSelected");
+
+}
+
+// REVIEW ORDER
+function goToReviewOrder() {
+  window.location.href = "review-order.html";
+}
+
+function payNow() {
+  window.location.href = "order-confirmation.html";
+}
+
+function backToStart() {
+  window.location.href = "index.html";
 }

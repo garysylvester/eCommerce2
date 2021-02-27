@@ -32,9 +32,9 @@
   <main>
     <section class="checkout2">
       <img src="img/checkout-logo.svg" style="margin-bottom: 32px">
-      <h3>Welcome UserTester, two more steps andwe'll have you out on the pitch enjoying your new game!</h3>
+      <h3>Order Complete!</h3>
       <!-- CHECKOUT SUMMARY (START) -->
-      <div class="checkout-summary2" id="checkoutSummary2" style="height: 150px">
+      <div class="checkout-summary2" id="checkoutSummary2">
         <hr>
         <h4 style="margin-bottom: 24px">Order Summary</h4>
         <img src="img/summary-header-annual-pro.svg">
@@ -46,60 +46,17 @@
           <li>Get early access to select new games before they’re released to the public</li>
           <li>Save 10% on all EA digital purchases, including game downloads, Season Passes, points packs, and DLC</li>
         </ul>
-
       </div>
 
-      <button class="toggle-btn bXS" onclick="expandCheckoutSummary2()" id="expandCheckoutSummarybtn">Show More +</button>
       <!-- CHECKOUT SUMMARY (END) -->
     </section>
     <section class="checkout">
       <hr>
       <div class="payment-methods">
-        <H4>Saved payment method</H4>
 
-        <div class="payment-method" onclick="selectCreditCard()" id="amex2">
-          <p class="bM">Amex ending in 9002</p>
-          <img src="img/AmericanExpress.svg">
-        </div>
+        <div class="reviewOrder-CTA">
+          <button class="checkout-cta" onclick="backToStart()">Back to start</button>
 
-        <div class="checkout-CTA" id="checkoutCTA2" style="display: none;">
-          <button class="checkout-cta" onclick="goToReviewOrder()">Review order</button>
-          <p class="bXXS">
-            You are providing your personal data to Electronic Arts Inc., subject to our Privacy & Cookie Policy. Data
-            will be processed in territories which might provide less protection for data than your country of residence.
-            Need more help with your order? <span style="color:#29ffc9 ">Visit EA Help.</span>
-          </p>
-        </div>
-        <hr>
-        <h4>Select new payment method</h4>
-        <div class="payment-method">
-          <p class="bM">Google Pay</p>
-          <img src="img/google-pay.png">
-        </div>
-
-        <div class="payment-method">
-          <p class="bM">Apple Pay</p>
-          <img src="img/ApplePay.svg">
-        </div>
-
-        <div class="payment-method">
-          <p class="bM">PayPal</p>
-          <img src="img/PayPal.svg">
-        </div>
-
-        <div class="payment-method">
-          <p class="bM">WeChat Pay</p>
-          <img src="img/we-chat-pay.png">
-        </div>
-
-        <div class="payment-method">
-          <p class="bM">Alipay</p>
-          <img src="img/ali-pay.png">
-        </div>
-
-        <div class="payment-method">
-          <p class="bM">EA Wallet</p>
-          <img src="img/ea-wallet.svg">
         </div>
 
       </div>

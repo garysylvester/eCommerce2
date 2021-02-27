@@ -180,7 +180,6 @@ h6 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 57px;
 }
 
 .fifa-home img {
@@ -920,7 +919,7 @@ h6 {
 
 .platformTileSelected {
   background-color: var(--color-fifa-neutral-900);
-  border: 1px solid var(--color-fifa-mint);
+  border: 1px solid var(--color-fifa-mint) !important;
 }
 
 .platformTileInactive {
@@ -1180,13 +1179,12 @@ h6 {
   padding: 15px 15px;
   border: 0;
   color: #fff;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
 }
 
 .form button:hover {
-  background: #369cb8;
+  background: var(--color-ea-primary);
 }
 
 .error,
@@ -1197,4 +1195,45 @@ h6 {
 .loginbox {
   width: 100%;
   margin-bottom: var(--dimension-space-larger);
+}
+
+.payment-methods{
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-methods h4{
+  margin-bottom: var(--dimension-space-large);
+}
+
+.payment-method{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: var(--dimension-space-small);
+  background: var(--color-fifa-neutral-900);
+  border-radius: var(--border-radius-small);
+  margin-bottom: var(--dimension-space-small);
+  border: 1px solid var(--color-fifa-neutral-900)
+}
+
+.payment-method img{
+  height: 32px;
+}
+
+.checkout-CTA{
+  padding: var(--dimension-space-medium) 0;
+}
+
+.checkout-CTA button, .reviewOrder-CTA button{
+  color: white;
+  background: var(--color-ea-primary);
+  padding: 12px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius-medium);
+  margin-bottom: var(--dimension-space-medium);
 }

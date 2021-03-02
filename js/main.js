@@ -283,6 +283,13 @@ function eadCallout() {
     x.style.display = "block";
   }
 
+  var x = document.getElementById("selectionProgressSteam1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
   var element = document.getElementById("s2selectSteam");
   element.classList.remove("platformTileSelected");
 

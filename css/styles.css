@@ -289,16 +289,16 @@ h6 {
   align-items: flex-start;
 }
 
-#expandCheckoutSummarybtn{
-    margin-top: var(--dimension-space-medium);
+#expandCheckoutSummarybtn {
+  margin-top: var(--dimension-space-medium);
 }
 
-.checkout-summary2{
-    overflow: hidden;
+.checkout-summary2 {
+  overflow: hidden;
 }
 
-.checkout-summary2 img{
-    margin-bottom: var(--dimension-space-medium);
+.checkout-summary2 img {
+  margin-bottom: var(--dimension-space-medium);
 }
 
 .ea-play-more {
@@ -337,6 +337,10 @@ h6 {
 
 .step-header-compare .content-left {
   width: 224px;
+}
+
+.step-header-compare .content-left h4, .step-header h4{
+  color: var(--color-fifa-neutral-600);
 }
 
 .select-platform {
@@ -809,7 +813,6 @@ h6 {
   margin-top: var(--dimension-space-small);
 }
 
-
 .cell-header-tileNEW3 img,
 .cell-header-tileNEW4 img {
   width: 100%;
@@ -1200,16 +1203,16 @@ h6 {
   margin-bottom: var(--dimension-space-larger);
 }
 
-.payment-methods{
+.payment-methods {
   display: flex;
   flex-direction: column;
 }
 
-.payment-methods h4{
+.payment-methods h4 {
   margin-bottom: var(--dimension-space-large);
 }
 
-.payment-method{
+.payment-method {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1222,15 +1225,16 @@ h6 {
   border: 1px solid var(--color-fifa-neutral-900)
 }
 
-.payment-method img{
+.payment-method img {
   height: 32px;
 }
 
-.checkout-CTA{
+.checkout-CTA {
   padding: var(--dimension-space-medium) 0;
 }
 
-.checkout-CTA button, .reviewOrder-CTA button{
+.checkout-CTA button,
+.reviewOrder-CTA button {
   color: white;
   background: var(--color-ea-primary);
   padding: 12px 0;

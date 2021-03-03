@@ -62,6 +62,7 @@
   --font-body-size-S: 1rem;
   --font-body-size-XS: 0.875rem;
   --font-body-size-XXS: 0.75rem;
+  --font-body-size-XXXS: 0.65rem;
 
   /* --border-radius-large: var(--dimension-space-small);
   --border-radius-medium: var(--dimension-space-smallest);
@@ -132,6 +133,12 @@ h6 {
 
 .bXXS {
   font-size: var(--font-body-size-XXS);
+  line-height: var(--font-line-height-display);
+  margin: 0px;
+}
+
+.bXXXS {
+  font-size: var(--font-body-size-XXXS);
   line-height: var(--font-line-height-display);
   margin: 0px;
 }

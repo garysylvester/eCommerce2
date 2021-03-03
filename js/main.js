@@ -120,6 +120,13 @@ function showModal3() {
   body.style.top = `-${scrollY}`;
 }
 
+function showModal4() {
+  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+}
+
 function closeModal() {
   const body = document.body;
   const scrollY = body.style.top;
@@ -137,6 +144,14 @@ function closeModal2() {
 }
 
 function closeModal3() {
+  const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+function closeModal4() {
   const body = document.body;
   const scrollY = body.style.top;
   body.style.position = '';

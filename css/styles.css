@@ -536,6 +536,10 @@ h6 {
   text-align: center;
 }
 
+.early-login{
+  text-align: center;
+}
+
 .make-selection h4 {
   margin-top: var(--dimension-space-large);
 }
@@ -1208,6 +1212,15 @@ h6 {
 .error,
 .valid {
   display: none;
+  text-align: center;
+}
+
+.error{
+  color: #e75858;
+}
+
+.valid{
+  color: #4DEEA1;
 }
 
 .loginbox {
@@ -1246,7 +1259,8 @@ h6 {
 }
 
 .checkout-CTA button,
-.reviewOrder-CTA button {
+.reviewOrder-CTA button,
+.early-login button {
   color: white;
   background: var(--color-ea-primary);
   padding: 12px 0;
@@ -1256,3 +1270,4 @@ h6 {
   border-radius: var(--border-radius-medium);
   margin-bottom: var(--dimension-space-medium);
 }
+

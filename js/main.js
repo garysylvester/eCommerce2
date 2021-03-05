@@ -1,5 +1,33 @@
 // GENERAL
 
+const interval = setInterval(() => {
+  windowLocation()
+}, 5)
+
+function windowLocation() {
+  var hash = window.location.hash.includes('hidelogin');
+  if (hash) {
+    const earlyLoginBlock = document.getElementById('earlyLoginBlock')
+    if (earlyLoginBlock) {
+      earlyLoginBlock.style.display = 'none'
+      clearInterval(interval)
+    }
+  } else {
+    clearInterval(interval)
+  }
+}
+
+function showAvatar() {
+  var hash = window.location.hash.includes('hidelogin');
+  if (hash) {
+    const profilePicture = document.getElementById('profilePicture')
+    if (profilePicture) {
+      profilePicture.style.display = 'block'
+    }
+  }
+}
+showAvatar()
+
 function aboutToggle() {
   var x = document.getElementById("aboutGame");
   if (x.style.height === "48px") {
@@ -174,12 +202,14 @@ function selectPC() {
     x.style.display = "none";
   }
 
-  // var x = document.getElementById("earlyLoginBlock");
-  // if (x.style.display === "block") {
-  //   x.style.display = "none";
-  // } else {
-  //   x.style.display = "block";
-  // }
+  var x = document.getElementById("earlyLoginBlock");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    if (!window.location.hash.includes('hidelogin')) {
+      x.style.display = "block"
+    }
+  }
 
   var element = document.getElementById("s1pc");
   element.classList.toggle("platformTileSelected");
@@ -205,12 +235,15 @@ function selectConsole() {
     x.style.display = "none";
   }
 
-  // var x = document.getElementById("earlyLoginBlock");
-  // if (x.style.display === "block") {
-  //   x.style.display = "none";
-  // } else {
-  //   x.style.display = "block";
-  // }
+  var x = document.getElementById("earlyLoginBlock");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    if (!window.location.hash.includes('hidelogin')) {
+      x.style.display = "block"
+    }
+  }
+  z
 
   var element = document.getElementById("s1console");
   element.classList.toggle("platformTileSelected");
@@ -1173,6 +1206,13 @@ function buyStandardEdition() {
 
 // LOGIN
 
+function goToLogin() {
+  window.location.href = "login.html";
+}
+
+function earlyLoginCTA() {
+  window.location.href = "earlylogin.html";
+}
 
 // CHECKOUT
 

@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="right-side">
-      <!-- <img src="img/fifa-cta.svg"> -->
+      <img src="img/profile.png" id="profilePicture" style="display: none;">
     </div>
   </div>
 
@@ -530,14 +530,23 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <!-- <script>
-      function windowLocation() {
-      var hash = window.location.hash.replace('#', 'hidelogin');
-      if (hash) {
-        document.getElementById('earlyLoginBlock').style.display = 'none'
-      }
+      const interval = setInterval(() => {
+        windowLocation()
+      },5)
 
-      window.onload = windowLocation;
-    }
+      function windowLocation() {
+        var hash = window.location.hash.includes('hidelogin');
+        if (hash) {
+          const earlyLoginBlock = document.getElementById('earlyLoginBlock')
+          if (earlyLoginBlock) {
+            earlyLoginBlock.style.display = 'none'
+            clearInterval(interval)
+          }                  
+        } else {
+          clearInterval(interval)
+        }
+        console.log("hey")
+      }
     </script> -->
 </body>
 

@@ -174,6 +174,13 @@ function selectPC() {
     x.style.display = "none";
   }
 
+  // var x = document.getElementById("earlyLoginBlock");
+  // if (x.style.display === "block") {
+  //   x.style.display = "none";
+  // } else {
+  //   x.style.display = "block";
+  // }
+
   var element = document.getElementById("s1pc");
   element.classList.toggle("platformTileSelected");
 
@@ -197,6 +204,13 @@ function selectConsole() {
   } else {
     x.style.display = "none";
   }
+
+  // var x = document.getElementById("earlyLoginBlock");
+  // if (x.style.display === "block") {
+  //   x.style.display = "none";
+  // } else {
+  //   x.style.display = "block";
+  // }
 
   var element = document.getElementById("s1console");
   element.classList.toggle("platformTileSelected");
@@ -258,7 +272,7 @@ function comparePCPlatforms() {
   // } else {
   //   x.style.display = "block";
   // }
-  
+
   var x = document.getElementById("comparePC");
   if (x.innerHTML === "Compare +") {
     x.innerHTML = "Collapse -";
@@ -1158,9 +1172,6 @@ function buyStandardEdition() {
 }
 
 // LOGIN
-function goToLogin() {
-  window.location.href = "login.html";
-}
 
 
 // CHECKOUT

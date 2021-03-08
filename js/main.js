@@ -8,10 +8,33 @@ function windowLocation() {
   var hash = window.location.hash.includes('hidelogin');
   if (hash) {
     const earlyLoginBlock = document.getElementById('earlyLoginBlock')
+    const stepOne = document.getElementById('selectPCPlatform')
+    const selectedStatePC = document.getElementById('s1pc')
+    const inactiveStateConsole = document.getElementById('s1console')
+    const stepTwo = document.getElementById('eadSection')
+    const selectedStateEAD = document.getElementById('s2selectEAD')
+    const inactiveStateSteam = document.getElementById('s2selectSteam')
+    const selectionProgress = document.getElementById('selectionProgressEAD1')
+    const scrollPosition = document.getElementById('makeSelection')
+    if (stepOne) {
+      stepOne.style.display = 'block'
+      selectedStatePC.classList.add('platformTileSelected')
+      inactiveStateConsole.classList.add('platformTileInactive')
+      stepTwo.style.display = 'block'
+      selectedStateEAD.classList.add('platformTileSelected')
+      inactiveStateSteam.classList.add('platformTileInactive')
+      selectionProgress.style.display = 'block'
+      scrollPosition.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+      clearInterval(interval)
+    }
     if (earlyLoginBlock) {
       earlyLoginBlock.style.display = 'none'
       clearInterval(interval)
     }
+
   } else {
     clearInterval(interval)
   }
@@ -27,6 +50,28 @@ function showAvatar() {
   }
 }
 showAvatar()
+
+setTimeout(function showWelcome() {
+  var hash = window.location.hash.includes('hidelogin');
+  if (hash) {
+    const welcomeBackUT = document.getElementById('welcomeBack')
+    if (welcomeBackUT) {
+      welcomeBackUT.classList.add('animate-welcome-back')
+    }
+  }
+}, 500);
+
+
+setTimeout(function hideWelcome() {
+  var hash = window.location.hash.includes('hidelogin');
+  if (hash) {
+    const welcomeBackUT = document.getElementById('welcomeBack')
+    if (welcomeBackUT) {
+      welcomeBackUT.classList.remove('animate-welcome-back')
+    }
+  }
+}, 5000);
+
 
 function aboutToggle() {
   var x = document.getElementById("aboutGame");
@@ -202,15 +247,6 @@ function selectPC() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("earlyLoginBlock");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    if (!window.location.hash.includes('hidelogin')) {
-      x.style.display = "block"
-    }
-  }
-
   var element = document.getElementById("s1pc");
   element.classList.toggle("platformTileSelected");
 
@@ -234,16 +270,6 @@ function selectConsole() {
   } else {
     x.style.display = "none";
   }
-
-  var x = document.getElementById("earlyLoginBlock");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    if (!window.location.hash.includes('hidelogin')) {
-      x.style.display = "block"
-    }
-  }
-  z
 
   var element = document.getElementById("s1console");
   element.classList.toggle("platformTileSelected");
@@ -269,6 +295,15 @@ function selectPlatformEAD() {
     x.style.display = "block";
   } else {
     x.style.display = "none";
+  }
+
+  var x = document.getElementById("earlyLoginBlock");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    if (!window.location.hash.includes('hidelogin')) {
+      x.style.display = "none"
+    }
   }
 
   var x = document.getElementById("selectionProgressEAD1");
@@ -298,13 +333,6 @@ function comparePCPlatforms() {
   } else {
     x.style.display = "none";
   }
-
-  // var x = document.getElementById("selectPCtiles");
-  // if (x.style.display === "block") {
-  //   x.style.display = "none";
-  // } else {
-  //   x.style.display = "block";
-  // }
 
   var x = document.getElementById("comparePC");
   if (x.innerHTML === "Compare +") {
@@ -358,12 +386,6 @@ function eadCallout() {
   var element = document.getElementById("s2selectEAD");
   element.classList.remove("platformTileInactive");
 
-  // var x = document.getElementById("compareJoinBuybtn2");
-  // if (x.innerHTML === "Compare +") {
-  //   x.innerHTML = "Collapse -";
-  // } else {
-  //   x.innerHTML = "Compare +";
-  // }
 }
 
 
@@ -716,6 +738,15 @@ function compareJoin() {
     x.style.display = "none";
   }
 
+  var x = document.getElementById("earlyLoginBlock");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    if (!window.location.hash.includes('hidelogin')) {
+      x.style.display = "block"
+    }
+  }
+
   var x = document.getElementById("selectionProgressEAD1");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -752,6 +783,15 @@ function compareBuy() {
     x.style.display = "block";
   } else {
     x.style.display = "none";
+  }
+
+  var x = document.getElementById("earlyLoginBlock");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    if (!window.location.hash.includes('hidelogin')) {
+      x.style.display = "block"
+    }
   }
 
   var x = document.getElementById("selectionProgressEAD2Buy");
@@ -1211,7 +1251,7 @@ function goToLogin() {
 }
 
 function earlyLoginCTA() {
-  window.location.href = "earlylogin.html";
+  window.location.href = "earlyLogin.html";
 }
 
 // CHECKOUT
@@ -1257,3 +1297,20 @@ function payNow() {
 function backToStart() {
   window.location.href = "index.html";
 }
+
+function goToCheckout() {
+  window.location.href = "checkout.html";
+}
+
+
+// function checkoutAction() {
+// var hash = window.location.hash.includes('hidelogin');
+// var skipLogin = document.getElementById("checkoutAction");
+// if (hash) {
+//   skipLogin.window.location.href = "checkout.html";
+// } else {
+//   skipLogin.window.location.href = "login.html";
+// }
+// }
+
+// checkoutAction()

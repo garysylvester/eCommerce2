@@ -72,6 +72,27 @@ setTimeout(function hideWelcome() {
   }
 }, 5000);
 
+setTimeout(function showCheckoutWelcome() {
+  var hash = window.location.hash.includes('showAvatar');
+  if (hash) {
+    const welcomeBackUT = document.getElementById('welcomeBack')
+    if (welcomeBackUT) {
+      welcomeBackUT.classList.add('animate-welcome-back')
+    }
+  }
+}, 500);
+
+
+setTimeout(function hideCheckoutWelcome() {
+  var hash = window.location.hash.includes('showAvatar');
+  if (hash) {
+    const welcomeBackUT = document.getElementById('welcomeBack')
+    if (welcomeBackUT) {
+      welcomeBackUT.classList.remove('animate-welcome-back')
+    }
+  }
+}, 5000);
+
 
 function aboutToggle() {
   var x = document.getElementById("aboutGame");

@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
       $('.valid').css('display', 'block');
-      window.location = "checkout.html"; // go to home.html
+      window.location = "checkout.html#showAvatar"; // go to home.html
     } else {
       $('.error').css('display', 'block'); // show error msg
     }

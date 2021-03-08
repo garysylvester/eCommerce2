@@ -185,6 +185,13 @@ h6 {
 .right-side {
   width: 144px;
   height: var(--dimension-space-largest);
+  display: flex;
+  justify-content: flex-end;
+}
+
+#profilePicture {
+  padding: var(--dimension-space-smaller);
+  height: 41px;
 }
 
 .fifa-home {
@@ -586,11 +593,11 @@ h6 {
   margin: 0 auto;
   height: fit-content;
   text-align: center;
-  padding: var(--dimension-space-medium);
+  padding: var(--dimension-space-medium) 0;
   background-color: var(--color-fifa-violet);
   position: fixed;
   top: 57px;
-  z-index: 10;
+  z-index: 9;
   transition: all 0.25s ease-in-out;
   opacity: 0;
   transform: translateY(-106px);
@@ -604,19 +611,6 @@ h6 {
 .animate-welcome-back{
   transform: translateY(0) !important;
   opacity: 1;
-}
-
-.welcome-back::after{
-  content: '';
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid var(--color-fifa-violet);
-  display: block;
-  right: 0;
-  top: 0;
-  transform: translateX(-53px) translateY(-8px);
-  z-index: 10;
 }
 
 .ea-play-content h3 {

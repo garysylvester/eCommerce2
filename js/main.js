@@ -18,12 +18,12 @@ function windowLocation() {
     const scrollPosition = document.getElementById('makeSelection')
     if (stepOne) {
       stepOne.style.display = 'block'
+      stepTwo.style.display = 'block'
+      selectionProgress.style.display = 'block'
       selectedStatePC.classList.add('platformTileSelected')
       inactiveStateConsole.classList.add('platformTileInactive')
-      stepTwo.style.display = 'block'
       selectedStateEAD.classList.add('platformTileSelected')
       inactiveStateSteam.classList.add('platformTileInactive')
-      selectionProgress.style.display = 'block'
       scrollPosition.scrollIntoView({
         behavior: 'smooth',
         block: 'start'

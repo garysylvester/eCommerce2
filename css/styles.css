@@ -578,7 +578,7 @@ h6 {
   bottom: 0px;
   width: 100%;
   height: 48px;
-  background: var(--color-ea-primary);
+  background: var(--color-fifa-violet);
 }
 
 .welcome-back{
@@ -1297,7 +1297,17 @@ h6 {
 }
 
 .checkout-CTA button,
-.reviewOrder-CTA button,
+.reviewOrder-CTA button {
+  color: white;
+  background: var(--color-fifa-violet);
+  padding: 12px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius-medium);
+  margin-bottom: var(--dimension-space-medium);
+}
+
 .early-login button {
   color: white;
   background: var(--color-ea-primary);
@@ -1308,4 +1318,3 @@ h6 {
   border-radius: var(--border-radius-medium);
   margin-bottom: var(--dimension-space-medium);
 }
-

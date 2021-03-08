@@ -5,8 +5,8 @@ $(document).ready(function () {
 
     event.preventDefault(); // prevent PageReLoad
 
-    var ValidEmail = $('#username').val() === 'user'; // User validate
-    var ValidPassword = $('#password').val() === 'test'; // Password validate
+    var ValidEmail = $('#username').val() === 'usertester'; // User validate
+    var ValidPassword = $('#password').val() === 'abctest123'; // Password validate
 
     if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
       $('.valid').css('display', 'block');
@@ -25,8 +25,8 @@ $(document).ready(function () {
 
     event.preventDefault(); // prevent PageReLoad
 
-    var ValidEmail = $('#username').val() === 'user'; // User validate
-    var ValidPassword = $('#password').val() === 'test'; // Password validate
+    var ValidEmail = $('#username').val() === 'usertester'; // User validate
+    var ValidPassword = $('#password').val() === 'abctest123'; // Password validate
 
     if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
       $('.valid').css('display', 'block');

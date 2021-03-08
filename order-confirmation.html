@@ -24,41 +24,33 @@
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </head>
 
 <body>
 
   <main>
-    <section class="checkout2">
-      <img src="img/checkout-logo.svg" style="margin-bottom: 32px">
-      <h3>Order Complete!</h3>
-      <img src="https://media.giphy.com/media/J1WyRIJrTeKs6R6VHL/giphy.gif" style="width: 100%; margin-top: 16px;">
-      <!-- CHECKOUT SUMMARY (START) -->
-      <!-- <div class="checkout-summary2" id="checkoutSummary2">
-        <hr>
-        <h4 style="margin-bottom: 24px">Order Summary</h4>
-        <img src="img/summary-header-annual-pro.svg">
-
-        <ul class="bXS">
-          <li>Unlimited access to FIFA 21 and all of our best games and brand-new releases</li>
-          <li>Play the best editions of FIFA 21 and our top games with all the added extras, including in-game rewards,
-            Season Passes, and premium player content</li>
-          <li>Get early access to select new games before they’re released to the public</li>
-          <li>Save 10% on all EA digital purchases, including game downloads, Season Passes, points packs, and DLC</li>
-        </ul>
-      </div> -->
-
-      <!-- CHECKOUT SUMMARY (END) -->
-    </section>
-    <section class="checkout">
-      <div class="payment-methods">
-
+    <lottie-player id="lottiePlayer" src="https://assets1.lottiefiles.com/packages/lf20_tkvgymkx.json"
+        background="transparent" speed="1"
+        style="width: 100%; height: 100%; position: fixed; z-index: 10; display: block;" autoplay></lottie-player>
+    <div class="conf-hero">
+      <img src="img/order-complete.svg" style="z-index: 10;">
+    </div>
+    <section class="checkout2" style="text-align: center;">
+      <img src="img/welcome-to-eapp.svg" style="margin: 16px auto 24px auto">
+      <h3>You now have unlimited access to the best games that EA has to offer.</h3>
+      <p class="bXS" style="margin: 16px auto 16px auto;">
+        If you do not have the EA Desktop App installed, check out that email we just sent you and follow the
+        instrutions so you can start enjoying your new EA Play Pro membership.
+      </p>
+      <div class="checkout-summary2" id="checkoutSummary2">
         <div class="reviewOrder-CTA">
-          <button class="checkout-cta" onclick="backToStart()">Back to start</button>
-
+          <button class="checkout-cta" onclick="backToStart()" style="z-index: 11;">Back to start</button>
         </div>
-
+        <hr>
+        <h3 style="margin: 24px auto 16px auto;">Membership Details</h3>
+        <img src="img/membership-details.svg">
       </div>
     </section>
 

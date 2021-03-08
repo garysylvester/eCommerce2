@@ -1286,10 +1286,10 @@ function earlyLoginCTA() {
 
 function expandCheckoutSummary2() {
   var x = document.getElementById("checkoutSummary2");
-  if (x.style.height === "150px") {
+  if (x.style.height === "135px") {
     x.style.height = "auto";
   } else {
-    x.style.height = "150px";
+    x.style.height = "135px";
   }
 
   var x = document.getElementById("expandCheckoutSummarybtn");
@@ -1329,3 +1329,10 @@ function backToStart() {
 function goToCheckout() {
   window.location.href = "checkout.html";
 }
+
+
+setTimeout(function removeLottie() {
+    const lottieAnim = document.getElementById('lottiePlayer')
+      lottieAnim.style.display = 'none'
+      console.log('time')
+}, 4000);

@@ -564,7 +564,7 @@ h6 {
 }
 
 .ea-desktop {
-  background: var(--color-ea-primary);
+  background: var(--color-fifa-violet);
 }
 
 .steam {
@@ -579,6 +579,44 @@ h6 {
   width: 100%;
   height: 48px;
   background: var(--color-ea-primary);
+}
+
+.welcome-back{
+  width: 100%;
+  margin: 0 auto;
+  height: fit-content;
+  text-align: center;
+  padding: var(--dimension-space-medium);
+  background-color: var(--color-fifa-violet);
+  position: fixed;
+  top: 57px;
+  z-index: 10;
+  transition: all 0.25s ease-in-out;
+  opacity: 0;
+  transform: translateY(-106px);
+}
+
+.remove-welcome{
+  position: absolute;
+  right: 8px;
+}
+
+.animate-welcome-back{
+  transform: translateY(0) !important;
+  opacity: 1;
+}
+
+.welcome-back::after{
+  content: '';
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid var(--color-fifa-violet);
+  display: block;
+  right: 0;
+  top: 0;
+  transform: translateX(-53px) translateY(-8px);
+  z-index: 10;
 }
 
 .ea-play-content h3 {

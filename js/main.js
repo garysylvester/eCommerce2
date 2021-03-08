@@ -937,11 +937,15 @@ function selectMonthlyPayments() {
     x.style.display = "block";
   }
 
-  var x = document.getElementById("checkoutAction");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var hash = window.location.hash.includes('hidelogin');
+  var noLogin = document.getElementById("skipLoginCheckout");
+  var login = document.getElementById("checkoutAction");
+  if (hash) {
+    noLogin.style.display = "block";
+    login.style.display = "none";
   } else {
-    x.style.display = "none";
+    noLogin.style.display = "none";
+    login.style.display = "block";
   }
 
   var element = document.getElementById("monthlyPaymentsCard");
@@ -974,11 +978,15 @@ function selectAnnualPayments() {
     x.style.display = "block";
   }
 
-  var x = document.getElementById("checkoutAction");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var hash = window.location.hash.includes('hidelogin');
+  var noLogin = document.getElementById("skipLoginCheckout");
+  var login = document.getElementById("checkoutAction");
+  if (hash) {
+    noLogin.style.display = "block";
+    login.style.display = "none";
   } else {
-    x.style.display = "none";
+    noLogin.style.display = "none";
+    login.style.display = "block";
   }
 
   var element = document.getElementById("annualPaymentsCard");
@@ -1010,11 +1018,15 @@ function selectMonthlyPaymentsPro() {
     x.style.display = "block";
   }
 
-  var x = document.getElementById("checkoutAction");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var hash = window.location.hash.includes('hidelogin');
+  var noLogin = document.getElementById("skipLoginCheckout");
+  var login = document.getElementById("checkoutAction");
+  if (hash) {
+    noLogin.style.display = "block";
+    login.style.display = "none";
   } else {
-    x.style.display = "none";
+    noLogin.style.display = "none";
+    login.style.display = "block";
   }
 
   var element = document.getElementById("monthlyPaymentsProCard");
@@ -1085,11 +1097,15 @@ function selectAnnualPaymentsPro() {
     x.style.display = "block";
   }
 
-  var x = document.getElementById("checkoutAction");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var hash = window.location.hash.includes('hidelogin');
+  var noLogin = document.getElementById("skipLoginCheckout");
+  var login = document.getElementById("checkoutAction");
+  if (hash) {
+    noLogin.style.display = "block";
+    login.style.display = "none";
   } else {
-    x.style.display = "none";
+    noLogin.style.display = "none";
+    login.style.display = "block";
   }
 
   var element = document.getElementById("annualPaymentsProCard");
@@ -1129,11 +1145,15 @@ function buyUltimateEdition() {
     x.style.display = "block";
   }
 
-  var x = document.getElementById("checkoutAction");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var hash = window.location.hash.includes('hidelogin');
+  var noLogin = document.getElementById("skipLoginCheckout");
+  var login = document.getElementById("checkoutAction");
+  if (hash) {
+    noLogin.style.display = "block";
+    login.style.display = "none";
   } else {
-    x.style.display = "none";
+    noLogin.style.display = "none";
+    login.style.display = "block";
   }
 
   var element = document.getElementById("ultimateEdition");
@@ -1175,11 +1195,15 @@ function buyChampionsEdition() {
     x.style.display = "block";
   }
 
-  var x = document.getElementById("checkoutAction");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var hash = window.location.hash.includes('hidelogin');
+  var noLogin = document.getElementById("skipLoginCheckout");
+  var login = document.getElementById("checkoutAction");
+  if (hash) {
+    noLogin.style.display = "block";
+    login.style.display = "none";
   } else {
-    x.style.display = "none";
+    noLogin.style.display = "none";
+    login.style.display = "block";
   }
 
   var element = document.getElementById("championsEdition");
@@ -1221,11 +1245,15 @@ function buyStandardEdition() {
     x.style.display = "block";
   }
 
-  var x = document.getElementById("checkoutAction");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var hash = window.location.hash.includes('hidelogin');
+  var noLogin = document.getElementById("skipLoginCheckout");
+  var login = document.getElementById("checkoutAction");
+  if (hash) {
+    noLogin.style.display = "block";
+    login.style.display = "none";
   } else {
-    x.style.display = "none";
+    noLogin.style.display = "none";
+    login.style.display = "block";
   }
 
   var element = document.getElementById("standardEdition");
@@ -1301,16 +1329,3 @@ function backToStart() {
 function goToCheckout() {
   window.location.href = "checkout.html";
 }
-
-
-// function checkoutAction() {
-// var hash = window.location.hash.includes('hidelogin');
-// var skipLogin = document.getElementById("checkoutAction");
-// if (hash) {
-//   skipLogin.window.location.href = "checkout.html";
-// } else {
-//   skipLogin.window.location.href = "login.html";
-// }
-// }
-
-// checkoutAction()

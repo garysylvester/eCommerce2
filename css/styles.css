@@ -309,10 +309,12 @@ h6 {
 
 .checkout-summary2 {
   overflow: hidden;
+  width: 100%;
 }
 
 .checkout-summary2 img {
   margin-bottom: var(--dimension-space-medium);
+  width: 100%;
 }
 
 .ea-play-more {
@@ -633,6 +635,7 @@ h6 {
   border: none;
   outline: none;
   text-decoration: underline;
+  margin: var(--dimension-space-small) 0;
 }
 
 .concensed-table {
@@ -1337,4 +1340,11 @@ h6 {
 .conf-hero-bg{
   width: 100%;
   height: auto;
+}
+
+.order-totals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }

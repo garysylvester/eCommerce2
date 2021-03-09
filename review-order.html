@@ -44,45 +44,175 @@
 
   <main>
     <section class="checkout2">
-      <a href="index.html"><img src="img/checkout-logo.svg"></a>
-      <!-- CHECKOUT SUMMARY (START) -->
-      <div class="checkout-summary2" id="checkoutSummary2">
-        <hr>
-        <h4 style="margin-bottom: 24px">Review your order</h4>
-        <img src="img/checkout-summary-img.svg">
+      <a href="index.html"><img src="img/review-order-header.svg"></a>
 
-        <ul class="bXS">
-          <li>Unlimited access to FIFA 21 and all of our best games and brand-new releases</li>
-          <li>Play the best editions of FIFA 21 and our top games with all the added extras, including in-game rewards,
-            Season Passes, and premium player content</li>
-          <li>Get early access to select new games before they’re released to the public</li>
-          <li>Save 10% on all EA digital purchases, including game downloads, Season Passes, points packs, and DLC</li>
-        </ul>
+      <!-- CHECKOUT SUMMARY - EAPPA (START) -->
+      <div class="checkout-summary-wrapper" id="checkoutEAPPA" style="display: none;">
+        <div class="checkout-summary2" id="checkoutSummaryEAPPA" style="height: auto;">
+          <hr>
+          <h4 style="margin-bottom: 24px">Order Summary</h4>
+          <img src="img/summary-header-annual-pro-noprice.svg">
+
+          <ul class="bXS">
+            <li>Unlimited access to FIFA 21 and all of our best games and brand-new releases</li>
+            <li>Play the best editions of FIFA 21 and our top games with all the added extras, including in-game
+              rewards,
+              Season Passes, and premium player content</li>
+            <li>Get early access to select new games before they’re released to the public</li>
+            <li>Save 10% on all EA digital purchases, including game downloads, Season Passes, points packs, and DLC
+            </li>
+          </ul>
+        </div>
+
+        <button class="toggle-btn bXS" onclick="expandCheckoutSummaryEAPPA()" id="expandCheckoutSummaryEAPPA">Show Less -</button>
+      </div>
+      <!-- CHECKOUT SUMMARY - EAPPA (END) -->
+
+      <!-- CHECKOUT SUMMARY - EAPPM (START) -->
+      <div class="checkout-summary-wrapper" id="checkoutEAPPM" style="display: none;">
+        <div class="checkout-summary2" id="checkoutSummaryEAPPM" style="height: auto;">
+          <hr>
+          <h4 style="margin-bottom: 24px">Order Summary</h4>
+          <img src="img/summary-header-monthly-pro-noprice.svg">
+
+          <ul class="bXS">
+            <li>Unlimited access to FIFA 21 and all of our best games and brand-new releases</li>
+            <li>Play the best editions of FIFA 21 and our top games with all the added extras, including in-game
+              rewards,
+              Season Passes, and premium player content</li>
+            <li>Get early access to select new games before they’re released to the public</li>
+            <li>Save 10% on all EA digital purchases, including game downloads, Season Passes, points packs, and DLC
+            </li>
+          </ul>
+        </div>
+
+        <button class="toggle-btn bXS" onclick="expandCheckoutSummaryEAPPM()" id="expandCheckoutSummaryEAPPM">Show Less -</button>
+      </div>
+      <!-- CHECKOUT SUMMARY - EAPPM (END) -->
+
+      <!-- CHECKOUT SUMMARY - EAPM (START) -->
+      <div class="checkout-summary-wrapper" id="checkoutEAPM" style="display: none;">
+        <div class="checkout-summary2" id="checkoutSummaryEAPM" style="height: auto;">
+          <hr>
+          <h4 style="margin-bottom: 24px">Order Summary</h4>
+          <img src="img/summary-header-monthly-noprice.svg">
+
+          <ul class="bXS">
+            <li>Unlimited access to FIFA 21 and all of our best games and brand-new releases</li>
+            <li>Play the best editions of FIFA 21 and our top games with all the added extras, including in-game
+              rewards,
+              Season Passes, and premium player content</li>
+            <li>Get early access to select new games before they’re released to the public</li>
+            <li>Save 10% on all EA digital purchases, including game downloads, Season Passes, points packs, and DLC
+            </li>
+          </ul>
+        </div>
+
+        <button class="toggle-btn bXS" onclick="expandCheckoutSummaryEAPM()" id="expandCheckoutSummaryEAPM">Show Less -</button>
+      </div>
+      <!-- CHECKOUT SUMMARY - EAPM (END) -->
+
+      <!-- CHECKOUT SUMMARY - EAPA (START) -->
+      <div class="checkout-summary-wrapper" id="checkoutEAPA" style="display: none;">
+        <div class="checkout-summary2" id="checkoutSummaryEAPA" style="height: auto;">
+          <hr>
+          <h4 style="margin-bottom: 24px">Order Summary</h4>
+          <img src="img/summary-header-annual-noprice.svg">
+
+          <ul class="bXS">
+            <li>Unlimited access to FIFA 21 and all of our best games and brand-new releases</li>
+            <li>Play the best editions of FIFA 21 and our top games with all the added extras, including in-game
+              rewards,
+              Season Passes, and premium player content</li>
+            <li>Get early access to select new games before they’re released to the public</li>
+            <li>Save 10% on all EA digital purchases, including game downloads, Season Passes, points packs, and DLC
+            </li>
+          </ul>
+        </div>
+
+        <button class="toggle-btn bXS" onclick="expandCheckoutSummaryEAPA()" id="expandCheckoutSummaryEAPA">Show Less -</button>
+      </div>
+      <!-- CHECKOUT SUMMARY - EAPA (END) -->
+
+      
+
+      <!-- CHECKOUT SUMMARY - STANDARD EDITION (START) -->
+      <div class="checkout-summary-wrapper" id="checkoutSE" style="display: none;">
+      <div class="checkout-summary2" id="checkoutSummarySE" style="height: auto;">
+        <hr>
+        <h4 style="margin-bottom: 24px">Order Summary</h4>
+        <img src="img/fifa-checkout-summary-standard-noprice.svg">
+        <img src="img/standard-edition-wide.png">
       </div>
 
-      <!-- CHECKOUT SUMMARY (END) -->
+      <button class="toggle-btn bXS" onclick="expandCheckoutSummarySE()" id="expandCheckoutSummarySE">Show Less -</button>
+    </div>
+      <!-- CHECKOUT SUMMARY - STANDARD EDITION (END) -->
+
+      <!-- CHECKOUT SUMMARY - ULTIMATE EDITION (START) -->
+      <div class="checkout-summary-wrapper" id="checkoutUE" style="display: none;">
+        <div class="checkout-summary2" id="checkoutSummaryUE" style="height: auto;">
+          <hr>
+          <h4 style="margin-bottom: 24px">Order Summary</h4>
+          <img src="img/fifa-checkout-summary-ultimate-noprice.svg">
+          <img src="img/ultimate-edition-wide.png">
+        </div>
+  
+        <button class="toggle-btn bXS" onclick="expandCheckoutSummaryUE()" id="expandCheckoutSummaryUE">Show Less -</button>
+      </div>
+        <!-- CHECKOUT SUMMARY - ULTIMATE EDITION (END) -->
+
+        <!-- CHECKOUT SUMMARY - CHAMPIONS EDITION (START) -->
+      <div class="checkout-summary-wrapper" id="checkoutCE" style="display: none;">
+        <div class="checkout-summary2" id="checkoutSummaryCE" style="height: auto;">
+          <hr>
+          <h4 style="margin-bottom: 24px">Order Summary</h4>
+          <img src="img/fifa-checkout-summary-champions-noprice.svg">
+          <img src="img/champions-edition-wide.png">
+        </div>
+  
+        <button class="toggle-btn bXS" onclick="expandCheckoutSummaryCE()" id="expandCheckoutSummaryCE">Show Less -</button>
+      </div>
+        <!-- CHECKOUT SUMMARY - CHAMPIONS EDITION (END) -->
     </section>
     <section class="checkout">
       <hr>
       <div class="payment-methods">
-        <img src="img/totals.svg">
+        <div class="order-totals">
+          <p class="bS" style="margin: 0;">Subtotal</p>
+          <h2 id="orderSubtotal">n/a</h2>
+        </div>
+        <div class="order-totals">
+          <p class="bS" style="margin: 0;">Tax</p>
+          <p class="bS" id="orderTax" style="margin: 0;">n/a</p>
+        </div>
         <hr>
-        <img src="img/annual-total.svg" style="margin-bottom: 24px;">
+        <div class="order-totals">
+          <p class="bS" style="margin: 0 0 24px 0;">Total</p>
+          <h2 id="orderTotal">n/a</h2>
+        </div>
         <img src="img/payment-review.svg" style="margin-bottom: 24px;">
 
         <div class="reviewOrder-CTA">
-          <button class="checkout-cta" onclick="payNow()">Pay Now</button>
-          <p class="bXXS"style="margin-bottom: 12px;">
+          <button class="checkout-cta" onclick="payNowSE()" id="payNowSEbtn" style="display: none;">Pay Now</button>
+          <button class="checkout-cta" onclick="payNowCE()" id="payNowCEbtn" style="display: none;">Pay Now</button>
+          <button class="checkout-cta" onclick="payNowUE()" id="payNowUEbtn" style="display: none;">Pay Now</button>
+          <button class="checkout-cta" onclick="payNowEAPM()" id="payNowEAPMbtn" style="display: none;">Pay Now</button>
+          <button class="checkout-cta" onclick="payNowEAPA()" id="payNowEAPAbtn" style="display: none;">Pay Now</button>
+          <button class="checkout-cta" onclick="payNowEAPPM()" id="payNowEAPPMbtn" style="display: none;">Pay Now</button>
+          <button class="checkout-cta" onclick="payNowEAPPA()" id="payNowEAPPAbtn" style="display: none;">Pay Now</button>
+          <p class="bXXS" style="margin-bottom: 12px;">
             This payment method will be used for the annual membership charges associated with this purchase. You may
             change this at any time in your <span style="color:#29ffc9 ">settings.</span>
           </p>
           <p class="bXXS">By clicking "Pay Now", I accept the Terms of Sale, the <span style="color:#29ffc9 ">EA User
               Agreement,</span> <span style="color:#29ffc9 ">Privacy and Cookie Policy,</span> and applicable Game
-            Disclaimer(s) as described <span style="color:#29ffc9 ">here.</span> I also understand that installation of the Origin client and acceptance of
+            Disclaimer(s) as described <span style="color:#29ffc9 ">here.</span> I also understand that installation of
+            the Origin client and acceptance of
             the Origin End User License Agreement (EULA) may be required to access my purchase(s).</p>
-            <p class="bXXS">
-                Need more help with your order? <span style="color:#29ffc9 ">Visit EA Help.</span>
-            </p>
+          <p class="bXXS">
+            Need more help with your order? <span style="color:#29ffc9 ">Visit EA Help.</span>
+          </p>
           </p>
         </div>
 

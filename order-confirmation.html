@@ -50,9 +50,83 @@
     <div class="conf-hero">
       <img src="img/order-complete.svg" style="z-index: 10;">
     </div>
-    <section class="checkout2" style="text-align: center;">
+
+    <!-- Confirmatiion - EA Play - Monthly -->
+    <section class="checkout2" id="confEAPM" style="text-align: center; display: none;">
+      <img src="img/welcome-to-eap.svg" style="margin: 16px auto 16px auto">
+      <h4>You now have access to FIFA 21 and the full library of EA Play games. Explore the catalog, download your favorites, and play your heart out.</h4>
+      <div class="checkout-summary2" id="checkoutSummary2">
+        <hr>
+        <h3 style="margin: 24px auto 16px auto;">Membership Details</h3>
+        <img src="img/membership-details-monthly.svg">
+        <p class="bXS" style="margin: 16px auto 16px auto;">
+          If you do not have the EA Desktop App installed, check out that email we just sent you and follow the
+          instrutions so you can start enjoying your new EA Play Pro membership.
+        </p>
+        <div class="reviewOrder-CTA">
+          <button class="checkout-cta" onclick="backToStart()" style="z-index: 11;">Back to start</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmatiion - EA Play - Annual -->
+    <section class="checkout2" id="confEAPA" style="text-align: center; display: none;">
+      <img src="img/welcome-to-eap.svg" style="margin: 16px auto 16px auto">
+      <h4>You now have access to FIFA 21 and the full library of EA Play games. Explore the catalog, download your favorites, and play your heart out.</h4>
+      <div class="checkout-summary2" id="checkoutSummary2">
+        <hr>
+        <h3 style="margin: 24px auto 16px auto;">Membership Details</h3>
+        <img src="img/membership-details-annual.svg">
+        <p class="bXS" style="margin: 16px auto 16px auto;">
+          If you do not have the EA Desktop App installed, check out that email we just sent you and follow the
+          instrutions so you can start enjoying your new EA Play Pro membership.
+        </p>
+        <div class="reviewOrder-CTA">
+          <button class="checkout-cta" onclick="backToStart()" style="z-index: 11;">Back to start</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmatiion - EA Play Pro - Monthly -->
+    <section class="checkout2" id="confEAPPM" style="text-align: center; display: none;">
+      <img src="img/welcome-to-eapp.svg" style="margin: 16px auto 16px auto">
+      <h4>You now have unlimited access to FIFA 21 and the full library of EA Play Pro games. Explore the catalog, download your favorites, and play your heart out.</h4>
+      <div class="checkout-summary2" id="checkoutSummary2">
+        <hr>
+        <h3 style="margin: 24px auto 16px auto;">Membership Details</h3>
+        <img src="img/membership-details-annual-monthly.svg">
+        <p class="bXS" style="margin: 16px auto 16px auto;">
+          If you do not have the EA Desktop App installed, check out that email we just sent you and follow the
+          instrutions so you can start enjoying your new EA Play Pro membership.
+        </p>
+        <div class="reviewOrder-CTA">
+          <button class="checkout-cta" onclick="backToStart()" style="z-index: 11;">Back to start</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmatiion - EA Play - Annual -->
+    <section class="checkout2" id="confEAPPA" style="text-align: center; display: none;">
       <img src="img/welcome-to-eapp.svg" style="margin: 16px auto 24px auto">
-      <h3>You now have unlimited access to the best games that EA has to offer.</h3>
+      <h4>You now have unlimited access to FIFA 21 and the full library of EA Play Pro games. Explore the catalog, download your favorites, and play your heart out.</h4>
+      <div class="checkout-summary2" id="checkoutSummary2">
+        <hr>
+        <h3 style="margin: 24px auto 16px auto;">Membership Details</h3>
+        <img src="img/membership-details-annual-pro.svg">
+        <p class="bXS" style="margin: 16px auto 16px auto;">
+          If you do not have the EA Desktop App installed, check out that email we just sent you and follow the
+          instrutions so you can start enjoying your new EA Play Pro membership.
+        </p>
+        <div class="reviewOrder-CTA">
+          <button class="checkout-cta" onclick="backToStart()" style="z-index: 11;">Back to start</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmatiion - Standard Edition -->
+    <section class="checkout2" id="confSE" style="text-align: center; display: none;">
+      <h2>FIFA 21 Standard Edition <br>is all yours!</h2>
+      <img src="img/standard-edition-wide.png" style="width: 100%; margin-top: 24px">
       <p class="bXS" style="margin: 16px auto 16px auto;">
         If you do not have the EA Desktop App installed, check out that email we just sent you and follow the
         instrutions so you can start enjoying your new EA Play Pro membership.
@@ -61,11 +135,42 @@
         <div class="reviewOrder-CTA">
           <button class="checkout-cta" onclick="backToStart()" style="z-index: 11;">Back to start</button>
         </div>
-        <hr>
-        <h3 style="margin: 24px auto 16px auto;">Membership Details</h3>
-        <img src="img/membership-details.svg">
       </div>
     </section>
+
+    <!-- Confirmatiion - Champions Edition -->
+    <section class="checkout2" id="confCE" style="text-align: center; display: none;">
+      <h2>FIFA 21 Champions Edition <br>is all yours!</h2>
+      <img src="img/champions-edition-wide.png" style="width: 100%; margin-top: 24px">
+      <p class="bXS" style="margin: 16px auto 16px auto;">
+        If you do not have the EA Desktop App installed, check out that email we just sent you and follow the
+        instrutions so you can start enjoying your new EA Play Pro membership.
+      </p>
+      <div class="checkout-summary2" id="checkoutSummary2">
+        <div class="reviewOrder-CTA">
+          <button class="checkout-cta" onclick="backToStart()" style="z-index: 11;">Back to start</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmatiion - Ultimate Edition -->
+    <section class="checkout2" id="confUE" style="text-align: center; display: none;">
+      <h2>FIFA 21 Ultimate Edition <br>is all yours!</h2>
+      <img src="img/ultimate-edition-wide.png" style="width: 100%; margin-top: 24px">
+      <p class="bXS" style="margin: 16px auto 16px auto;">
+        If you do not have the EA Desktop App installed, check out that email we just sent you and follow the
+        instrutions so you can start enjoying your new EA Play Pro membership.
+      </p>
+      <div class="checkout-summary2" id="checkoutSummary2">
+        <div class="reviewOrder-CTA">
+          <button class="checkout-cta" onclick="backToStart()" style="z-index: 11;">Back to start</button>
+        </div>
+      </div>
+    </section>
+
+    
+
+
 
   </main>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

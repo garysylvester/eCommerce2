@@ -23,7 +23,9 @@
   <script src="js/csi.min.js"></script>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
 
@@ -44,74 +46,223 @@
 
 
   <main>
-    <section class="about-game" id="aboutGame" style="height:900px">
-      <div class="about-game-header">
-        <h1>Get FIFA 21</h1>
-        <button class="toggle-btn" onclick="aboutToggle()" id="learnMore">About +</button>
-        </a>
-      </div>
+    <section class="checkout select-membership" id="eaPlaySelectMembershipSection" style="display:block">
       <hr>
-
-    <form>
-        EA Desktop  <input type="radio" onclick="javascript:platformCheck();" name="platform" id="eadCheck">
-        Steam           <input type="radio" onclick="javascript:platformCheck();" name="platform" id="steamCheck">
-        Playstation     <input type="radio" onclick="javascript:platformCheck();" name="platform" id="playstationCheck">
-    </form>
-
-    <div id="ifEAD" style="display:none">
-      <h1>EA Desktop</h1>
-      <form>
-        join            <input type="radio" onclick="javascript:joinBuy();" name="platform" id="joinCheck">
-        buy             <input type="radio" onclick="javascript:joinBuy();" name="platform" id="buyCheck">
-    </form>
-    </div>
-
-    <div id="ifSteam" style="display:none">
-        <h1>Steam</h1>
-        <form>
-            join            <input type="radio" onclick="javascript:joinBuy();" name="platform" id="joinCheck">
-            buy             <input type="radio" onclick="javascript:joinBuy();" name="platform" id="buyCheck">
-        </form>
+      <div class="step-header-compare">
+        <div class="content-left">
+          <h4>Step 4</h4>
+          <h2>Select a membership</h2>
+        </div>
+        <div class="content-right">
+          <button class="toggle-btn" onclick="compareSubsToggle()" id="compareSubs">Compare +</button>
+          </a>
+        </div>
       </div>
-
-      <div id="ifPlaystation" style="display:none">
-        <h1>Playstation</h1>
+    
+      <!-- TABLE (START) -->
+      <div class="edition-table-wrapper" id="subsTable" style="display: block;">
+        <div class="edition-table">
+          <div class="table-row-header2" id="editionHeaderRow">
+            <div class="cell-header-tileNEW" id="EADselectJoin">
+              <img src="img/ea-play-table-header.svg">
+            </div>
+            <div class="cell-header-tileNEW" id="EADselectBuy">
+              <img src="img/ea-play-pro-table-header.svg">
+            </div>
+          </div>
+    
+          <div class="subs-table-row">
+            <div class="table-row-description">
+              <p class="bS" style="font-weight: bold;">Play new releases up to 10 days before launch</p>
+            </div>
+            <div class="table-row-details-3 heightLarge">
+              <div class="cell-icon" style="margin-bottom: 0px;">
+                <p class="bS">Play select games up to 10 hours each</p>
+              </div>
+              <div class="cell-icon" style="margin-bottom: 0px;">
+                <p class="bS" style="color: #29FFC9">Unlimited</p>
+              </div>
+            </div>
+            <div class="table-row-details-3 heightFitContent">
+              <div class="gamesRow">
+                <div class="swiper-container swiper-container6">
+                  <!-- swiper slides -->
+                  <div class="swiper-wrapper">
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-01.jpg">
+                    </div>
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-02.jpg">
+                    </div>
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-03.jpg">
+                    </div>
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-04.jpg">
+                    </div>
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-05.jpg">
+                    </div>
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-06.jpg">
+                    </div>
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-07.jpg">
+                    </div>
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-08.jpg">
+                    </div>
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-09.jpg">
+                    </div>
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-10.jpg">
+                    </div>
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-11.jpg">
+                    </div>
+        
+                    <div class="swiper-slide swiper-slide6">
+                      <img src="img/steam-game-12.jpg">
+                    </div>
+        
+                  </div>
+                  <!-- !swiper slides -->
+        
+                  <!-- pagination dots -->
+                  <div class="swiper-pagination swiper-pagination6"></div>
+                  <!-- !pagination dots -->
+                  <script>
+                    var swiper6 = new Swiper('.swiper-container6', {
+                      loop: false,
+                      slidesPerView: 3,
+                      spaceBetween: 12,
+                      navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                      },
+                      pagination: {
+                        el: '.swiper-pagination6',
+                      },
+                    });
+        
+                  </script>
+                </div>
+                </div>
+            
+            </div>
+          </div>
+    
+          <div class="subs-table-row">
+            <div class="table-row-description">
+              <p class="bS" style="font-weight: bold;">Access to all of EA’s latest games</p>
+            </div>
+            <div class="table-row-details-3 heightMedium">
+              <div class="cell-icon">
+                <p class="bS">Play select games up to 10 hours each</p>
+              </div>
+              <div class="cell-icon">
+                <p class="bS" style="color: #29FFC9">Unlimited</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="subs-table-row">
+            <div class="table-row-description" style="height: 80px;">
+              <p class="bS" style="font-weight: bold;">Exclusive member-only benefits</p>
+              <label class="btn bXS" for="modal-3" onclick="showModal3()"
+                  style="color:#29FFC9; text-decoration: underline;">FIFA 21 benefits</label>
+            </div>
+            <div class="table-row-details-3 heightSmall">
+              <div class="cell-icon">
+                <img src="img/check.svg">
+              </div>
+              <div class="cell-icon">
+                <img src="img/check.svg">
+              </div>
+            </div>
+          </div>
+    
+          <div class="subs-table-row">
+            <div class="table-row-description">
+              <p class="bS" style="font-weight: bold;">Unlimited access to a collection of EA games</p>
+            </div>
+            <div class="table-row-details-3 heightMedium">
+              <div class="cell-icon">
+                <img src="img/check.svg">
+                <label class="btn bXS" for="modal-2" onclick="showModal2()"
+                  style="color:#29FFC9; text-decoration: underline;">View Games</label>
+              </div>
+              <div class="cell-icon">
+                <img src="img/check.svg">
+                <label class="btn bXS" for="modal-2" onclick="showModal2()"
+                  style="color:#29FFC9; text-decoration: underline;">View Games</label>
+              </div>
+            </div>
+          </div>
+    
+          <div class="subs-table-row">
+            <div class="table-row-description">
+              <p class="bS" style="font-weight: bold;">Save 10% on EA digital purchases</p>
+            </div>
+            <div class="table-row-details-3 heightSmall">
+              <div class="cell-icon">
+                <img src="img/check.svg">
+              </div>
+              <div class="cell-icon">
+                <img src="img/check.svg">
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
       </div>
-
-      <div id="ifJoin" style="display:none">
-        <h1>Join</h1>
+      <!-- TABLE (END) -->
+    
+      <!-- OPTIONS (START) -->
+      <div class="checkout-tiles stacked" id="membershipTiles2" style="display: block;">
+        <div onclick="selectEAPLAY2()" class="membership-tile" id="selectEAPlayCard2">
+          <div class="membership-tile-top">
+            <img class="membership-logo" src="img/EAP.svg">
+            <div class="membership-price">
+              <p class="bXS">$29.99/yr</p>
+              <h4>or $4.99/mo</h4>
+            </div>
+          </div>
+          <div class="membership-tile-bottom">
+            <p class="bXS">Play new EA releases like FIFA 21 for 10 hours, plus play hundreds of top titles & save 10% on
+              digital purchases.</p>
+          </div>
+        </div>
+    
+        <div class="membership-tile" onclick="selectEAPLAYPRO2()" id="selectEAPlayProCard2">
+          <div class="membership-tile-top">
+            <img class="membership-logo" src="img/EAPP.svg">
+            <div class="membership-price">
+              <p class="bXS">$99.99/yr</p>
+              <h4>or $14.99/mo</h4>
+            </div>
+          </div>
+          <div class="membership-tile-bottom">
+            <p class="bXS">Get unlimited access to FIFA 21 plus pro-level rewards like Season Passes, exclusive player
+              content, and a library of premium-edition games</p>
+          </div>
+        </div>
       </div>
-
-      <div id="ifBuy" style="display:none">
-        <h1>Buy</h1>
-      </div>
-
-      
+      <!-- OPTIONS (END) -->
+    
     </section>
-
-
-
-    <div class="make-selection" id="makeSelection" style="display: block;">
-      <hr>
-      <h4>Make a selection to proceed</h4>
-    </div>
-
-    <!-- <div class="slection-progress" id="selectionProgressEAD1" style="display:none">
-      <p class="bS">EA Desktop</p>
-    </div>
-
-    <div class="slection-progress" id="selectionProgressEAD2" style="display:none">
-      <p class="bS">Join EA Play <span style="opacity: 0.5;">on</span> EA Desktop</p>
-    </div>
-
-    <div class="slection-progress" id="selectionProgressEAD3" style="display:none">
-      <p class="bS">Join EA Play Pro <span style="opacity: 0.5;">on</span> EA Desktop</p>
-    </div>
-
-    <div onclick="goToLogin()" class="checkout-action" id="checkoutAction" style="display:none">
-      <h2>Checkout</h2>
-    </div> -->
-
   </main>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

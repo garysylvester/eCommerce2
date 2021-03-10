@@ -142,6 +142,62 @@ function compareSubsToggle() {
   }
 }
 
+// ---------- FAQ's ----------
+
+function toFAQ() {
+  window.location.href = "faq.html";
+}
+
+function backToBuy() {
+  window.location.href = "buy.html#select-membership";
+}
+
+const interval2 = setInterval(() => {
+  windowLocation2()
+}, 5)
+
+function windowLocation2() {
+  var selectMembershipHash = window.location.hash.includes('select-membership');
+  if (selectMembershipHash) {
+    const earlyLoginBlock = document.getElementById('earlyLoginBlock')
+    const stepOne = document.getElementById('selectPCPlatform')
+    const selectedStatePC = document.getElementById('s1pc')
+    const inactiveStateConsole = document.getElementById('s1console')
+    const stepTwo = document.getElementById('eadSection')
+    const selectedStateEAD = document.getElementById('s2selectEAD')
+    const inactiveStateSteam = document.getElementById('s2selectSteam')
+    const stepThree = document.getElementById('eaPlaySelectMembershipSection')
+    const selectedStateJoin = document.getElementById('compareJoinCard')
+    const inactiveStateBuy = document.getElementById('compareBuyCard')
+    const selectionProgress = document.getElementById('selectionProgressEAD1')
+    const scrollPosition = document.getElementById('makeSelection')
+    if (stepOne) {
+      stepOne.style.display = 'block'
+      stepTwo.style.display = 'block'
+      stepThree.style.display = 'block'
+      selectionProgress.style.display = 'block'
+      selectedStatePC.classList.add('platformTileSelected')
+      inactiveStateConsole.classList.add('platformTileInactive')
+      selectedStateEAD.classList.add('platformTileSelected')
+      inactiveStateSteam.classList.add('platformTileInactive')
+      selectedStateJoin.classList.add('platformTileSelected')
+      inactiveStateBuy.classList.add('platformTileInactive')
+      scrollPosition.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+      clearInterval(interval2)
+    }
+    if (earlyLoginBlock) {
+      earlyLoginBlock.style.display = 'none'
+      clearInterval(interval2)
+    }
+
+  } else {
+    clearInterval(interval2)
+  }
+}
+
 //------------------------ COMPARE EDITION ------------------------ (START)
 function compareEditionToggle() {
   var x = document.getElementById("editionTable");

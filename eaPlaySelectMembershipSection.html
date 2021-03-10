@@ -1,4 +1,4 @@
-<section class="checkout select-membership" id="eaPlaySelectMembershipSection" style="display:none">
+<section class="checkout select-membership" id="eaPlaySelectMembershipSection" style="display:block">
   <hr>
   <div class="step-header-compare">
     <div class="content-left">
@@ -12,7 +12,7 @@
   </div>
 
   <!-- TABLE (START) -->
-  <div class="edition-table-wrapper" id="subsTable" style="display: none;">
+  <div class="edition-table-wrapper" id="subsTable" style="display: block;">
     <div class="edition-table">
       <div class="table-row-header2" id="editionHeaderRow">
         <div class="cell-header-tileNEW" id="EADselectJoin">
@@ -27,7 +27,7 @@
         <div class="table-row-description">
           <p class="bS" style="font-weight: bold;">Play new releases up to 10 days before launch</p>
         </div>
-        <div class="table-row-details-3 heightMedium">
+        <div class="table-row-details-3 heightLarge">
           <div class="cell-icon">
             <p class="bS">Play select games up to 10 hours each</p>
           </div>
@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <div class="subs-table-row">
+      <!-- <div class="subs-table-row">
         <div class="table-row-description">
           <p class="bS" style="font-weight: bold;">Exclusive in-game rewards</p>
         </div>
@@ -63,11 +63,13 @@
             <img src="img/check.svg">
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="subs-table-row">
-        <div class="table-row-description">
-          <p class="bS" style="font-weight: bold;">Exclusive member-only content</p>
+        <div class="table-row-description" style="height: 80px;">
+          <p class="bS" style="font-weight: bold;">Exclusive member-only benefits</p>
+          <label class="btn bXS" for="modal-3" onclick="showModal3()"
+              style="color:#29FFC9; text-decoration: underline;">FIFA 21 benefits</label>
         </div>
         <div class="table-row-details-3 heightSmall">
           <div class="cell-icon">
@@ -83,12 +85,16 @@
         <div class="table-row-description">
           <p class="bS" style="font-weight: bold;">Unlimited access to a collection of EA games</p>
         </div>
-        <div class="table-row-details-3 heightSmall">
+        <div class="table-row-details-3 heightMedium">
           <div class="cell-icon">
             <img src="img/check.svg">
+            <label class="btn bXS" for="modal-2" onclick="showModal2()"
+              style="color:#29FFC9; text-decoration: underline;">View Games</label>
           </div>
           <div class="cell-icon">
             <img src="img/check.svg">
+            <label class="btn bXS" for="modal-2" onclick="showModal2()"
+              style="color:#29FFC9; text-decoration: underline;">View Games</label>
           </div>
         </div>
       </div>

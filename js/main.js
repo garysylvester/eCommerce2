@@ -169,7 +169,7 @@ function windowLocation2() {
     const stepThree = document.getElementById('eaPlaySelectMembershipSection')
     const selectedStateJoin = document.getElementById('compareJoinCard')
     const inactiveStateBuy = document.getElementById('compareBuyCard')
-    const selectionProgress = document.getElementById('selectionProgressEAD1')
+    const selectionProgress = document.getElementById('selectionProgressEAD2')
     const scrollPosition = document.getElementById('makeSelection')
     if (stepOne) {
       stepOne.style.display = 'block'

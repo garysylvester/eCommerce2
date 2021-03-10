@@ -1756,6 +1756,10 @@ function showEAPPMreview() {
 }
 showEAPPMreview()
 
+function goToReviewOrderEAPPM() {
+  window.location.href = "review-order.html#eappm";
+}
+
 // PAY NOW
 // Standard Edition
 function showPayNowSE() {
@@ -1975,114 +1979,44 @@ setTimeout(function removeLottie() {
 }, 4000);
 
 // PRICES
-function priceEAPA(){
-  var hash = window.location.hash.includes('eapa');
+function showPrices() {
+  var EAPAhash = window.location.hash.includes('eapa');
+  var EAPMhash = window.location.hash.includes('eapm');
+  var EAPPAhash = window.location.hash.includes('eappa');
+  var EAPPMhash = window.location.hash.includes('eappm');
+  var SEhash = window.location.hash.includes('standard-edition');
+  var CEhash = window.location.hash.includes('champions-edition');
+  var UEhash = window.location.hash.includes('ultimate-edition');
+
   var subtotal = document.getElementById('orderSubtotal');
   var tax = document.getElementById('orderTax');
   var total = document.getElementById('orderTotal');
-  if (hash) {
+
+  if (EAPAhash) {
     subtotal.innerHTML = "$29.99";
     tax.innerHTML = "$2.09";
     total.innerHTML = "$32.09";
-  } else {
-    subtotal.innerHTML = "n/a";
-    tax.innerHTML = "n/a";
-    total.innerHTML = "n/a";
-  }
-}
-priceEAPA()
-
-function priceEAPM(){
-  var hash = window.location.hash.includes('eapm');
-  var subtotal = document.getElementById("orderSubtotal");
-  var tax = document.getElementById("orderTax");
-  var total = document.getElementById("orderTotal");
-  if (hash) {
+  } else if (EAPMhash) {
     subtotal.innerHTML = "$4.99";
     tax.innerHTML = "$0.35";
     total.innerHTML = "$5.34";
-  } else {
-    subtotal.innerHTML = "n/a";
-    tax.innerHTML = "n/a";
-    total.innerHTML = "n/a";
-  }
-}
-priceEAPM()
-
-function priceEAPPM(){
-  var hash = window.location.hash.includes('eappm');
-  var subtotal = document.getElementById("orderSubtotal");
-  var tax = document.getElementById("orderTax");
-  var total = document.getElementById("orderTotal");
-  if (hash) {
-    subtotal.innerHTML = "$14.99";
-    tax.innerHTML = "$1.05";
-    total.innerHTML = "$16.04";
-  } else {
-    subtotal.innerHTML = "n/a";
-    tax.innerHTML = "n/a";
-    total.innerHTML = "n/a";
-  }
-}
-priceEAPPM()
-
-function priceEAPPA(){
-  var hash = window.location.hash.includes('eappa');
-  var subtotal = document.getElementById("orderSubtotal");
-  var tax = document.getElementById("orderTax");
-  var total = document.getElementById("orderTotal");
-  if (hash) {
+  } else if (EAPPAhash) {
     subtotal.innerHTML = "$99.99";
     tax.innerHTML = "$6.99";
     total.innerHTML = "$106.98";
-  } else {
-    subtotal.innerHTML = "n/a";
-    tax.innerHTML = "n/a";
-    total.innerHTML = "n/a";
-  }
-}
-priceEAPPA()
-
-function priceSE(){
-  var hash = window.location.hash.includes('standard-edition');
-  var subtotal = document.getElementById("orderSubtotal");
-  var tax = document.getElementById("orderTax");
-  var total = document.getElementById("orderTotal");
-  if (hash) {
+  } else if (EAPPMhash) {
+    subtotal.innerHTML = "$14.99";
+    tax.innerHTML = "$1.05";
+    total.innerHTML = "$16.40";
+  } else if (SEhash) {
     subtotal.innerHTML = "$59.99";
     tax.innerHTML = "$4.19";
     total.innerHTML = "$64.19";
-  } else {
-    subtotal.innerHTML = "n/a";
-    tax.innerHTML = "n/a";
-    total.innerHTML = "n/a";
-  }
-}
-priceSE()
-
-function priceCE(){
-  var hash = window.location.hash.includes('champions-edition');
-  var subtotal = document.getElementById("orderSubtotal");
-  var tax = document.getElementById("orderTax");
-  var total = document.getElementById("orderTotal");
-  if (hash) {
+  } else if (CEhash) {
     subtotal.innerHTML = "$79.99";
     tax.innerHTML = "$5.59"
     total.innerHTML = "$85.59"
-  } else {
-    subtotal.innerHTML = "n/a";
-    tax.innerHTML = "n/a";
-    total.innerHTML = "n/a";
-  }
-}
-priceCE()
-
-function priceUE(){
-  var hash = window.location.hash.includes('ultimate-edition');
-  var subtotal = document.getElementById("orderSubtotal");
-  var tax = document.getElementById("orderTax");
-  var total = document.getElementById("orderTotal");
-  if (hash) {
+  } else if (UEhash) {
     subtotal.innerHTML = "$99.99";
     tax.innerHTML = "$6.99"
     total.innerHTML = "$106.98"
@@ -2091,5 +2025,7 @@ function priceUE(){
     tax.innerHTML = "n/a"
     total.innerHTML = "n/a"
   }
+
 }
-priceUE()
+
+showPrices()

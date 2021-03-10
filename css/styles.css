@@ -88,6 +88,7 @@ body {
 
 .fifaBG {
   background-image: url('../img/bg-element.png');
+  background-size: contain;
 }
 
 .playstation {
@@ -748,7 +749,10 @@ h6 {
 
 .heightLarge {
   height: 96px;
+}
 
+.heightFitContent {
+  height: fit-content;
 }
 
 .table-row-header3 {
@@ -1112,6 +1116,11 @@ h6 {
   margin: var(--dimension-space-medium) 0;
 }
 
+.swiper-container6 {
+  overflow: visible !important;
+  margin: var(--dimension-space-smaller) 0 0 0;
+}
+
 .swiper-slide4 img {
   margin-bottom: var(--dimension-space-small);
 }
@@ -1347,4 +1356,12 @@ h6 {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.gamesRow{
+  background: var(--table-cell-bg);
+  width: 100%;
+  height: fit-content;
+  padding: 0 var(--dimension-space-small) 42px var(--dimension-space-small);
+  overflow: hidden;
 }

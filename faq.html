@@ -1,0 +1,373 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/csi.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="left-side">
+      <div class="nav-icon">
+        <img src="img/nav-icon.svg">
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="img/fifa-logo.png"></a>
+      </div>
+    </div>
+    <div class="right-side">
+      <!-- <img src="img/fifa-cta.svg"> -->
+    </div>
+  </div>
+
+
+  <main>
+    <button class="ea-play-faq-btn" onclick="backToBuy()" style="margin: 24px 0 0 16px">< &nbsp;&nbsp;Back to FIFA 21</button> <section class="checkout faq-section" id="faqs" style="display:block">
+        <h2>What is EA Play?</h2>
+        <p class="bS">EA Play is the ultimate game destination for anyone who loves EA titles. Membership gives you more of your favorite Electronic Arts games – more rewards, more exclusive trials, and more discounts.</p>
+        <div class="subsUSP">
+            <img src="img/usp1.png" style="height:64px; margin-right: 24px;">
+          <div class="subsUSPcontent">
+            <h4>Reward your dedication</h4>
+            <p class="bS" style="margin-top: 4px;">Unlock exclusive rewards and member-only content.</p>
+          </div>
+        </div>
+        <div class="subsUSP">
+            <img src="img/usp2.png" style="height:64px; margin-right: 24px;">
+          <div class="subsUSPcontent">
+            <h4>Try something new</h4>
+            <p class="bS" style="margin-top: 4px;">Play select new-release EA games for up to 10 hours.</p>
+          </div>
+        </div>
+        <div class="subsUSP">
+            <img src="img/usp3.png" style="height:64px; margin-right: 24px;">
+          <div class="subsUSPcontent">
+            <h4>There’s always more to play</h4>
+            <p class="bS" style="margin-top: 4px;">Get instant access to a collection of EA’s best-loved games.</p>
+          </div>
+        </div>
+        <div class="subsUSP">
+            <img src="img/usp4.png" style="height:64px; margin-right: 24px;">
+          <div class="subsUSPcontent">
+            <h4>Get more for less</h4>
+            <p class="bS" style="margin-top: 4px;">Save 10% on EA digital purchases from full games to DLC.</p>
+          </div>
+        </div>
+        <hr>
+        <img src="img/ea-play-faq's.svg" style="margin:16px 0">
+        <div class="accordion arrows">
+          <input type="radio" name="accordion" id="cb1" />
+          <section class="box height1">
+            <label class="box-title height1" for="cb1">
+              <h4>What do you get with EA Play?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">
+                Here’s what you get with EA Play membership:
+
+                <ul>
+                  <li>Unlock exclusive challenges and rewards, member-only content, early trials of new releases, and
+                    access to a library of top titles.</li>
+                  <li>Play select new-release games for up to 10 hours even before they launch.</li>
+                  <li>Get more to play with unlimited access to a collection of Electronic Arts’ fan-favorite series and
+                    top titles.</li>
+                  <li>Save 10%* on EA digital purchases including game downloads, Season Passes, points packs, and DLC.
+                  </li>
+                </ul>
+
+                Here’s what you get with EA Play Pro membership:
+
+                <ul>
+                  <li>Score unlimited access to all our best games and brand new releases.</li>
+                  <li>Play the best editions of our top games with all the added extras including in-game rewards and
+                    premium player content.</li>
+                  <li>Get early access to select new games before they’re released to the public.</li>
+                  <li>The same 10% discount* on EA digital purchases including full games, expansions, points packs and
+                    more.</li>
+                </ul>
+
+            </div>
+
+          </section>
+
+          <input type="radio" name="accordion" id="cb2" />
+          <section class="box height2">
+            <label class="box-title height2" for="cb2">
+              <h4>What happened to Origin Access Basic and Origin Access Premier</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">They just got a name change, now they’re EA Play and EA Play Pro. You
+                still have access to all the great games and benefits as an Origin Access Basic or Premier member.</p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb3" />
+          <section class="box height2">
+            <label class="box-title height2" for="cb3">
+              <h4>Can I upgrade from EA Play to Pro membership?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">You sure can! From the nav bar select EA Play / Manage My Membership
+                and choose the Pro membership and monthly or annual billing plan. Your new membership will start
+                immediately, giving you instant access to everything EA Play Pro has to offer.
+                Still have time left on your previous membership? When you upgrade we’ll convert that time into a dollar
+                amount that will be automatically refunded to you!</p>
+              <p class="bS">Have more questions about changing your membership? <span
+                  style="color:#29FFC9; text-decoration: underline;">Please speak with an advisor.</span></p>
+
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb4" />
+          <section class="box height3">
+            <label class="box-title height3" for="cb4">
+              <h4>Do I get to keep playing my EA Play Pro games after the early access period is over?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">As a long as you’re an EA Play Pro member, absolutely. The games
+                added to this service level will be available to play whenever you want and as much as you want.
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb5" />
+          <section class="box height2">
+            <label class="box-title height2" for="cb5">
+              <h4>If I play an EA Play early game trial will my progress carry over?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">EA Play members can download and try select upcoming EA games before
+                they’re released for a limited time. Yep – that’s right, you’ll be the first to play some of EA’s latest
+                and greatest with an EA Play membership. And because you’re trying the real game, not a demo, your
+                progress will carry over, so you can pick up where you left off if you decide to purchase the game.
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb6" />
+          <section class="box height2">
+            <label class="box-title height2" for="cb6">
+              <h4>Is EA Play available on other platforms?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">Yes! EA Play is available for PC here and on Steam as well as on Xbox
+                One and PlayStation 4. However EA Play Pro is only available here on PC.
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb7" />
+          <section class="box height2">
+            <label class="box-title height2" for="cb7">
+              <h4>What payment methods can I use to purchase an EA Play membership?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">Depending on where you live, you can use a credit card, PayPal, or
+                your EA Wallet. Not all methods are available everywhere. Check out our <span
+                  style="color:#29FFC9; text-decoration: underline;">article</span> on EA Help for more information.
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb8" />
+          <section class="box height1">
+            <label class="box-title height1" for="cb8">
+              <h4>How do I join EA Play?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">Simple - all you gotta do is <span
+                  style="color:#29FFC9; text-decoration: underline;">sign up.</span> Just follow the on-screen
+                instructions and you'll be knee-deep in games in no time.
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb9" />
+          <section class="box height1">
+            <label class="box-title height1" for="cb9">
+              <h4>What's The Play List?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">The Play List is an evolving collection of great games included in
+                your membership. We’re talking full versions, yours to play as much as you want. The Play List is
+                awesome now. It’s getting even… awesomer. <span style="color:#29FFC9; text-decoration: underline;">Find
+                  out more here.</span>
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb10" />
+          <section class="box height1">
+            <label class="box-title height1" for="cb10">
+              <h4>Does The Play List include third party games?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">Yep! You’ll be able to play select games from other publishers with
+                your EA Play membership – and great games will be added over time.
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb11" />
+          <section class="box height2">
+            <label class="box-title height2" for="cb11">
+              <h4>Why do games on The Play List vary from country to country?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">Short answer: different countries have different rules about what
+                games can be sold or made available. The result: what you see in The Play List may vary slightly by
+                locale.
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb12" />
+          <section class="box height2">
+            <label class="box-title height2" for="cb12">
+              <h4>What can I use my member discount on?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">As an EA Play member, you'll score an automatic 10% discount* on
+                purchases from Origin.com, including new releases and pre-orders. Ditto for expansions, game packs,
+                Points Packs, you name it. Please note: while EA Play is available on multiple platforms your discount
+                only applies to the platform you joined on. For example, if you joined via Origin.com, your EA digital
+                purchases here would receive a 10% discount. If you joined on Steam, your EA digital purchases on <span
+                  style="color:#29FFC9; text-decoration: underline;">store.steampowered.com</span> would receive the 10%
+                discount.
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb13" />
+          <section class="box height1">
+            <label class="box-title height1" for="cb13">
+              <h4>Can I play EA Play games on Mac?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">EA Play is not available on Mac.
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb14" />
+          <section class="box height1">
+            <label class="box-title height1" for="cb14">
+              <h4>How much is EA Play?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">An EA Play membership is just $4.99 a month. Or you can save even
+                more by signing up for a full year for $24.99 - a membership pays for itself if you buy even one game
+                with your 10% discount!
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb15" />
+          <section class="box height1">
+            <label class="box-title height1" for="cb15">
+              <h4>How much is EA Play Pro?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">An EA Play Pro membership is available for $14.99 a month or $99.99 a
+                year – you also get the 10% discount!
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb16" />
+          <section class="box height2">
+            <label class="box-title height2" for="cb16">
+              <h4>How do I cancel my EA Play membership?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">Canceling your EA Play membership is quick and easy. From the nav bar
+                select EA Play > Manage My Membership. Just click the “Cancel my membership” link at the bottom to get
+                started. No fuss, no muss. You can cancel from either the Origin client or Origin.com.
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb17" />
+          <section class="box height2">
+            <label class="box-title height2" for="cb17">
+              <h4>What if I want to cancel EA Play before my membership ends?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">If you cancel your membership prior to your next monthly or annual
+                billing date, you won't be charged for the following month or year. You'll be able to continue to play
+                games, use your discount and jump into any available trials (if you’re an EA Play member) or brand new
+                full games (if you’re a Pro member) until your membership expires.
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="cb18" />
+          <section class="box height2">
+            <label class="box-title height2" for="cb18">
+              <h4>Can I change my Pro membership to EA Play?</h4>
+            </label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+              <p class="bS" style="margin-top:0px">You sure can! From the nav bar select EA Play > Manage My Membership
+                and choose the EA Play membership and monthly or annual billing plan. Your new membership will start at
+                the end of your current billing cycle. Have more questions about changing your membership? <span
+                  style="color:#29FFC9; text-decoration: underline;">Please speak with an advisor.</span>
+              </p>
+            </div>
+          </section>
+
+          <input type="radio" name="accordion" id="acc-close" />
+          <p class="bXS" style="margin: 32px 16px;">* Conditions, limitations and exclusions apply. <br><span
+              style="color:#29FFC9; text-decoration: underline;">Click here for details.</span></p>
+
+        </div>
+        </section>
+
+  </main>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

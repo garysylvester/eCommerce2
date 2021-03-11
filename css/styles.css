@@ -879,6 +879,24 @@ h6 {
   width: 100%;
 }
 
+.cell-header-tile-3up {
+  height: fit-content;
+  width: calc(33.33% - 4px);
+  margin-bottom: var(--dimension-space-small);
+  background: var(--table-cell-bg);
+  padding: var(--dimension-space-medium) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.cell-header-tile-3up img{
+  width: 80%;
+}
+
 .cell-header-tile2wBG {
   width: calc(50% - 8px);
   height: fit-content;
@@ -1126,7 +1144,27 @@ h6 {
 
 .swiper-container6 {
   overflow: visible !important;
-  margin: var(--dimension-space-smaller) 0 0 0;
+  margin: var(--dimension-space-smaller) 0 var(--dimension-space-smaller) 0;
+}
+
+.swiper-container7 {
+  overflow: visible !important;
+  margin: var(--dimension-space-smaller) 0 var(--dimension-space-smaller) 0;
+}
+
+.swiper-container8 {
+  overflow: visible !important;
+  margin: var(--dimension-space-smaller) 0 var(--dimension-space-smaller) 0;
+}
+
+.swiper-container9 {
+  overflow: visible !important;
+  margin: var(--dimension-space-smaller) 0 var(--dimension-space-smaller) 0;
+}
+
+.swiper-container10 {
+  overflow: visible !important;
+  margin: var(--dimension-space-smaller) 0 var(--dimension-space-smaller) 0;
 }
 
 .swiper-slide4 img {
@@ -1140,6 +1178,24 @@ h6 {
   justify-content: center;
   flex-direction: column;
   object-fit: cover;
+}
+
+.swiper-row-header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper-row-header p{
+  max-width: 75%;
+  margin-bottom: var(--dimension-space-smaller);
+}
+
+.swiper-row-header .swiper-pagination{
+  width: fit-content;
+  margin-left: var(--dimension-space-large);
 }
 
 .swiper-slide img {
@@ -1163,12 +1219,22 @@ h6 {
   outline: none;
 }
 
+.swiper-pagination5,
+.swiper-pagination6,
+.swiper-pagination7,
+.swiper-pagination8,
+.swiper-pagination9,
+.swiper-pagination10 {
+  position: relative !important;
+}
+
 .swiper-pagination-bullet {
   background: var(--color-fifa-neutral-800) !important;
   opacity: 1 !important;
-  width: 4px !important;
+  width: 2px !important;
   height: 4px !important;
-  margin: 0 3px !important;
+  margin: 0 !important;
+  border-radius: 0px !important;
 }
 
 .swiper-pagination-bullet-active {

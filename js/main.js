@@ -277,6 +277,27 @@ function showModal4() {
   body.style.top = `-${scrollY}`;
 }
 
+function showModal5() {
+  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+}
+
+function showModal6() {
+  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+}
+
+function showModal7() {
+  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+}
+
 function closeModal() {
   const body = document.body;
   const scrollY = body.style.top;
@@ -302,6 +323,30 @@ function closeModal3() {
 }
 
 function closeModal4() {
+  const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+function closeModal5() {
+  const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+function closeModal6() {
+  const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+function closeModal7() {
   const body = document.body;
   const scrollY = body.style.top;
   body.style.position = '';

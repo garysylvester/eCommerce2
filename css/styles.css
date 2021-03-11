@@ -1043,6 +1043,7 @@ h6 {
   text-align: left;
   background: rgba(0, 0, 0, .9);
   transition: opacity .25s ease;
+  z-index: 100;
 }
 
 .modal__bg {
@@ -1074,22 +1075,23 @@ h6 {
   right: 0;
   bottom: 0;
   left: 0;
-  width: calc(100% - 64px);
+  width: calc(100% - 48px);
   margin: auto;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   background: var(--color-fifa-base);
   border-radius: var(--border-radius-small);
-  padding: var(--dimension-space-larger) var(--dimension-space-medium);
+  padding: var(--dimension-space-larger) var(--dimension-space-small) var(--dimension-space-smaller) var(--dimension-space-small);
   height: fit-content;
   max-height: 80%;
 }
 
 .modal__close {
   position: absolute;
-  right: 1em;
-  top: 1em;
-  width: 1.1em;
-  height: 1.1em;
+  right: var(--dimension-space-small);
+  top: var(--dimension-space-small);
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 }
 
@@ -1098,7 +1100,7 @@ h6 {
   content: '';
   position: absolute;
   width: 2px;
-  height: 1.5em;
+  height: 24px;
   background: #ccc;
   display: block;
   transform: rotate(45deg);
@@ -1219,6 +1221,7 @@ h6 {
   outline: none;
 }
 
+.swiper-pagination4,
 .swiper-pagination5,
 .swiper-pagination6,
 .swiper-pagination7,

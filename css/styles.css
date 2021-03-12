@@ -1081,9 +1081,9 @@ h6 {
   overflow-y: scroll;
   background: var(--color-fifa-base);
   border-radius: var(--border-radius-small);
-  padding: var(--dimension-space-larger) var(--dimension-space-small) var(--dimension-space-smaller) var(--dimension-space-small);
+  padding: var(--dimension-space-medium) var(--dimension-space-small) var(--dimension-space-smaller) var(--dimension-space-small);
   height: fit-content;
-  max-height: 80%;
+  max-height: calc(100% - 48px);
 }
 
 .modal__close {
@@ -1191,7 +1191,7 @@ h6 {
 }
 
 .swiper-row-header p{
-  max-width: 75%;
+  max-width: 82%;
   margin-bottom: var(--dimension-space-smaller);
 }
 
@@ -1241,7 +1241,7 @@ h6 {
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--color-fifa-mint) !important;
+  background: var(--color-fifa-neutral-300) !important;
 }
 
 .swiper-button-next:after,

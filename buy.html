@@ -257,6 +257,7 @@
               loop: true,
               slidesPerView: 2,
               spaceBetween: 16,
+              freeMode: true,
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -347,6 +348,7 @@
               loop: false,
               slidesPerView: 2.25,
               spaceBetween: 18,
+              freeMode: true,
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -419,8 +421,9 @@
           <script>
             var swiper4 = new Swiper('.swiper-container4', {
               loop: false,
-              slidesPerView: 1.15,
+              slidesPerView: 1.25,
               spaceBetween: 18,
+              freeMode: true,
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -445,7 +448,7 @@
         <img src="img/eap-on-steam.svg">
 
         <div class="swiper-row-header">
-          <p class="bS">EA Play games on Steam</p>
+          <p class="bS">EA Play games on Steam<span style="font-size:12px; opacity:0.7;">&nbsp; &nbsp;(66)</span></p>
           <div class="swiper-pagination swiper-pagination5"></div>
         </div>
 
@@ -530,18 +533,6 @@
             </div>
 
             <div class="swiper-slide swiper-slide5">
-              <img src="img/steam-modal/eap-steam-20.png">
-            </div>
-
-            <div class="swiper-slide swiper-slide5">
-              <img src="img/steam-modal/eap-steam-21.png">
-            </div>
-
-            <div class="swiper-slide swiper-slide5">
-              <img src="img/steam-modal/eap-steam-22.png">
-            </div>
-
-            <div class="swiper-slide swiper-slide5">
               <img src="img/steam-modal/load-more-steam.png">
             </div>
           </div>
@@ -551,6 +542,7 @@
               loop: false,
               slidesPerView: 2.5,
               spaceBetween: 12,
+              freeMode: true,
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -573,10 +565,10 @@
       <div class="modal__inner">
         <label class="modal__close" for="modal-5" onclick="closeModal5()"></label>
         <img src="img/ea-play-pro-logo-tile.svg" style="margin-bottom: 16px;">
-        <h4 style="margin-bottom: 16px;">Unlimitd access games included in the <br>EA Play Pro membership:</h4>
+        <h4 style="margin-bottom: 16px;">Unlimitd access to 209 games included <br>in the EA Play Pro membership</h4>
 
         <div class="swiper-row-header">
-          <p class="bS">Games in The Play Pro List</p>
+          <p class="bS">The Play Pro List<span style="font-size:12px; opacity:0.7;">&nbsp; &nbsp;(186)</span></p>
           <div class="swiper-pagination swiper-pagination7"></div>
         </div>
 
@@ -594,6 +586,10 @@
 
             <div class="swiper-slide swiper-slide7">
               <img src="img/eapp-modal/eapp-play-list-02.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide7">
+              <img src="img/eap-modal/eap-coming-soon-01.png">
             </div>
 
             <div class="swiper-slide swiper-slide7">
@@ -669,7 +665,14 @@
             var swiper7 = new Swiper('.swiper-container7', {
               loop: false,
               slidesPerView: 2.5,
+              edgeSwipeThreshold: 24,
               spaceBetween: 12,
+              freeModeMomentum: true,
+              freeModeMomentumRatio: 1.21,
+              freeModeMinimumVelocity: 0.04,
+              freeMode: true,
+              freeModeSticky: true,
+              freeModeFluid: true,
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -684,7 +687,7 @@
         <!-- !swiper slides -->
 
         <div class="swiper-row-header">
-          <p class="bS">Games exclusive to EA Play Pro</p>
+          <p class="bS">Games exclusive to EA Play Pro<span style="font-size:12px; opacity:0.7;">&nbsp; &nbsp;(23)</span></p>
           <div class="swiper-pagination swiper-pagination6"></div>
         </div>
 
@@ -786,6 +789,7 @@
               loop: false,
               slidesPerView: 2.5,
               spaceBetween: 12,
+              freeMode: true,
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -810,10 +814,10 @@
       <div class="modal__inner">
         <label class="modal__close" for="modal-6" onclick="closeModal6()"></label>
         <img src="img/ea-play-logo-tile.svg" style="margin-bottom: 16px;">
-        <h4 style="margin-bottom: 16px;">Games included in the EA Play membership:</h4>
+        <h4 style="margin-bottom: 16px;">182 games included in the EA Play membership</h4>
 
         <div class="swiper-row-header">
-          <p class="bS">10 hour trials avaliable now</p>
+          <p class="bS">10 hour trials avaliable now<span style="font-size:12px; opacity:0.7;">&nbsp; &nbsp;(3)</span></p>
           <div class="swiper-pagination swiper-pagination8"></div>
         </div>
 
@@ -830,7 +834,11 @@
             </div>
 
             <div class="swiper-slide swiper-slide8">
-              <img src="img/eapp-modal/eapp-exclusive-01.png">
+              <img src="img/eap-modal/eap-10hr-trial-03.png">
+            </div>
+
+            <div class="swiper-slide swiper-slide8">
+              <img src="img/eap-modal/eap-coming-soon-01.png">
             </div>
           </div>
 
@@ -839,6 +847,7 @@
               loop: false,
               slidesPerView: 2.5,
               spaceBetween: 12,
+              freeMode: true,
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -853,7 +862,7 @@
         <!-- !swiper slides -->
 
         <div class="swiper-row-header">
-          <p class="bS">Unlimited access to <br>The Play List</p>
+          <p class="bS">Unlimited access to The Play List<span style="font-size:12px; opacity:0.7;">&nbsp; &nbsp;(179)</span></p>
           <div class="swiper-pagination swiper-pagination9"></div>
         </div>
 
@@ -939,6 +948,7 @@
             loop: false,
             slidesPerView: 2.5,
             spaceBetween: 12,
+            freeMode: true,
             navigation: {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
@@ -965,7 +975,7 @@
         <img src="img/eap-on-ps.svg">
 
         <div class="swiper-row-header">
-          <p class="bS">EA Play games on the Playstaion Network</p>
+          <p class="bS">EA Play games on the Playstaion Network<span style="font-size:12px; opacity:0.7;">&nbsp; &nbsp;(66)</span></p>
           <div class="swiper-pagination swiper-pagination10"></div>
         </div>
 
@@ -1071,6 +1081,7 @@
               loop: false,
               slidesPerView: 2.5,
               spaceBetween: 12,
+              freeMode: true,
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',

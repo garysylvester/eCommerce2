@@ -102,28 +102,15 @@ function aboutToggle() {
     x.style.height = "48px";
   }
 
-  var x = document.getElementById("learnMore");
-  if (x.innerHTML === "About +") {
-    x.innerHTML = "Collapse -";
+  var x = document.getElementById("aboutToggleText");
+  if (x.innerHTML === "About") {
+    x.innerHTML = "Collapse";
   } else {
-    x.innerHTML = "About +";
-  }
-}
-
-function eaPlayMore2() {
-  var x = document.getElementById("eaPlayMoreDiv");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+    x.innerHTML = "About";
   }
 
-  var x = document.getElementById("eaPlayMoreBtn2");
-  if (x.innerHTML === "Explore EA Play +") {
-    x.innerHTML = "Collapse -";
-  } else {
-    x.innerHTML = "Explore EA Play +";
-  }
+  var rotate = document.getElementById("chevron");
+  rotate.classList.toggle("chevron-rotate");
 }
 
 function compareSubsToggle() {
@@ -134,12 +121,15 @@ function compareSubsToggle() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("compareSubs");
-  if (x.innerHTML === "Compare +") {
-    x.innerHTML = "Collapse -";
+  var x = document.getElementById("compareSubsText");
+  if (x.innerHTML === "Compare") {
+    x.innerHTML = "Collapse";
   } else {
-    x.innerHTML = "Compare +";
+    x.innerHTML = "Compare";
   }
+
+  var rotate = document.getElementById("chevron8");
+  rotate.classList.toggle("chevron-rotate");
 }
 
 // ---------- FAQ's ----------
@@ -207,12 +197,15 @@ function compareEditionToggle() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("compareEdition");
-  if (x.innerHTML === "Compare +") {
-    x.innerHTML = "Collapse -";
+  var x = document.getElementById("compareEditionText");
+  if (x.innerHTML === "Compare") {
+    x.innerHTML = "Collapse";
   } else {
-    x.innerHTML = "Compare +";
+    x.innerHTML = "Compare";
   }
+
+  var rotate = document.getElementById("chevron9");
+  rotate.classList.toggle("chevron-rotate");
 }
 
 function compareEditionToggle2() {
@@ -223,12 +216,15 @@ function compareEditionToggle2() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("compareEdition2");
-  if (x.innerHTML === "Compare +") {
-    x.innerHTML = "Collapse -";
+  var x = document.getElementById("compareEdition2Text");
+  if (x.innerHTML === "Compare") {
+    x.innerHTML = "Collapse";
   } else {
-    x.innerHTML = "Compare +";
+    x.innerHTML = "Compare";
   }
+
+  var rotate = document.getElementById("chevron2");
+  rotate.classList.toggle("chevron-rotate");
 }
 
 function compareEditionToggle3() {
@@ -239,12 +235,15 @@ function compareEditionToggle3() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("compareEdition3");
-  if (x.innerHTML === "Compare +") {
-    x.innerHTML = "Collapse -";
+  var x = document.getElementById("compareEdition3Text");
+  if (x.innerHTML === "Compare") {
+    x.innerHTML = "Collapse";
   } else {
-    x.innerHTML = "Compare +";
+    x.innerHTML = "Compare";
   }
+
+  var rotate = document.getElementById("chevron4");
+  rotate.classList.toggle("chevron-rotate");
 }
 //------------------------ COMPARE EDITION ------------------------ (END)
 
@@ -456,14 +455,15 @@ function comparePCPlatforms() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("comparePC");
-  if (x.innerHTML === "Compare +") {
-    x.innerHTML = "Collapse -";
+  var x = document.getElementById("comparePCText");
+  if (x.innerHTML === "Compare") {
+    x.innerHTML = "Collapse";
   } else {
-    x.innerHTML = "Compare +";
+    x.innerHTML = "Compare";
   }
 
-
+  var rotate = document.getElementById("chevron5");
+  rotate.classList.toggle("chevron-rotate");
 }
 // EA DESKTOP APP (END)
 
@@ -479,12 +479,15 @@ function compareJoinBuy2() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("compareJoinBuybtn2");
-  if (x.innerHTML === "Compare +") {
-    x.innerHTML = "Collapse -";
+  var x = document.getElementById("compareJoinBuybtn2Text");
+  if (x.innerHTML === "Compare") {
+    x.innerHTML = "Collapse";
   } else {
-    x.innerHTML = "Compare +";
+    x.innerHTML = "Compare";
   }
+
+  var rotate = document.getElementById("chevron6");
+  rotate.classList.toggle("chevron-rotate");
 }
 
 function eadCallout() {
@@ -552,12 +555,15 @@ function compareJoinBuy3() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("compareJoinBuybtn3");
-  if (x.innerHTML === "Compare +") {
-    x.innerHTML = "Collapse -";
+  var x = document.getElementById("compareJoinBuybtn3Text");
+  if (x.innerHTML === "Compare") {
+    x.innerHTML = "Collapse";
   } else {
-    x.innerHTML = "Compare +";
+    x.innerHTML = "Compare";
   }
+
+  var rotate = document.getElementById("chevron3");
+  rotate.classList.toggle("chevron-rotate");
 }
 
 function compareJoinBuy4() {
@@ -568,12 +574,15 @@ function compareJoinBuy4() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("compareJoinBuybtn4");
-  if (x.innerHTML === "Compare +") {
-    x.innerHTML = "Collapse -";
+  var x = document.getElementById("compareJoinBuybtn4Text");
+  if (x.innerHTML === "Compare") {
+    x.innerHTML = "Collapse";
   } else {
-    x.innerHTML = "Compare +";
+    x.innerHTML = "Compare";
   }
+
+  var rotate = document.getElementById("chevron5");
+  rotate.classList.toggle("chevron-rotate");
 }
 // GENERAL (END)
 
@@ -842,12 +851,15 @@ function compareJoinBuy() {
     x.style.display = "none";
   }
 
-  var x = document.getElementById("compareJoinBuybtn");
-  if (x.innerHTML === "Compare +") {
-    x.innerHTML = "Collapse -";
+  var x = document.getElementById("compareJoinBuybtnText");
+  if (x.innerHTML === "Compare") {
+    x.innerHTML = "Collapse";
   } else {
-    x.innerHTML = "Compare +";
+    x.innerHTML = "Compare";
   }
+
+  var rotate = document.getElementById("chevron7");
+  rotate.classList.toggle("chevron-rotate");
 }
 // -------- GENERAL (START)
 
@@ -1044,7 +1056,7 @@ function selectEAPLAYPRO2() {
 // -------- JOIN EA PLAY PRO (END)
 
 // MEMBERSHIPS
-function isMembershipSelected(){
+function isMembershipSelected() {
   var EAPM = document.getElementById("EADcheckoutMonthly");
   var EAPA = document.getElementById("EADcheckoutAnnual");
   var EAPPM = document.getElementById("EADcheckoutProMonthly");
@@ -1081,7 +1093,7 @@ function selectMonthlyPayments() {
   } else {
     if (hash) {
       noLogin.style.display = "none";
-    } 
+    }
 
     if (!hash) {
       login.style.display = "none";
@@ -1131,7 +1143,7 @@ function selectAnnualPayments() {
   } else {
     if (hash) {
       noLogin.style.display = "none";
-    } 
+    }
 
     if (!hash) {
       login.style.display = "none";
@@ -1180,7 +1192,7 @@ function selectAnnualPaymentsPro() {
   } else {
     if (hash) {
       noLogin.style.display = "none";
-    } 
+    }
 
     if (!hash) {
       login.style.display = "none";
@@ -1229,7 +1241,7 @@ function selectMonthlyPaymentsPro() {
   } else {
     if (hash) {
       noLogin.style.display = "none";
-    } 
+    }
 
     if (!hash) {
       login.style.display = "none";
@@ -1288,7 +1300,7 @@ function goToSteam() {
 }
 
 // SELECT EDITION //
-function isGameSelected(){
+function isGameSelected() {
   var standardEdition = document.getElementById("EADcheckoutBuyStandardEdition");
   var ultimateEdition = document.getElementById("EADcheckoutBuyUltimateEdition");
   var championsEdition = document.getElementById("EADcheckoutBuyChampionsEdition");
@@ -1330,7 +1342,7 @@ function buyUltimateEdition() {
   } else {
     if (hash) {
       noLogin.style.display = "none";
-    } 
+    }
 
     if (!hash) {
       login.style.display = "none";
@@ -1389,7 +1401,7 @@ function buyChampionsEdition() {
   } else {
     if (hash) {
       noLogin.style.display = "none";
-    } 
+    }
 
     if (!hash) {
       login.style.display = "none";
@@ -1448,7 +1460,7 @@ function buyStandardEdition() {
   } else {
     if (hash) {
       noLogin.style.display = "none";
-    } 
+    }
 
     if (!hash) {
       login.style.display = "none";

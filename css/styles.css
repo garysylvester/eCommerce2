@@ -1568,3 +1568,23 @@ input:checked+section.box .box-title:before {
   align-items: center;
   margin-bottom: var(--dimension-space-smaller);
 }
+
+.chevron-rotate{
+  transform: rotate(-90deg) !important;
+}
+
+#chevron,
+#chevron2,
+#chevron3,
+#chevron4,
+#chevron5,
+#chevron6,
+#chevron7,
+#chevron8,
+#chevron9 {
+  display: inline-block;
+  margin-left: var(--dimension-space-smaller);
+  transform: rotate(90deg);
+  transition: all 0.25s ease-in-out;
+}
+

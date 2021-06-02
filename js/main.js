@@ -1,98 +1,94 @@
 // GENERAL
 
 const interval = setInterval(() => {
-  windowLocation()
-}, 5)
+  windowLocation();
+}, 5);
 
 function windowLocation() {
-  var hash = window.location.hash.includes('hidelogin');
+  var hash = window.location.hash.includes("hidelogin");
   if (hash) {
-    const earlyLoginBlock = document.getElementById('earlyLoginBlock')
-    const stepOne = document.getElementById('selectPCPlatform')
-    const selectedStatePC = document.getElementById('s1pc')
-    const inactiveStateConsole = document.getElementById('s1console')
-    const stepTwo = document.getElementById('eadSection')
-    const selectedStateEAD = document.getElementById('s2selectEAD')
-    const inactiveStateSteam = document.getElementById('s2selectSteam')
-    const selectionProgress = document.getElementById('selectionProgressEAD1')
-    const scrollPosition = document.getElementById('makeSelection')
+    const earlyLoginBlock = document.getElementById("earlyLoginBlock");
+    const stepOne = document.getElementById("selectPCPlatform");
+    const selectedStatePC = document.getElementById("s1pc");
+    const inactiveStateConsole = document.getElementById("s1console");
+    const stepTwo = document.getElementById("eadSection");
+    const selectedStateEAD = document.getElementById("s2selectEAD");
+    const inactiveStateSteam = document.getElementById("s2selectSteam");
+    const selectionProgress = document.getElementById("selectionProgressEAD1");
+    const scrollPosition = document.getElementById("makeSelection");
     if (stepOne) {
-      stepOne.style.display = 'block'
-      stepTwo.style.display = 'block'
-      selectionProgress.style.display = 'block'
-      selectedStatePC.classList.add('platformTileSelected')
-      inactiveStateConsole.classList.add('platformTileInactive')
-      selectedStateEAD.classList.add('platformTileSelected')
-      inactiveStateSteam.classList.add('platformTileInactive')
+      stepOne.style.display = "block";
+      stepTwo.style.display = "block";
+      selectionProgress.style.display = "block";
+      selectedStatePC.classList.add("platformTileSelected");
+      inactiveStateConsole.classList.add("platformTileInactive");
+      selectedStateEAD.classList.add("platformTileSelected");
+      inactiveStateSteam.classList.add("platformTileInactive");
       scrollPosition.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
-      clearInterval(interval)
+        behavior: "smooth",
+        block: "start",
+      });
+      clearInterval(interval);
     }
     if (earlyLoginBlock) {
-      earlyLoginBlock.style.display = 'none'
-      clearInterval(interval)
+      earlyLoginBlock.style.display = "none";
+      clearInterval(interval);
     }
-
   } else {
-    clearInterval(interval)
+    clearInterval(interval);
   }
 }
 
 function showAvatar() {
-  var hash = window.location.hash.includes('hidelogin');
+  var hash = window.location.hash.includes("hidelogin");
   if (hash) {
-    const profilePicture = document.getElementById('profilePicture')
+    const profilePicture = document.getElementById("profilePicture");
     if (profilePicture) {
-      profilePicture.style.display = 'block'
+      profilePicture.style.display = "block";
     }
   }
 }
-showAvatar()
+showAvatar();
 
 setTimeout(function showWelcome() {
-  var hash = window.location.hash.includes('hidelogin');
+  var hash = window.location.hash.includes("hidelogin");
   if (hash) {
-    const welcomeBackUT = document.getElementById('welcomeBack')
+    const welcomeBackUT = document.getElementById("welcomeBack");
     if (welcomeBackUT) {
-      welcomeBackUT.classList.add('animate-welcome-back')
+      welcomeBackUT.classList.add("animate-welcome-back");
     }
   }
 }, 500);
 
-
 setTimeout(function hideWelcome() {
-  var hash = window.location.hash.includes('hidelogin');
+  var hash = window.location.hash.includes("hidelogin");
   if (hash) {
-    const welcomeBackUT = document.getElementById('welcomeBack')
+    const welcomeBackUT = document.getElementById("welcomeBack");
     if (welcomeBackUT) {
-      welcomeBackUT.classList.remove('animate-welcome-back')
+      welcomeBackUT.classList.remove("animate-welcome-back");
     }
   }
 }, 5000);
 
 setTimeout(function showCheckoutWelcome() {
-  var hash = window.location.hash.includes('showAvatar');
+  var hash = window.location.hash.includes("showAvatar");
   if (hash) {
-    const welcomeBackUT = document.getElementById('welcomeBack')
+    const welcomeBackUT = document.getElementById("welcomeBack");
     if (welcomeBackUT) {
-      welcomeBackUT.classList.add('animate-welcome-back')
+      welcomeBackUT.classList.add("animate-welcome-back");
     }
   }
 }, 500);
 
-
 setTimeout(function hideCheckoutWelcome() {
-  var hash = window.location.hash.includes('showAvatar');
+  var hash = window.location.hash.includes("showAvatar");
   if (hash) {
-    const welcomeBackUT = document.getElementById('welcomeBack')
+    const welcomeBackUT = document.getElementById("welcomeBack");
     if (welcomeBackUT) {
-      welcomeBackUT.classList.remove('animate-welcome-back')
+      welcomeBackUT.classList.remove("animate-welcome-back");
     }
   }
 }, 5000);
-
 
 function aboutToggle() {
   var x = document.getElementById("aboutGame");
@@ -143,48 +139,47 @@ function backToBuy() {
 }
 
 const interval2 = setInterval(() => {
-  windowLocation2()
-}, 5)
+  windowLocation2();
+}, 5);
 
 function windowLocation2() {
-  var selectMembershipHash = window.location.hash.includes('select-membership');
+  var selectMembershipHash = window.location.hash.includes("select-membership");
   if (selectMembershipHash) {
-    const earlyLoginBlock = document.getElementById('earlyLoginBlock')
-    const stepOne = document.getElementById('selectPCPlatform')
-    const selectedStatePC = document.getElementById('s1pc')
-    const inactiveStateConsole = document.getElementById('s1console')
-    const stepTwo = document.getElementById('eadSection')
-    const selectedStateEAD = document.getElementById('s2selectEAD')
-    const inactiveStateSteam = document.getElementById('s2selectSteam')
-    const stepThree = document.getElementById('eaPlaySelectMembershipSection')
-    const selectedStateJoin = document.getElementById('compareJoinCard')
-    const inactiveStateBuy = document.getElementById('compareBuyCard')
-    const selectionProgress = document.getElementById('selectionProgressEAD2')
-    const scrollPosition = document.getElementById('makeSelection')
+    const earlyLoginBlock = document.getElementById("earlyLoginBlock");
+    const stepOne = document.getElementById("selectPCPlatform");
+    const selectedStatePC = document.getElementById("s1pc");
+    const inactiveStateConsole = document.getElementById("s1console");
+    const stepTwo = document.getElementById("eadSection");
+    const selectedStateEAD = document.getElementById("s2selectEAD");
+    const inactiveStateSteam = document.getElementById("s2selectSteam");
+    const stepThree = document.getElementById("eaPlaySelectMembershipSection");
+    const selectedStateJoin = document.getElementById("compareJoinCard");
+    const inactiveStateBuy = document.getElementById("compareBuyCard");
+    const selectionProgress = document.getElementById("selectionProgressEAD2");
+    const scrollPosition = document.getElementById("makeSelection");
     if (stepOne) {
-      stepOne.style.display = 'block'
-      stepTwo.style.display = 'block'
-      stepThree.style.display = 'block'
-      selectionProgress.style.display = 'block'
-      selectedStatePC.classList.add('platformTileSelected')
-      inactiveStateConsole.classList.add('platformTileInactive')
-      selectedStateEAD.classList.add('platformTileSelected')
-      inactiveStateSteam.classList.add('platformTileInactive')
-      selectedStateJoin.classList.add('platformTileSelected')
-      inactiveStateBuy.classList.add('platformTileInactive')
+      stepOne.style.display = "block";
+      stepTwo.style.display = "block";
+      stepThree.style.display = "block";
+      selectionProgress.style.display = "block";
+      selectedStatePC.classList.add("platformTileSelected");
+      inactiveStateConsole.classList.add("platformTileInactive");
+      selectedStateEAD.classList.add("platformTileSelected");
+      inactiveStateSteam.classList.add("platformTileInactive");
+      selectedStateJoin.classList.add("platformTileSelected");
+      inactiveStateBuy.classList.add("platformTileInactive");
       scrollPosition.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
-      clearInterval(interval2)
+        behavior: "smooth",
+        block: "start",
+      });
+      clearInterval(interval2);
     }
     if (earlyLoginBlock) {
-      earlyLoginBlock.style.display = 'none'
-      clearInterval(interval2)
+      earlyLoginBlock.style.display = "none";
+      clearInterval(interval2);
     }
-
   } else {
-    clearInterval(interval2)
+    clearInterval(interval2);
   }
 }
 
@@ -249,112 +244,115 @@ function compareEditionToggle3() {
 
 //------------------------ SHOW MODAL ------------------------ (END)
 function showModal() {
-  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const scrollY = document.documentElement.style.getPropertyValue("--scroll-y");
   const body = document.body;
-  body.style.position = 'fixed';
+  body.style.position = "fixed";
   body.style.top = `-${scrollY}`;
 }
 
 function showModal2() {
-  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const scrollY = document.documentElement.style.getPropertyValue("--scroll-y");
   const body = document.body;
-  body.style.position = 'fixed';
+  body.style.position = "fixed";
   body.style.top = `-${scrollY}`;
 }
 
 function showModal3() {
-  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const scrollY = document.documentElement.style.getPropertyValue("--scroll-y");
   const body = document.body;
-  body.style.position = 'fixed';
+  body.style.position = "fixed";
   body.style.top = `-${scrollY}`;
 }
 
 function showModal4() {
-  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const scrollY = document.documentElement.style.getPropertyValue("--scroll-y");
   const body = document.body;
-  body.style.position = 'fixed';
+  body.style.position = "fixed";
   body.style.top = `-${scrollY}`;
 }
 
 function showModal5() {
-  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const scrollY = document.documentElement.style.getPropertyValue("--scroll-y");
   const body = document.body;
-  body.style.position = 'fixed';
+  body.style.position = "fixed";
   body.style.top = `-${scrollY}`;
 }
 
 function showModal6() {
-  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const scrollY = document.documentElement.style.getPropertyValue("--scroll-y");
   const body = document.body;
-  body.style.position = 'fixed';
+  body.style.position = "fixed";
   body.style.top = `-${scrollY}`;
 }
 
 function showModal7() {
-  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const scrollY = document.documentElement.style.getPropertyValue("--scroll-y");
   const body = document.body;
-  body.style.position = 'fixed';
+  body.style.position = "fixed";
   body.style.top = `-${scrollY}`;
 }
 
 function closeModal() {
   const body = document.body;
   const scrollY = body.style.top;
-  body.style.position = '';
-  body.style.top = '';
-  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  body.style.position = "";
+  body.style.top = "";
+  window.scrollTo(0, parseInt(scrollY || "0") * -1);
 }
 
 function closeModal2() {
   const body = document.body;
   const scrollY = body.style.top;
-  body.style.position = '';
-  body.style.top = '';
-  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  body.style.position = "";
+  body.style.top = "";
+  window.scrollTo(0, parseInt(scrollY || "0") * -1);
 }
 
 function closeModal3() {
   const body = document.body;
   const scrollY = body.style.top;
-  body.style.position = '';
-  body.style.top = '';
-  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  body.style.position = "";
+  body.style.top = "";
+  window.scrollTo(0, parseInt(scrollY || "0") * -1);
 }
 
 function closeModal4() {
   const body = document.body;
   const scrollY = body.style.top;
-  body.style.position = '';
-  body.style.top = '';
-  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  body.style.position = "";
+  body.style.top = "";
+  window.scrollTo(0, parseInt(scrollY || "0") * -1);
 }
 
 function closeModal5() {
   const body = document.body;
   const scrollY = body.style.top;
-  body.style.position = '';
-  body.style.top = '';
-  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  body.style.position = "";
+  body.style.top = "";
+  window.scrollTo(0, parseInt(scrollY || "0") * -1);
 }
 
 function closeModal6() {
   const body = document.body;
   const scrollY = body.style.top;
-  body.style.position = '';
-  body.style.top = '';
-  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  body.style.position = "";
+  body.style.top = "";
+  window.scrollTo(0, parseInt(scrollY || "0") * -1);
 }
 
 function closeModal7() {
   const body = document.body;
   const scrollY = body.style.top;
-  body.style.position = '';
-  body.style.top = '';
-  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  body.style.position = "";
+  body.style.top = "";
+  window.scrollTo(0, parseInt(scrollY || "0") * -1);
 }
 
-window.addEventListener('scroll', () => {
-  document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+window.addEventListener("scroll", () => {
+  document.documentElement.style.setProperty(
+    "--scroll-y",
+    `${window.scrollY}px`
+  );
 });
 //------------------------ SHOW MODAL ------------------------ (END)
 
@@ -368,6 +366,12 @@ function selectPC() {
     x.style.display = "none";
   }
 
+  if ($("#selectPCPlatform").css("opacity") == 0) {
+    $("#selectPCPlatform").css("opacity", 1);
+  } else {
+    $("#selectPCPlatform").css("opacity", 0);
+  }
+
   var element = document.getElementById("s1pc");
   element.classList.toggle("platformTileSelected");
 
@@ -376,8 +380,8 @@ function selectPC() {
 
   var elmnt = document.getElementById("selectPCPlatform");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -392,6 +396,12 @@ function selectConsole() {
     x.style.display = "none";
   }
 
+  if ($("#selectConsolePlatform").css("opacity") == 0) {
+    $("#selectConsolePlatform").css("opacity", 1);
+  } else {
+    $("#selectConsolePlatform").css("opacity", 0);
+  }
+
   var element = document.getElementById("s1console");
   element.classList.toggle("platformTileSelected");
 
@@ -400,13 +410,12 @@ function selectConsole() {
 
   var elmnt = document.getElementById("selectConsolePlatform");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 // SELECT CONSOLE (END)
 //STEP 1 ------------------------ SELECT DEVICE ------------------------ (END)
-
 
 // STEP 2 ----------------- SELECT SELECT PLATFORM - PC ----------------- (START)
 // EA DESKTOP APP (START)
@@ -418,12 +427,18 @@ function selectPlatformEAD() {
     x.style.display = "none";
   }
 
+  if ($("#eadSection").css("opacity") == 0) {
+    $("#eadSection").css("opacity", 1);
+  } else {
+    $("#eadSection").css("opacity", 0);
+  }
+
   var x = document.getElementById("earlyLoginBlock");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
-    if (!window.location.hash.includes('hidelogin')) {
-      x.style.display = "none"
+    if (!window.location.hash.includes("hidelogin")) {
+      x.style.display = "none";
     }
   }
 
@@ -442,8 +457,8 @@ function selectPlatformEAD() {
 
   var elmnt = document.getElementById("eadSection");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -466,7 +481,6 @@ function comparePCPlatforms() {
   rotate.classList.toggle("chevron-rotate");
 }
 // EA DESKTOP APP (END)
-
 
 // -------- STEAM (START) --------
 
@@ -510,9 +524,7 @@ function eadCallout() {
 
   var element = document.getElementById("s2selectEAD");
   element.classList.remove("platformTileInactive");
-
 }
-
 
 // -------- GENERAL (START)
 
@@ -522,6 +534,12 @@ function selectPlatformSteam() {
     x.style.display = "block";
   } else {
     x.style.display = "none";
+  }
+
+  if ($("#steamSection").css("opacity") == 0) {
+    $("#steamSection").css("opacity", 1);
+  } else {
+    $("#steamSection").css("opacity", 0);
   }
 
   var x = document.getElementById("selectionProgressSteam1");
@@ -539,8 +557,8 @@ function selectPlatformSteam() {
 
   var elmnt = document.getElementById("steamSection");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 // STEAM (END)
@@ -595,6 +613,12 @@ function selectPS5() {
     x.style.display = "none";
   }
 
+  if ($("#playstation5Section").css("opacity") == 0) {
+    $("#playstation5Section").css("opacity", 1);
+  } else {
+    $("#playstation5Section").css("opacity", 0);
+  }
+
   var x = document.getElementById("selectionProgressPS5");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -619,8 +643,8 @@ function selectPS5() {
 
   var elmnt = document.getElementById("playstation5Section");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -632,6 +656,12 @@ function ps5joinEAPlay() {
     x.style.display = "none";
   }
 
+  if ($("#ps5EAPlaySelectPaymentPlan").css("opacity") == 0) {
+    $("#ps5EAPlaySelectPaymentPlan").css("opacity", 1);
+  } else {
+    $("#ps5EAPlaySelectPaymentPlan").css("opacity", 0);
+  }
+
   var element = document.getElementById("ps5compareJoinCard");
   element.classList.toggle("platformTileSelected");
 
@@ -640,17 +670,23 @@ function ps5joinEAPlay() {
 
   var elmnt = document.getElementById("ps5EAPlaySelectPaymentPlan");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
 function selectMonthlyPaymentsps5() {
-  window.open("https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA99CENTPROMO", "_blank");
+  window.open(
+    "https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA99CENTPROMO",
+    "_blank"
+  );
 }
 
 function selectAnnualPaymentsps5() {
-  window.open("https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA12M00000000", "_blank");
+  window.open(
+    "https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA12M00000000",
+    "_blank"
+  );
 }
 
 function ps5buyFifa() {
@@ -661,6 +697,12 @@ function ps5buyFifa() {
     x.style.display = "none";
   }
 
+  if ($("#buyTheGameSectionPS5").css("opacity") == 0) {
+    $("#buyTheGameSectionPS5").css("opacity", 1);
+  } else {
+    $("#buyTheGameSectionPS5").css("opacity", 0);
+  }
+
   var element = document.getElementById("ps5compareBuyCard");
   element.classList.toggle("platformTileSelected");
 
@@ -669,27 +711,38 @@ function ps5buyFifa() {
 
   var elmnt = document.getElementById("buyTheGameSectionPS5");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
 function buyStandardEditionps5() {
-  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-FIFAFOOTBALL2021", "_blank");
+  window.open(
+    "https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-FIFAFOOTBALL2021",
+    "_blank"
+  );
 }
 
 function buyChampionsEditionps5() {
-  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHCHAMPN", "_blank");
+  window.open(
+    "https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHCHAMPN",
+    "_blank"
+  );
 }
 
 function buyUltimateEditionps5() {
-  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHULTIMA", "_blank");
+  window.open(
+    "https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHULTIMA",
+    "_blank"
+  );
 }
 
 function buyNXTLVLEditionps5() {
-  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-PS5LAUNCHBUNDLE0", "_blank");
+  window.open(
+    "https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-PS5LAUNCHBUNDLE0",
+    "_blank"
+  );
 }
-
 
 // ----- PS4 -----
 function selectPS4() {
@@ -698,6 +751,12 @@ function selectPS4() {
     x.style.display = "block";
   } else {
     x.style.display = "none";
+  }
+
+  if ($("#playstation4Section").css("opacity") == 0) {
+    $("#playstation4Section").css("opacity", 1);
+  } else {
+    $("#playstation4Section").css("opacity", 0);
   }
 
   var x = document.getElementById("selectionProgressPS4");
@@ -724,8 +783,8 @@ function selectPS4() {
 
   var elmnt = document.getElementById("playstation4Section");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -737,6 +796,12 @@ function ps4joinEAPlay() {
     x.style.display = "none";
   }
 
+  if ($("#ps4EAPlaySelectPaymentPlan").css("opacity") == 0) {
+    $("#ps4EAPlaySelectPaymentPlan").css("opacity", 1);
+  } else {
+    $("#ps4EAPlaySelectPaymentPlan").css("opacity", 0);
+  }
+
   var element = document.getElementById("ps4compareJoinCard");
   element.classList.toggle("platformTileSelected");
 
@@ -745,8 +810,8 @@ function ps4joinEAPlay() {
 
   var elmnt = document.getElementById("ps4EAPlaySelectPaymentPlan");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -758,6 +823,12 @@ function ps4buyFifa() {
     x.style.display = "none";
   }
 
+  if ($("#buyTheGameSectionPS4").css("opacity") == 0) {
+    $("#buyTheGameSectionPS4").css("opacity", 1);
+  } else {
+    $("#buyTheGameSectionPS4").css("opacity", 0);
+  }
+
   var element = document.getElementById("ps4compareBuyCard");
   element.classList.toggle("platformTileSelected");
 
@@ -766,31 +837,45 @@ function ps4buyFifa() {
 
   var elmnt = document.getElementById("buyTheGameSectionPS4");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
 function selectMonthlyPaymentsps4() {
-  window.open("https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA99CENTPROMO", "_blank");
+  window.open(
+    "https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA99CENTPROMO",
+    "_blank"
+  );
 }
 
 function selectAnnualPaymentsps4() {
-  window.open("https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA12M00000000", "_blank");
+  window.open(
+    "https://store.playstation.com/en-us/product/UP5498-CUSA15087_00-PSEAA12M00000000",
+    "_blank"
+  );
 }
 
 function buyStandardEditionps4() {
-  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-FIFAFOOTBALL2021", "_blank");
+  window.open(
+    "https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-FIFAFOOTBALL2021",
+    "_blank"
+  );
 }
 
 function buyChampionsEditionps4() {
-  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHCHAMPN", "_blank");
+  window.open(
+    "https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHCHAMPN",
+    "_blank"
+  );
 }
 
 function buyUltimateEditionps4() {
-  window.open("https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHULTIMA", "_blank");
+  window.open(
+    "https://store.playstation.com/en-US/product/UP0006-PPSA01327_00-POSTLAUNCHULTIMA",
+    "_blank"
+  );
 }
-
 
 // PLAYSTATIOON (END)
 
@@ -835,10 +920,12 @@ function buyUltimateEditionps4() {
 
 // SWITCH (START)
 function selectSwitch() {
-  window.open("https://www.nintendo.com/games/detail/fifa-21-nintendo-switch-legacy-edition-switch/", "_blank");
+  window.open(
+    "https://www.nintendo.com/games/detail/fifa-21-nintendo-switch-legacy-edition-switch/",
+    "_blank"
+  );
 }
 // SWITCH (END)
-
 
 // STEP 3 ----------------- JOIN OR BUY ----------------- (START)
 
@@ -872,12 +959,18 @@ function compareJoin() {
     x.style.display = "none";
   }
 
+  if ($("#eaPlaySelectMembershipSection").css("opacity") == 0) {
+    $("#eaPlaySelectMembershipSection").css("opacity", 1);
+  } else {
+    $("#eaPlaySelectMembershipSection").css("opacity", 0);
+  }
+
   var x = document.getElementById("earlyLoginBlock");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
-    if (!window.location.hash.includes('hidelogin')) {
-      x.style.display = "block"
+    if (!window.location.hash.includes("hidelogin")) {
+      x.style.display = "block";
     }
   }
 
@@ -903,12 +996,11 @@ function compareJoin() {
 
   var elmnt = document.getElementById("eaPlaySelectMembershipSection");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 // -------- JOIN EA PLAY (END)
-
 
 // -------- BUY THE GAME (START)
 function compareBuy() {
@@ -919,12 +1011,18 @@ function compareBuy() {
     x.style.display = "none";
   }
 
+  if ($("#buyTheGameSection").css("opacity") == 0) {
+    $("#buyTheGameSection").css("opacity", 1);
+  } else {
+    $("#buyTheGameSection").css("opacity", 0);
+  }
+
   var x = document.getElementById("earlyLoginBlock");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
-    if (!window.location.hash.includes('hidelogin')) {
-      x.style.display = "block"
+    if (!window.location.hash.includes("hidelogin")) {
+      x.style.display = "block";
     }
   }
 
@@ -943,13 +1041,12 @@ function compareBuy() {
 
   var elmnt = document.getElementById("buyTheGameSection");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 // -------- BUY THE GAME (END)
 // STEP 3 ----------------- JOIN OR BUY ----------------- (END)
-
 
 // STEP 4 ----------------- SELECT A MEMBERSHIP ----------------- (START)
 // -------- JOIN EA PLAY (START)
@@ -961,6 +1058,12 @@ function selectEAPLAY1() {
     x.style.display = "none";
   }
 
+  if ($("#eaPlaySelectPaymentPlan").css("opacity") == 0) {
+    $("#eaPlaySelectPaymentPlan").css("opacity", 1);
+  } else {
+    $("#eaPlaySelectPaymentPlan").css("opacity", 0);
+  }
+
   var element = document.getElementById("selectEAPlayCard1");
   element.classList.toggle("platformTileSelected");
 
@@ -969,8 +1072,8 @@ function selectEAPLAY1() {
 
   var elmnt = document.getElementById("eaPlaySelectPaymentPlan");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -982,6 +1085,12 @@ function selectEAPLAY2() {
     x.style.display = "none";
   }
 
+  if ($("#eaPlaySelectPaymentPlan").css("opacity") == 0) {
+    $("#eaPlaySelectPaymentPlan").css("opacity", 1);
+  } else {
+    $("#eaPlaySelectPaymentPlan").css("opacity", 0);
+  }
+
   var element = document.getElementById("selectEAPlayCard2");
   element.classList.toggle("platformTileSelected");
 
@@ -990,12 +1099,11 @@ function selectEAPLAY2() {
 
   var elmnt = document.getElementById("eaPlaySelectPaymentPlan");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 // -------- JOIN EA PLAY (END)
-
 
 // -------- JOIN EA PLAY PRO (START)
 function selectEAPLAYPRO1() {
@@ -1006,6 +1114,12 @@ function selectEAPLAYPRO1() {
     x.style.display = "none";
   }
 
+  if ($("#eaPlayProSelectPaymentPlan").css("opacity") == 0) {
+    $("#eaPlayProSelectPaymentPlan").css("opacity", 1);
+  } else {
+    $("#eaPlayProSelectPaymentPlan").css("opacity", 0);
+  }
+
   var element = document.getElementById("selectEAPlayProCard1");
   element.classList.toggle("platformTileSelected");
 
@@ -1014,8 +1128,8 @@ function selectEAPLAYPRO1() {
 
   var elmnt = document.getElementById("eaPlayProSelectPaymentPlan");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -1025,6 +1139,12 @@ function selectEAPLAYPRO2() {
     x.style.display = "block";
   } else {
     x.style.display = "none";
+  }
+
+  if ($("#eaPlayProSelectPaymentPlan").css("opacity") == 0) {
+    $("#eaPlayProSelectPaymentPlan").css("opacity", 1);
+  } else {
+    $("#eaPlayProSelectPaymentPlan").css("opacity", 0);
   }
 
   var x = document.getElementById("selectionProgressEAD2");
@@ -1049,8 +1169,8 @@ function selectEAPLAYPRO2() {
 
   var elmnt = document.getElementById("eaPlayProSelectPaymentPlan");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 // -------- JOIN EA PLAY PRO (END)
@@ -1061,7 +1181,12 @@ function isMembershipSelected() {
   var EAPA = document.getElementById("EADcheckoutAnnual");
   var EAPPM = document.getElementById("EADcheckoutProMonthly");
   var EAPPA = document.getElementById("EADcheckoutProAnnual");
-  return EAPM.style.display === "block" || EAPA.style.display === "block" || EAPPM.style.display === "block" || EAPPA.style.display === "block";
+  return (
+    EAPM.style.display === "block" ||
+    EAPA.style.display === "block" ||
+    EAPPM.style.display === "block" ||
+    EAPPA.style.display === "block"
+  );
 }
 
 //PAYMENT PLANS - EA PLAY - MONTHLY
@@ -1073,6 +1198,12 @@ function selectMonthlyPayments() {
     x.style.display = "none";
   }
 
+  if ($("#EADcheckoutMonthly").css("opacity") == 0) {
+    $("#EADcheckoutMonthly").css("opacity", 1);
+  } else {
+    $("#EADcheckoutMonthly").css("opacity", 0);
+  }
+
   var x = document.getElementById("makeSelection");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -1080,7 +1211,7 @@ function selectMonthlyPayments() {
     x.style.display = "block";
   }
 
-  var hash = window.location.hash.includes('hidelogin');
+  var hash = window.location.hash.includes("hidelogin");
   var login = document.getElementById("checkoutEAPM");
   var noLogin = document.getElementById("skipLoginCheckoutEAPM");
   if (isMembershipSelected()) {
@@ -1108,11 +1239,10 @@ function selectMonthlyPayments() {
 
   var elmnt = document.getElementById("EADcheckoutMonthly");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
-
 
 //PAYMENT PLANS - EA PLAY  - ANNUAL
 function selectAnnualPayments() {
@@ -1123,6 +1253,12 @@ function selectAnnualPayments() {
     x.style.display = "none";
   }
 
+  if ($("#EADcheckoutAnnual").css("opacity") == 0) {
+    $("#EADcheckoutAnnual").css("opacity", 1);
+  } else {
+    $("#EADcheckoutAnnual").css("opacity", 0);
+  }
+
   var x = document.getElementById("makeSelection");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -1130,7 +1266,7 @@ function selectAnnualPayments() {
     x.style.display = "block";
   }
 
-  var hash = window.location.hash.includes('hidelogin');
+  var hash = window.location.hash.includes("hidelogin");
   var login = document.getElementById("checkoutEAPA");
   var noLogin = document.getElementById("skipLoginCheckoutEAPA");
   if (isMembershipSelected()) {
@@ -1158,8 +1294,8 @@ function selectAnnualPayments() {
 
   var elmnt = document.getElementById("EADcheckoutAnnual");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -1172,6 +1308,12 @@ function selectAnnualPaymentsPro() {
     x.style.display = "none";
   }
 
+  if ($("#EADcheckoutProAnnual").css("opacity") == 0) {
+    $("#EADcheckoutProAnnual").css("opacity", 1);
+  } else {
+    $("#EADcheckoutProAnnual").css("opacity", 0);
+  }
+
   var x = document.getElementById("makeSelection");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -1179,7 +1321,7 @@ function selectAnnualPaymentsPro() {
     x.style.display = "block";
   }
 
-  var hash = window.location.hash.includes('hidelogin');
+  var hash = window.location.hash.includes("hidelogin");
   var login = document.getElementById("checkoutEAPPA");
   var noLogin = document.getElementById("skipLoginCheckoutEAPPA");
   if (isMembershipSelected()) {
@@ -1207,8 +1349,8 @@ function selectAnnualPaymentsPro() {
 
   var elmnt = document.getElementById("EADcheckoutProAnnual");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -1221,6 +1363,12 @@ function selectMonthlyPaymentsPro() {
     x.style.display = "none";
   }
 
+  if ($("#EADcheckoutProMonthly").css("opacity") == 0) {
+    $("#EADcheckoutProMonthly").css("opacity", 1);
+  } else {
+    $("#EADcheckoutProMonthly").css("opacity", 0);
+  }
+
   var x = document.getElementById("makeSelection");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -1228,7 +1376,7 @@ function selectMonthlyPaymentsPro() {
     x.style.display = "block";
   }
 
-  var hash = window.location.hash.includes('hidelogin');
+  var hash = window.location.hash.includes("hidelogin");
   var login = document.getElementById("checkoutEAPPM");
   var noLogin = document.getElementById("skipLoginCheckoutEAPPM");
   if (isMembershipSelected()) {
@@ -1256,18 +1404,24 @@ function selectMonthlyPaymentsPro() {
 
   var elmnt = document.getElementById("EADcheckoutProMonthly");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
-//JOIN- EA PLAY - STEAM 
+//JOIN- EA PLAY - STEAM
 function joinEAPlaySteam() {
   var x = document.getElementById("steamEAPlaySelectPaymentPlan");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
+  }
+
+  if ($("#steamEAPlaySelectPaymentPlan").css("opacity") == 0) {
+    $("#steamEAPlaySelectPaymentPlan").css("opacity", 1);
+  } else {
+    $("#steamEAPlaySelectPaymentPlan").css("opacity", 0);
   }
 
   var x = document.getElementById("selectionProgressSteam1");
@@ -1285,26 +1439,42 @@ function joinEAPlaySteam() {
 
   var elmnt = document.getElementById("steamEAPlaySelectPaymentPlan");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
 // ----- EXTERNAL LINKS -----
 function buyGameSteam() {
-  window.open("https://store.steampowered.com/app/1313860/EA_SPORTS_FIFA_21/", "_blank");
+  window.open(
+    "https://store.steampowered.com/app/1313860/EA_SPORTS_FIFA_21/",
+    "_blank"
+  );
 }
 
 function goToSteam() {
-  window.open("https://store.steampowered.com/subscriptions/ea#SaleSection_77945", "_blank");
+  window.open(
+    "https://store.steampowered.com/subscriptions/ea#SaleSection_77945",
+    "_blank"
+  );
 }
 
 // SELECT EDITION //
 function isGameSelected() {
-  var standardEdition = document.getElementById("EADcheckoutBuyStandardEdition");
-  var ultimateEdition = document.getElementById("EADcheckoutBuyUltimateEdition");
-  var championsEdition = document.getElementById("EADcheckoutBuyChampionsEdition");
-  return standardEdition.style.display === "block" || ultimateEdition.style.display === "block" || championsEdition.style.display === "block";
+  var standardEdition = document.getElementById(
+    "EADcheckoutBuyStandardEdition"
+  );
+  var ultimateEdition = document.getElementById(
+    "EADcheckoutBuyUltimateEdition"
+  );
+  var championsEdition = document.getElementById(
+    "EADcheckoutBuyChampionsEdition"
+  );
+  return (
+    standardEdition.style.display === "block" ||
+    ultimateEdition.style.display === "block" ||
+    championsEdition.style.display === "block"
+  );
 }
 // ULTIMATE EDITION
 function buyUltimateEdition() {
@@ -1313,6 +1483,12 @@ function buyUltimateEdition() {
     x.style.display = "block";
   } else {
     x.style.display = "none";
+  }
+
+  if ($("#EADcheckoutBuyUltimateEdition").css("opacity") == 0) {
+    $("#EADcheckoutBuyUltimateEdition").css("opacity", 1);
+  } else {
+    $("#EADcheckoutBuyUltimateEdition").css("opacity", 0);
   }
 
   var x = document.getElementById("selectionProgressEAD2Buy");
@@ -1329,7 +1505,7 @@ function buyUltimateEdition() {
     x.style.display = "block";
   }
 
-  var hash = window.location.hash.includes('hidelogin');
+  var hash = window.location.hash.includes("hidelogin");
   var login = document.getElementById("checkoutUE");
   var noLogin = document.getElementById("skipLoginCheckoutUE");
   if (isGameSelected()) {
@@ -1360,8 +1536,8 @@ function buyUltimateEdition() {
 
   var elmnt = document.getElementById("EADcheckoutBuyUltimateEdition");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -1372,6 +1548,12 @@ function buyChampionsEdition() {
     x.style.display = "block";
   } else {
     x.style.display = "none";
+  }
+
+  if ($("#EADcheckoutBuyChampionsEdition").css("opacity") == 0) {
+    $("#EADcheckoutBuyChampionsEdition").css("opacity", 1);
+  } else {
+    $("#EADcheckoutBuyChampionsEdition").css("opacity", 0);
   }
 
   var x = document.getElementById("selectionProgressEAD2Buy");
@@ -1388,7 +1570,7 @@ function buyChampionsEdition() {
     x.style.display = "block";
   }
 
-  var hash = window.location.hash.includes('hidelogin');
+  var hash = window.location.hash.includes("hidelogin");
   var login = document.getElementById("checkoutCE");
   var noLogin = document.getElementById("skipLoginCheckoutCE");
   if (isGameSelected()) {
@@ -1419,8 +1601,8 @@ function buyChampionsEdition() {
 
   var elmnt = document.getElementById("EADcheckoutBuyChampionsEdition");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -1431,6 +1613,12 @@ function buyStandardEdition() {
     x.style.display = "block";
   } else {
     x.style.display = "none";
+  }
+
+  if ($("#EADcheckoutBuyStandardEdition").css("opacity") == 0) {
+    $("#EADcheckoutBuyStandardEdition").css("opacity", 1);
+  } else {
+    $("#EADcheckoutBuyStandardEdition").css("opacity", 0);
   }
 
   var x = document.getElementById("selectionProgressEAD2Buy");
@@ -1447,7 +1635,7 @@ function buyStandardEdition() {
     x.style.display = "block";
   }
 
-  var hash = window.location.hash.includes('hidelogin');
+  var hash = window.location.hash.includes("hidelogin");
   var login = document.getElementById("checkoutSE");
   var noLogin = document.getElementById("skipLoginCheckoutSE");
   if (isGameSelected()) {
@@ -1478,8 +1666,8 @@ function buyStandardEdition() {
 
   var elmnt = document.getElementById("EADcheckoutBuyStandardEdition");
   elmnt.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    behavior: "smooth",
+    block: "start",
   });
 }
 
@@ -1568,15 +1756,15 @@ function expandCheckoutSummaryEAPPA() {
 }
 
 function showEAPPASummary() {
-  var hash = window.location.hash.includes('eappa');
+  var hash = window.location.hash.includes("eappa");
   if (hash) {
-    const profilePicture = document.getElementById('checkoutEAPPA')
+    const profilePicture = document.getElementById("checkoutEAPPA");
     if (profilePicture) {
-      profilePicture.style.display = 'block'
+      profilePicture.style.display = "block";
     }
   }
 }
-showEAPPASummary()
+showEAPPASummary();
 
 // EA PLAY PRO - MONTHLY
 function expandCheckoutSummaryEAPPM() {
@@ -1596,15 +1784,15 @@ function expandCheckoutSummaryEAPPM() {
 }
 
 function showEAPPMSummary() {
-  var hash = window.location.hash.includes('eappm');
+  var hash = window.location.hash.includes("eappm");
   if (hash) {
-    const profilePicture = document.getElementById('checkoutEAPPM')
+    const profilePicture = document.getElementById("checkoutEAPPM");
     if (profilePicture) {
-      profilePicture.style.display = 'block'
+      profilePicture.style.display = "block";
     }
   }
 }
-showEAPPMSummary()
+showEAPPMSummary();
 
 // EA PLAY  - ANNUAL
 function expandCheckoutSummaryEAPA() {
@@ -1624,15 +1812,15 @@ function expandCheckoutSummaryEAPA() {
 }
 
 function showEAPASummary() {
-  var hash = window.location.hash.includes('eapa');
+  var hash = window.location.hash.includes("eapa");
   if (hash) {
-    const profilePicture = document.getElementById('checkoutEAPA')
+    const profilePicture = document.getElementById("checkoutEAPA");
     if (profilePicture) {
-      profilePicture.style.display = 'block'
+      profilePicture.style.display = "block";
     }
   }
 }
-showEAPASummary()
+showEAPASummary();
 
 // EA PLAY  - MONTHLY
 function expandCheckoutSummaryEAPM() {
@@ -1652,15 +1840,15 @@ function expandCheckoutSummaryEAPM() {
 }
 
 function showEAPMSummary() {
-  var hash = window.location.hash.includes('eapm');
+  var hash = window.location.hash.includes("eapm");
   if (hash) {
-    const profilePicture = document.getElementById('checkoutEAPM')
+    const profilePicture = document.getElementById("checkoutEAPM");
     if (profilePicture) {
-      profilePicture.style.display = 'block'
+      profilePicture.style.display = "block";
     }
   }
 }
-showEAPMSummary()
+showEAPMSummary();
 
 // STANDARD EDITION
 function expandCheckoutSummarySE() {
@@ -1680,15 +1868,15 @@ function expandCheckoutSummarySE() {
 }
 
 function showSESummary() {
-  var hash = window.location.hash.includes('standard-edition');
+  var hash = window.location.hash.includes("standard-edition");
   if (hash) {
-    const profilePicture = document.getElementById('checkoutSE')
+    const profilePicture = document.getElementById("checkoutSE");
     if (profilePicture) {
-      profilePicture.style.display = 'block'
+      profilePicture.style.display = "block";
     }
   }
 }
-showSESummary()
+showSESummary();
 
 // ULTIMATE EDITION
 function expandCheckoutSummaryUE() {
@@ -1708,15 +1896,15 @@ function expandCheckoutSummaryUE() {
 }
 
 function showUESummary() {
-  var hash = window.location.hash.includes('ultimate-edition');
+  var hash = window.location.hash.includes("ultimate-edition");
   if (hash) {
-    const profilePicture = document.getElementById('checkoutUE')
+    const profilePicture = document.getElementById("checkoutUE");
     if (profilePicture) {
-      profilePicture.style.display = 'block'
+      profilePicture.style.display = "block";
     }
   }
 }
-showUESummary()
+showUESummary();
 
 // CHAMPIONS EDITION
 function expandCheckoutSummaryCE() {
@@ -1736,16 +1924,15 @@ function expandCheckoutSummaryCE() {
 }
 
 function showCESummary() {
-  var hash = window.location.hash.includes('champions-edition');
+  var hash = window.location.hash.includes("champions-edition");
   if (hash) {
-    const profilePicture = document.getElementById('checkoutCE')
+    const profilePicture = document.getElementById("checkoutCE");
     if (profilePicture) {
-      profilePicture.style.display = 'block'
+      profilePicture.style.display = "block";
     }
   }
 }
-showCESummary()
-
+showCESummary();
 
 // PAYMENT METHOD
 function selectCreditCard() {
@@ -1758,21 +1945,20 @@ function selectCreditCard() {
 
   var element = document.getElementById("amex2");
   element.classList.toggle("platformTileSelected");
-
 }
 
 // REVIEW ORDER
 // Standard Edition
 function showSEreview() {
-  var hash = window.location.hash.includes('standard-edition');
+  var hash = window.location.hash.includes("standard-edition");
   if (hash) {
-    const reviewOrderBtnSE = document.getElementById('reviewOrderSE')
+    const reviewOrderBtnSE = document.getElementById("reviewOrderSE");
     if (reviewOrderBtnSE) {
-      reviewOrderBtnSE.style.display = 'block'
+      reviewOrderBtnSE.style.display = "block";
     }
   }
 }
-showSEreview()
+showSEreview();
 
 function goToReviewOrderSE() {
   window.location.href = "review-order.html#standard-edition";
@@ -1780,15 +1966,15 @@ function goToReviewOrderSE() {
 
 // Ultimate Edition
 function showUEreview() {
-  var hash = window.location.hash.includes('ultimate-edition');
+  var hash = window.location.hash.includes("ultimate-edition");
   if (hash) {
-    const reviewOrderBtnUE = document.getElementById('reviewOrderUE')
+    const reviewOrderBtnUE = document.getElementById("reviewOrderUE");
     if (reviewOrderBtnUE) {
-      reviewOrderBtnUE.style.display = 'block'
+      reviewOrderBtnUE.style.display = "block";
     }
   }
 }
-showUEreview()
+showUEreview();
 
 function goToReviewOrderUE() {
   window.location.href = "review-order.html#ultimate-edition";
@@ -1796,15 +1982,15 @@ function goToReviewOrderUE() {
 
 // Champions Edition
 function showCEreview() {
-  var hash = window.location.hash.includes('champions-edition');
+  var hash = window.location.hash.includes("champions-edition");
   if (hash) {
-    const reviewOrderBtnCE = document.getElementById('reviewOrderCE')
+    const reviewOrderBtnCE = document.getElementById("reviewOrderCE");
     if (reviewOrderBtnCE) {
-      reviewOrderBtnCE.style.display = 'block'
+      reviewOrderBtnCE.style.display = "block";
     }
   }
 }
-showCEreview()
+showCEreview();
 
 function goToReviewOrderCE() {
   window.location.href = "review-order.html#champions-edition";
@@ -1812,15 +1998,15 @@ function goToReviewOrderCE() {
 
 // EA Play - Monthly
 function showEAPMreview() {
-  var hash = window.location.hash.includes('eapm');
+  var hash = window.location.hash.includes("eapm");
   if (hash) {
-    const reviewOrderBtnEAPM = document.getElementById('reviewOrderEAPM')
+    const reviewOrderBtnEAPM = document.getElementById("reviewOrderEAPM");
     if (reviewOrderBtnEAPM) {
-      reviewOrderBtnEAPM.style.display = 'block'
+      reviewOrderBtnEAPM.style.display = "block";
     }
   }
 }
-showEAPMreview()
+showEAPMreview();
 
 function goToReviewOrderEAPM() {
   window.location.href = "review-order.html#eapm";
@@ -1828,15 +2014,15 @@ function goToReviewOrderEAPM() {
 
 // EA Play - Annual
 function showEAPAreview() {
-  var hash = window.location.hash.includes('eapa');
+  var hash = window.location.hash.includes("eapa");
   if (hash) {
-    const reviewOrderBtnEAPA = document.getElementById('reviewOrderEAPA')
+    const reviewOrderBtnEAPA = document.getElementById("reviewOrderEAPA");
     if (reviewOrderBtnEAPA) {
-      reviewOrderBtnEAPA.style.display = 'block'
+      reviewOrderBtnEAPA.style.display = "block";
     }
   }
 }
-showEAPAreview()
+showEAPAreview();
 
 function goToReviewOrderEAPA() {
   window.location.href = "review-order.html#eapa";
@@ -1844,30 +2030,30 @@ function goToReviewOrderEAPA() {
 
 // EA Play Pro - Annual
 function showEAPPAreview() {
-  var hash = window.location.hash.includes('eappa');
+  var hash = window.location.hash.includes("eappa");
   if (hash) {
-    const reviewOrderBtnEAPPA = document.getElementById('reviewOrderEAPPA')
+    const reviewOrderBtnEAPPA = document.getElementById("reviewOrderEAPPA");
     if (reviewOrderBtnEAPPA) {
-      reviewOrderBtnEAPPA.style.display = 'block'
+      reviewOrderBtnEAPPA.style.display = "block";
     }
   }
 }
-showEAPPAreview()
+showEAPPAreview();
 
 function goToReviewOrderEAPPA() {
   window.location.href = "review-order.html#eappa";
 }
 // EA Play Pro - Monthly
 function showEAPPMreview() {
-  var hash = window.location.hash.includes('eappm');
+  var hash = window.location.hash.includes("eappm");
   if (hash) {
-    const reviewOrderBtnEAPPM = document.getElementById('reviewOrderEAPPM')
+    const reviewOrderBtnEAPPM = document.getElementById("reviewOrderEAPPM");
     if (reviewOrderBtnEAPPM) {
-      reviewOrderBtnEAPPM.style.display = 'block'
+      reviewOrderBtnEAPPM.style.display = "block";
     }
   }
 }
-showEAPPMreview()
+showEAPPMreview();
 
 function goToReviewOrderEAPPM() {
   window.location.href = "review-order.html#eappm";
@@ -1876,15 +2062,15 @@ function goToReviewOrderEAPPM() {
 // PAY NOW
 // Standard Edition
 function showPayNowSE() {
-  var hash = window.location.hash.includes('standard-edition');
+  var hash = window.location.hash.includes("standard-edition");
   if (hash) {
-    const payNowBtnSE = document.getElementById('payNowSEbtn')
+    const payNowBtnSE = document.getElementById("payNowSEbtn");
     if (payNowBtnSE) {
-      payNowBtnSE.style.display = 'block'
+      payNowBtnSE.style.display = "block";
     }
   }
 }
-showPayNowSE()
+showPayNowSE();
 
 function payNowSE() {
   window.location.href = "order-confirmation.html#standard-edition";
@@ -1892,15 +2078,15 @@ function payNowSE() {
 
 // Ultimate Edition
 function showPayNowUE() {
-  var hash = window.location.hash.includes('ultimate-edition');
+  var hash = window.location.hash.includes("ultimate-edition");
   if (hash) {
-    const payNowBtnUE = document.getElementById('payNowUEbtn')
+    const payNowBtnUE = document.getElementById("payNowUEbtn");
     if (payNowBtnUE) {
-      payNowBtnUE.style.display = 'block'
+      payNowBtnUE.style.display = "block";
     }
   }
 }
-showPayNowUE()
+showPayNowUE();
 
 function payNowUE() {
   window.location.href = "order-confirmation.html#ultimate-edition";
@@ -1908,15 +2094,15 @@ function payNowUE() {
 
 // Champions Edition
 function showPayNowCE() {
-  var hash = window.location.hash.includes('champions-edition');
+  var hash = window.location.hash.includes("champions-edition");
   if (hash) {
-    const payNowBtnCE = document.getElementById('payNowCEbtn')
+    const payNowBtnCE = document.getElementById("payNowCEbtn");
     if (payNowBtnCE) {
-      payNowBtnCE.style.display = 'block'
+      payNowBtnCE.style.display = "block";
     }
   }
 }
-showPayNowCE()
+showPayNowCE();
 
 function payNowCE() {
   window.location.href = "order-confirmation.html#champions-edition";
@@ -1924,15 +2110,15 @@ function payNowCE() {
 
 // EA Play - Monthly
 function showPayNowEAPM() {
-  var hash = window.location.hash.includes('eapm');
+  var hash = window.location.hash.includes("eapm");
   if (hash) {
-    const payNowBtnEAPM = document.getElementById('payNowEAPMbtn')
+    const payNowBtnEAPM = document.getElementById("payNowEAPMbtn");
     if (payNowBtnEAPM) {
-      payNowBtnEAPM.style.display = 'block'
+      payNowBtnEAPM.style.display = "block";
     }
   }
 }
-showPayNowEAPM()
+showPayNowEAPM();
 
 function payNowEAPM() {
   window.location.href = "order-confirmation.html#eapm";
@@ -1940,15 +2126,15 @@ function payNowEAPM() {
 
 // EA Play - Annual
 function showPayNowEAPA() {
-  var hash = window.location.hash.includes('eapa');
+  var hash = window.location.hash.includes("eapa");
   if (hash) {
-    const payNowBtnEAPA = document.getElementById('payNowEAPAbtn')
+    const payNowBtnEAPA = document.getElementById("payNowEAPAbtn");
     if (payNowBtnEAPA) {
-      payNowBtnEAPA.style.display = 'block'
+      payNowBtnEAPA.style.display = "block";
     }
   }
 }
-showPayNowEAPA()
+showPayNowEAPA();
 
 function payNowEAPA() {
   window.location.href = "order-confirmation.html#eapa";
@@ -1956,15 +2142,15 @@ function payNowEAPA() {
 
 // EA Play Pro - Annual
 function showPayNowEAPPA() {
-  var hash = window.location.hash.includes('eappa');
+  var hash = window.location.hash.includes("eappa");
   if (hash) {
-    const payNowBtnEAPPA = document.getElementById('payNowEAPPAbtn')
+    const payNowBtnEAPPA = document.getElementById("payNowEAPPAbtn");
     if (payNowBtnEAPPA) {
-      payNowBtnEAPPA.style.display = 'block'
+      payNowBtnEAPPA.style.display = "block";
     }
   }
 }
-showPayNowEAPPA()
+showPayNowEAPPA();
 
 function payNowEAPPA() {
   window.location.href = "order-confirmation.html#eappa";
@@ -1972,15 +2158,15 @@ function payNowEAPPA() {
 
 // EA Play Pro - Monthly
 function showPayNowEAPPM() {
-  var hash = window.location.hash.includes('eappm');
+  var hash = window.location.hash.includes("eappm");
   if (hash) {
-    const payNowBtnEAPPM = document.getElementById('payNowEAPPMbtn')
+    const payNowBtnEAPPM = document.getElementById("payNowEAPPMbtn");
     if (payNowBtnEAPPM) {
-      payNowBtnEAPPM.style.display = 'block'
+      payNowBtnEAPPM.style.display = "block";
     }
   }
 }
-showPayNowEAPPM()
+showPayNowEAPPM();
 
 function payNowEAPPM() {
   window.location.href = "order-confirmation.html#eappm";
@@ -1989,88 +2175,87 @@ function payNowEAPPM() {
 // ORDER CONFIRMATION
 // EA Play - Annual
 function showConfEAPA() {
-  var hash = window.location.hash.includes('eapa');
+  var hash = window.location.hash.includes("eapa");
   if (hash) {
-    const showEAPA = document.getElementById('confEAPA')
+    const showEAPA = document.getElementById("confEAPA");
     if (showEAPA) {
-      showEAPA.style.display = 'block'
+      showEAPA.style.display = "block";
     }
   }
 }
-showConfEAPA()
+showConfEAPA();
 
 // EA Play - Monthly
 function showConfEAPM() {
-  var hash = window.location.hash.includes('eapm');
+  var hash = window.location.hash.includes("eapm");
   if (hash) {
-    const showEAPM = document.getElementById('confEAPM')
+    const showEAPM = document.getElementById("confEAPM");
     if (showEAPM) {
-      showEAPM.style.display = 'block'
+      showEAPM.style.display = "block";
     }
   }
 }
-showConfEAPM()
+showConfEAPM();
 
 // EA Play Pro - Annual
 function showConfEAPPA() {
-  var hash = window.location.hash.includes('eappa');
+  var hash = window.location.hash.includes("eappa");
   if (hash) {
-    const showEAPPA = document.getElementById('confEAPPA')
+    const showEAPPA = document.getElementById("confEAPPA");
     if (showEAPPA) {
-      showEAPPA.style.display = 'block'
+      showEAPPA.style.display = "block";
     }
   }
 }
-showConfEAPPA()
+showConfEAPPA();
 
 // EA Play Pro - Monthly
 function showConfEAPPM() {
-  var hash = window.location.hash.includes('eappm');
+  var hash = window.location.hash.includes("eappm");
   if (hash) {
-    const showEAPPM = document.getElementById('confEAPPM')
+    const showEAPPM = document.getElementById("confEAPPM");
     if (showEAPPM) {
-      showEAPPM.style.display = 'block'
+      showEAPPM.style.display = "block";
     }
   }
 }
-showConfEAPPM()
+showConfEAPPM();
 
 // Standard Edition
 function showConfSE() {
-  var hash = window.location.hash.includes('standard-edition');
+  var hash = window.location.hash.includes("standard-edition");
   if (hash) {
-    const showSEconf = document.getElementById('confSE')
+    const showSEconf = document.getElementById("confSE");
     if (showSEconf) {
-      showSEconf.style.display = 'block'
+      showSEconf.style.display = "block";
     }
   }
 }
-showConfSE()
+showConfSE();
 
 // Champions Edition
 function showConfCE() {
-  var hash = window.location.hash.includes('champions-edition');
+  var hash = window.location.hash.includes("champions-edition");
   if (hash) {
-    const showCEconf = document.getElementById('confCE')
+    const showCEconf = document.getElementById("confCE");
     if (showCEconf) {
-      showCEconf.style.display = 'block'
+      showCEconf.style.display = "block";
     }
   }
 }
-showConfCE()
+showConfCE();
 
 // Champions Edition
 function showConfUE() {
-  var hash = window.location.hash.includes('ultimate-edition');
+  var hash = window.location.hash.includes("ultimate-edition");
   if (hash) {
-    const showUEconf = document.getElementById('confUE')
+    const showUEconf = document.getElementById("confUE");
     if (showUEconf) {
-      showUEconf.style.display = 'block'
+      showUEconf.style.display = "block";
     }
   }
 }
-showConfUE()
-
+showConfUE();
 
 function payNow() {
   window.location.href = "order-confirmation.html";
@@ -2086,24 +2271,24 @@ function goToCheckout() {
 
 // ORDER CONFIRMATION
 setTimeout(function removeLottie() {
-  const lottieAnim = document.getElementById('lottiePlayer')
-  lottieAnim.style.display = 'none'
-  console.log('time')
+  const lottieAnim = document.getElementById("lottiePlayer");
+  lottieAnim.style.display = "none";
+  console.log("time");
 }, 4000);
 
 // PRICES
 function showPrices() {
-  var EAPAhash = window.location.hash.includes('eapa');
-  var EAPMhash = window.location.hash.includes('eapm');
-  var EAPPAhash = window.location.hash.includes('eappa');
-  var EAPPMhash = window.location.hash.includes('eappm');
-  var SEhash = window.location.hash.includes('standard-edition');
-  var CEhash = window.location.hash.includes('champions-edition');
-  var UEhash = window.location.hash.includes('ultimate-edition');
+  var EAPAhash = window.location.hash.includes("eapa");
+  var EAPMhash = window.location.hash.includes("eapm");
+  var EAPPAhash = window.location.hash.includes("eappa");
+  var EAPPMhash = window.location.hash.includes("eappm");
+  var SEhash = window.location.hash.includes("standard-edition");
+  var CEhash = window.location.hash.includes("champions-edition");
+  var UEhash = window.location.hash.includes("ultimate-edition");
 
-  var subtotal = document.getElementById('orderSubtotal');
-  var tax = document.getElementById('orderTax');
-  var total = document.getElementById('orderTotal');
+  var subtotal = document.getElementById("orderSubtotal");
+  var tax = document.getElementById("orderTax");
+  var total = document.getElementById("orderTotal");
 
   if (EAPAhash) {
     subtotal.innerHTML = "$29.99";
@@ -2127,18 +2312,17 @@ function showPrices() {
     total.innerHTML = "$64.19";
   } else if (CEhash) {
     subtotal.innerHTML = "$79.99";
-    tax.innerHTML = "$5.59"
-    total.innerHTML = "$85.59"
+    tax.innerHTML = "$5.59";
+    total.innerHTML = "$85.59";
   } else if (UEhash) {
     subtotal.innerHTML = "$99.99";
-    tax.innerHTML = "$6.99"
-    total.innerHTML = "$106.98"
+    tax.innerHTML = "$6.99";
+    total.innerHTML = "$106.98";
   } else {
     subtotal.innerHTML = "n/a";
-    tax.innerHTML = "n/a"
-    total.innerHTML = "n/a"
+    tax.innerHTML = "n/a";
+    total.innerHTML = "n/a";
   }
-
 }
 
-showPrices()
+showPrices();

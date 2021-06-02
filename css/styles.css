@@ -1,28 +1,27 @@
 :root {
-
-  --color-ea-primary: #FF4747;
+  --color-ea-primary: #ff4747;
   --color-ea-secondary: blue;
   --color-ea-base: white;
   --color-fifa-base: #151515;
-  --color-fifa-mint: #29FFC9;
-  --color-fifa-violet: #7E42F5;
-  --color-fifa-majenta: #E518FB;
-  --color-fifa-obsidian: #201E20;
+  --color-fifa-mint: #29ffc9;
+  --color-fifa-violet: #7e42f5;
+  --color-fifa-majenta: #e518fb;
+  --color-fifa-obsidian: #201e20;
   --color-fifa-nav-color: #000000;
   --color-steam-blue: #397298;
 
   --table-cell-bg: rgba(50, 50, 50, 0.2);
 
   --color-fifa-neutral-0: #ffffff;
-  --color-fifa-neutral-100: #E7E7E7;
-  --color-fifa-neutral-200: #D0D0D0;
-  --color-fifa-neutral-300: #B8B8B8;
-  --color-fifa-neutral-400: #A1A1A1;
-  --color-fifa-neutral-500: #8A8A8A;
+  --color-fifa-neutral-100: #e7e7e7;
+  --color-fifa-neutral-200: #d0d0d0;
+  --color-fifa-neutral-300: #b8b8b8;
+  --color-fifa-neutral-400: #a1a1a1;
+  --color-fifa-neutral-500: #8a8a8a;
   --color-fifa-neutral-600: #727272;
-  --color-fifa-neutral-700: #5B5B5B;
+  --color-fifa-neutral-700: #5b5b5b;
   --color-fifa-neutral-800: #434343;
-  --color-fifa-neutral-900: #2C2C2C;
+  --color-fifa-neutral-900: #2c2c2c;
   --color-fifa-neutral-1000: var(--color-fifa-base);
 
   --dimension-space-large: 24px;
@@ -36,8 +35,8 @@
   --dimension-space-smaller: 8px;
   --dimension-space-smallest: 4px;
 
-  --font-family-body: 'Electronic Arts Text';
-  --font-family-display: 'Electronic Arts Display';
+  --font-family-body: "Electronic Arts Text";
+  --font-family-display: "Electronic Arts Display";
 
   --font-line-height-body: 1.5;
   --font-line-height-display: 1.25;
@@ -71,8 +70,6 @@
   --border-radius-large: 0;
   --border-radius-medium: 0;
   --border-radius-small: 0;
-
-
 }
 
 body {
@@ -87,14 +84,13 @@ body {
 }
 
 .fifaBG {
-  background-image: url('../img/bg-element.png');
+  background-image: url("../img/bg-element.png");
   background-size: contain;
 }
 
 .playstation {
-  background: #2F6ECA;
+  background: #2f6eca;
 }
-
 
 a {
   color: var(--color-fifa-mint);
@@ -103,7 +99,6 @@ a {
 a:visited {
   color: var(--color-fifa-mint);
 }
-
 
 h1,
 h2,
@@ -351,7 +346,6 @@ h6 {
   width: 246px;
 }
 
-
 .step-header-compare .content-left {
   width: 224px;
 }
@@ -363,6 +357,39 @@ h6 {
 
 .select-platform {
   display: block;
+  transition: all 2s linear;
+}
+
+#selectPCPlatform,
+#selectConsolePlatform,
+#eadSection,
+#steamSection,
+#playstation5Section,
+#playstation4Section,
+#xboxSection,
+#eaPlaySelectMembershipSection,
+#buyTheGameSection,
+#buyTheGameSectionPS5,
+#buyTheGameSectionPS4,
+#eaPlaySelectPaymentPlan,
+#eaPlayProSelectPaymentPlan,
+#steamEAPlaySelectPaymentPlan,
+#ps5EAPlaySelectPaymentPlan,
+#ps4EAPlaySelectPaymentPlan,
+#EADcheckoutBuyStandardEdition,
+#EADcheckoutBuyChampionsEdition,
+#EADcheckoutBuyUltimateEdition,
+#EADcheckoutAnnual,
+#EADcheckoutMonthly,
+#EADcheckoutProAnnual,
+#EADcheckoutProMonthly,
+#SteamCheckoutMonthly {
+  opacity: 0;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  -ms-transition: all 0.75s ease-in-out;
+  -o-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 .checkout-tiles {
@@ -543,7 +570,8 @@ h6 {
 }
 
 .make-selection {
-  margin: var(--dimension-space-larger) var(--dimension-space-medium) 96px var(--dimension-space-medium);
+  margin: var(--dimension-space-larger) var(--dimension-space-medium) 96px
+    var(--dimension-space-medium);
   text-align: center;
 }
 
@@ -729,11 +757,11 @@ h6 {
 }
 
 .table-row-header2::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 24px;
   height: 24px;
-  background-image: url('../img/versus.svg');
+  background-image: url("../img/versus.svg");
   display: block;
   left: 50%;
   top: 50%;
@@ -893,7 +921,7 @@ h6 {
   overflow: hidden;
 }
 
-.cell-header-tile-3up img{
+.cell-header-tile-3up img {
   width: 80%;
 }
 
@@ -919,7 +947,6 @@ h6 {
 .cell-header img {
   width: 100%;
   border-radius: var(--border-radius-small);
-  ;
 }
 
 .cell-header-tile p {
@@ -997,7 +1024,6 @@ h6 {
   width: 12px;
   height: 64px;
   background: transparent;
-
 }
 
 .platformTileSelected {
@@ -1041,8 +1067,8 @@ h6 {
   bottom: 0;
   left: 0;
   text-align: left;
-  background: rgba(0, 0, 0, .9);
-  transition: opacity .25s ease;
+  background: rgba(0, 0, 0, 0.9);
+  transition: opacity 0.25s ease;
   z-index: 100;
 }
 
@@ -1059,17 +1085,17 @@ h6 {
   display: none;
 }
 
-.modal-state:checked+.modal {
+.modal-state:checked + .modal {
   opacity: 1;
   visibility: visible;
 }
 
-.modal-state:checked+.modal .modal__inner {
+.modal-state:checked + .modal .modal__inner {
   top: 0;
 }
 
 .modal__inner {
-  transition: top .25s ease;
+  transition: top 0.25s ease;
   position: absolute;
   top: -20%;
   right: 0;
@@ -1081,7 +1107,8 @@ h6 {
   overflow-y: scroll;
   background: var(--color-fifa-base);
   border-radius: var(--border-radius-small);
-  padding: var(--dimension-space-medium) var(--dimension-space-small) var(--dimension-space-smaller) var(--dimension-space-small);
+  padding: var(--dimension-space-medium) var(--dimension-space-small)
+    var(--dimension-space-smaller) var(--dimension-space-small);
   height: fit-content;
   max-height: calc(100% - 48px);
 }
@@ -1097,7 +1124,7 @@ h6 {
 
 .modal__close:after,
 .modal__close:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   height: 24px;
@@ -1183,7 +1210,7 @@ h6 {
   object-fit: cover;
 }
 
-.swiper-row-header{
+.swiper-row-header {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -1191,12 +1218,12 @@ h6 {
   align-items: center;
 }
 
-.swiper-row-header p{
+.swiper-row-header p {
   max-width: 82%;
   margin-bottom: var(--dimension-space-smaller);
 }
 
-.swiper-row-header .swiper-pagination{
+.swiper-row-header .swiper-pagination {
   width: fit-content;
   margin-left: var(--dimension-space-large);
 }
@@ -1222,7 +1249,7 @@ h6 {
   outline: none;
 }
 
-.swiper-slide1{
+.swiper-slide1 {
   opacity: 1;
   border: 2px solid var(--color-fifa-base);
 }
@@ -1230,7 +1257,7 @@ h6 {
 .selected-media {
   opacity: 1;
   border: 4px solid var(--color-fifa-base);
-  outline: 2px solid var(--color-fifa-mint)
+  outline: 2px solid var(--color-fifa-mint);
 }
 
 .swiper-pagination1,
@@ -1262,7 +1289,7 @@ h6 {
   font-size: var(--font-body-size-M) !important;
 }
 
-.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: -30px !important;
@@ -1285,7 +1312,6 @@ h6 {
   border-radius: var(--border-radius-small);
   padding: var(--dimension-space-smaller) var(--dimension-space-small);
 }
-
 
 /* Login Screen */
 .form {
@@ -1354,7 +1380,7 @@ h6 {
 }
 
 .valid {
-  color: #4DEEA1;
+  color: #4deea1;
 }
 
 .loginbox {
@@ -1381,7 +1407,7 @@ h6 {
   background: var(--color-fifa-neutral-900);
   border-radius: var(--border-radius-small);
   margin-bottom: var(--dimension-space-small);
-  border: 1px solid var(--color-fifa-neutral-900)
+  border: 1px solid var(--color-fifa-neutral-900);
 }
 
 .payment-method img {
@@ -1418,7 +1444,7 @@ h6 {
 .conf-hero {
   width: 100%;
   height: 200px;
-  background-image: url('https://media.giphy.com/media/Qwtw3GTvRg8LxKaUet/giphy.gif');
+  background-image: url("https://media.giphy.com/media/Qwtw3GTvRg8LxKaUet/giphy.gif");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -1471,11 +1497,11 @@ h6 {
 
 .box {
   position: relative;
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .box::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   height: 2px;
@@ -1502,20 +1528,21 @@ h6 {
   user-select: none;
 }
 
-.height1{
+.height1 {
   height: 64px;
 }
 
-.height2{
+.height2 {
   height: 78px;
 }
 
-.height3{
-height: 96px;
+.height3 {
+  height: 96px;
 }
 .box-content {
   width: calc(100% - 32px);
-  padding: var(--dimension-space-smallest) var(--dimension-space-medium) var(--dimension-space-medium) var(--dimension-space-medium);
+  padding: var(--dimension-space-smallest) var(--dimension-space-medium)
+    var(--dimension-space-medium) var(--dimension-space-medium);
   font-size: 11pt;
   color: var(--color-fifa-neutral-100);
   display: none;
@@ -1531,13 +1558,13 @@ height: 96px;
   display: none;
 }
 
-input:checked+.box {
+input:checked + .box {
   height: auto;
   background: var(--table-cell-bg);
 }
 
-input:checked+.box .box-content,
-input:checked+.box .box-close {
+input:checked + .box .box-content,
+input:checked + .box .box-close {
   display: inline-block;
 }
 
@@ -1549,15 +1576,15 @@ input:checked+.box .box-close {
 .arrows section .box-title:before {
   position: absolute;
   display: block;
-  content: '\203a';
+  content: "\203a";
   font-size: 18pt;
   left: 20px;
   top: -2px;
-  transition: transform .15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
   color: var(--color-fifa-mint);
 }
 
-input:checked+section.box .box-title:before {
+input:checked + section.box .box-title:before {
   transform: rotate(90deg);
 }
 
@@ -1569,7 +1596,7 @@ input:checked+section.box .box-title:before {
   margin-bottom: var(--dimension-space-smaller);
 }
 
-.chevron-rotate{
+.chevron-rotate {
   transform: rotate(-90deg) !important;
 }
 
@@ -1587,4 +1614,3 @@ input:checked+section.box .box-title:before {
   transform: rotate(90deg);
   transition: all 0.25s ease-in-out;
 }
-

@@ -81,6 +81,8 @@ body {
   color: var(--color-fifa-neutral-0);
   font-size: var(--font-size-base);
   line-height: var(--font-line-height-body);
+  max-width: 375px;
+  margin:0 auto;
 }
 
 .fifaBG {
